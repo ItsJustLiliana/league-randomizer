@@ -35,9 +35,6 @@
     },
     "Prestige DRX Aatrox": {
       "id": 31
-    },
-    "Primordian Aatrox": {
-      "id": 33
     }
   },
   "Ahri": {
@@ -94,18 +91,6 @@
     },
     "Snow Moon Ahri": {
       "id": 76
-    },
-    "Risen Legend Ahri": {
-      "id": 85
-    },
-    "Immortalized Legend Ahri": {
-      "id": 86
-    },
-    "Spirit Blossom Springs Ahri": {
-      "id": 88
-    },
-    "After Hours Spirit Blossom Springs Ahri": {
-      "id": 89
     }
   },
   "Akali": {
@@ -168,12 +153,6 @@
     },
     "Prestige Coven Akali": {
       "id": 71
-    },
-    "Empyrean Akali": {
-      "id": 82
-    },
-    "Spirit Blossom Akali": {
-      "id": 92
     }
   },
   "Akshan": {
@@ -185,9 +164,6 @@
     },
     "Crystal Rose Akshan": {
       "id": 10
-    },
-    "Three Honors Akshan": {
-      "id": 20
     }
   },
   "Alistar": {
@@ -235,17 +211,6 @@
     },
     "Lunar Beast Alistar": {
       "id": 29
-    },
-    "Elderwood Alistar": {
-      "id": 40
-    }
-  },
-  "Ambessa": {
-    "default": {
-      "id": 0
-    },
-    "Chosen of the Wolf Ambessa": {
-      "id": 1
     }
   },
   "Amumu": {
@@ -290,9 +255,6 @@
     },
     "Heartache Amumu": {
       "id": 44
-    },
-    "Dumpling Darlings Amumu": {
-      "id": 53
     }
   },
   "Anivia": {
@@ -387,9 +349,6 @@
     },
     "Winterblessed Annie": {
       "id": 40
-    },
-    "Battle Princess Annie": {
-      "id": 50
     }
   },
   "Aphelios": {
@@ -410,9 +369,6 @@
     },
     "HEARTSTEEL Aphelios": {
       "id": 30
-    },
-    "Prestige Spirit Blossom Springs Aphelios": {
-      "id": 40
     }
   },
   "Ashe": {
@@ -469,18 +425,9 @@
     },
     "Crystalis Motus Ashe": {
       "id": 65
-    },
-    "Infernal Ashe": {
-      "id": 67
-    },
-    "Spirit Blossom Ashe": {
-      "id": 76
-    },
-    "Firecracker Ashe": {
-      "id": 84
     }
   },
-  "AurelionSol": {
+  "Aurelion Sol": {
     "default": {
       "id": 0
     },
@@ -495,23 +442,6 @@
     },
     "Inkshadow Aurelion Sol": {
       "id": 21
-    },
-    "Porcelain Protector Aurelion Sol": {
-      "id": 31
-    },
-    "Divine Architect Porcelain Aurelion Sol": {
-      "id": 38
-    }
-  },
-  "Aurora": {
-    "default": {
-      "id": 0
-    },
-    "Battle Bunny Aurora": {
-      "id": 1
-    },
-    "Arcana Aurora": {
-      "id": 11
     }
   },
   "Azir": {
@@ -535,9 +465,6 @@
     },
     "Worlds 2022 Azir": {
       "id": 14
-    },
-    "Attorney Azir": {
-      "id": 19
     }
   },
   "Bard": {
@@ -561,15 +488,9 @@
     },
     "Shan Hai Scrolls Bard": {
       "id": 26
-    },
-    "T1 Bard": {
-      "id": 35
-    },
-    "Spirit Blossom Bard": {
-      "id": 37
     }
   },
-  "Belveth": {
+  "Bel'Veth": {
     "default": {
       "id": 0
     },
@@ -578,9 +499,6 @@
     },
     "Cosmic Matriarch Bel'Veth": {
       "id": 10
-    },
-    "Primordian Bel'Veth": {
-      "id": 19
     }
   },
   "Blitzcrank": {
@@ -669,9 +587,6 @@
     },
     "Street Demons Brand": {
       "id": 33
-    },
-    "Empyrean Brand": {
-      "id": 42
     }
   },
   "Braum": {
@@ -698,9 +613,6 @@
     },
     "Pool Party Braum": {
       "id": 33
-    },
-    "Grill Master Braum": {
-      "id": 42
     }
   },
   "Briar": {
@@ -709,12 +621,6 @@
     },
     "Street Demons Briar": {
       "id": 1
-    },
-    "Primordian Briar": {
-      "id": 10
-    },
-    "Battle Academia Briar": {
-      "id": 20
     }
   },
   "Caitlyn": {
@@ -757,7 +663,7 @@
     "Battle Academia Caitlyn": {
       "id": 22
     },
-    "Arcane Enforcer Caitlyn": {
+    "Arcane Caitlyn": {
       "id": 28
     },
     "Prestige Arcade Caitlyn (2022)": {
@@ -771,15 +677,6 @@
     },
     "DRX Caitlyn": {
       "id": 48
-    },
-    "Arcane Commander Caitlyn": {
-      "id": 50
-    },
-    "Prestige Arcane Commander Caitlyn": {
-      "id": 51
-    },
-    "Firecracker Caitlyn": {
-      "id": 54
     }
   },
   "Camille": {
@@ -806,9 +703,6 @@
     },
     "Prestige Winterblessed Camille": {
       "id": 32
-    },
-    "Petals of Spring Camille": {
-      "id": 44
     }
   },
   "Cassiopeia": {
@@ -838,12 +732,9 @@
     },
     "Bewitching Cassiopeia": {
       "id": 28
-    },
-    "Prestige Mythmaker Cassiopeia": {
-      "id": 38
     }
   },
-  "Chogath": {
+  "Cho'Gath": {
     "default": {
       "id": 0
     },
@@ -873,12 +764,6 @@
     },
     "Broken Covenant Cho'Gath": {
       "id": 23
-    },
-    "Toy Terror Cho'Gath": {
-      "id": 32
-    },
-    "Petricite Cho'Gath": {
-      "id": 41
     }
   },
   "Corki": {
@@ -914,9 +799,6 @@
     },
     "Astronaut Corki": {
       "id": 26
-    },
-    "Brick Toy Corki": {
-      "id": 36
     }
   },
   "Darius": {
@@ -955,18 +837,6 @@
     },
     "Spirit Blossom Darius": {
       "id": 43
-    },
-    "Porcelain Darius": {
-      "id": 54
-    },
-    "Divine God-King Darius": {
-      "id": 64
-    },
-    "Prestige Triumphant General Darius": {
-      "id": 65
-    },
-    "Mecha Kingdoms Darius": {
-      "id": 67
     }
   },
   "Diana": {
@@ -1005,15 +875,44 @@
     },
     "Winterblessed Diana": {
       "id": 47
+    }
+  },
+  "Dr. Mundo": {
+    "default": {
+      "id": 0
     },
-    "Heavenscale Diana": {
-      "id": 54
+    "Toxic Dr. Mundo": {
+      "id": 1
     },
-    "Dark Cosmic Diana": {
-      "id": 64
+    "Mr. Mundoverse": {
+      "id": 2
     },
-    "Prestige Dark Cosmic Diana": {
-      "id": 65
+    "Corporate Mundo": {
+      "id": 3
+    },
+    "Mundo Mundo": {
+      "id": 4
+    },
+    "Executioner Mundo": {
+      "id": 5
+    },
+    "Rageborn Mundo": {
+      "id": 6
+    },
+    "TPA Mundo": {
+      "id": 7
+    },
+    "Pool Party Mundo": {
+      "id": 8
+    },
+    "El Macho Mundo": {
+      "id": 9
+    },
+    "Frozen Prince Mundo": {
+      "id": 10
+    },
+    "Street Demons Dr. Mundo": {
+      "id": 21
     }
   },
   "Draven": {
@@ -1055,50 +954,6 @@
     },
     "La Ilusi\u00f3n Draven": {
       "id": 48
-    },
-    "Grand Reckoning Draven": {
-      "id": 58
-    },
-    "Victorious Draven": {
-      "id": 68
-    }
-  },
-  "DrMundo": {
-    "default": {
-      "id": 0
-    },
-    "Toxic Dr. Mundo": {
-      "id": 1
-    },
-    "Mr. Mundoverse": {
-      "id": 2
-    },
-    "Corporate Mundo": {
-      "id": 3
-    },
-    "Mundo Mundo": {
-      "id": 4
-    },
-    "Executioner Mundo": {
-      "id": 5
-    },
-    "Rageborn Mundo": {
-      "id": 6
-    },
-    "TPA Mundo": {
-      "id": 7
-    },
-    "Pool Party Mundo": {
-      "id": 8
-    },
-    "El Macho Mundo": {
-      "id": 9
-    },
-    "Frozen Prince Mundo": {
-      "id": 10
-    },
-    "Street Demons Dr. Mundo": {
-      "id": 21
     }
   },
   "Ekko": {
@@ -1126,7 +981,7 @@
     "Pulsefire Ekko": {
       "id": 28
     },
-    "Arcane Firelight Ekko": {
+    "Firelight Ekko": {
       "id": 36
     },
     "Star Guardian Ekko": {
@@ -1137,9 +992,6 @@
     },
     "Breakout True Damage Ekko": {
       "id": 56
-    },
-    "Arcane Last Stand Ekko": {
-      "id": 57
     }
   },
   "Elise": {
@@ -1169,9 +1021,6 @@
     },
     "Coven Elise": {
       "id": 24
-    },
-    "Masque of the Black Rose Elise": {
-      "id": 34
     }
   },
   "Evelynn": {
@@ -1216,15 +1065,6 @@
     },
     "Soul Fighter Evelynn": {
       "id": 42
-    },
-    "High Noon Evelynn": {
-      "id": 52
-    },
-    "Prestige High Noon Evelynn": {
-      "id": 53
-    },
-    "Nightbringer Evelynn": {
-      "id": 64
     }
   },
   "Ezreal": {
@@ -1284,15 +1124,6 @@
     },
     "HEARTSTEEL Ezreal": {
       "id": 43
-    },
-    "Heavenscale Ezreal": {
-      "id": 44
-    },
-    "Prestige Heavenscale Ezreal": {
-      "id": 54
-    },
-    "Masque of the Black Rose Ezreal": {
-      "id": 65
     }
   },
   "Fiddlesticks": {
@@ -1328,12 +1159,6 @@
     },
     "Star Nemesis Fiddlesticks": {
       "id": 27
-    },
-    "Blood Moon Fiddlesticks": {
-      "id": 37
-    },
-    "Flora Fatalis Fiddlesticks": {
-      "id": 46
     }
   },
   "Fiora": {
@@ -1381,12 +1206,6 @@
     },
     "Dragonmancer Fiora": {
       "id": 80
-    },
-    "Battle Queen Fiora": {
-      "id": 89
-    },
-    "Victorious Fiora": {
-      "id": 98
     }
   },
   "Fizz": {
@@ -1428,9 +1247,6 @@
     },
     "Astronaut Fizz": {
       "id": 26
-    },
-    "Rain Shepherd Fizz": {
-      "id": 35
     }
   },
   "Galio": {
@@ -1463,9 +1279,6 @@
     },
     "Mythmaker Galio": {
       "id": 28
-    },
-    "Aegis Frame Galio": {
-      "id": 40
     }
   },
   "Gangplank": {
@@ -1504,9 +1317,6 @@
     },
     "Gangplank the Betrayer": {
       "id": 23
-    },
-    "PROJECT: Gangplank": {
-      "id": 33
     }
   },
   "Garen": {
@@ -1554,12 +1364,6 @@
     },
     "Mythmaker Garen": {
       "id": 33
-    },
-    "Fallen God-King Garen": {
-      "id": 44
-    },
-    "Visions of the Fallen Garen": {
-      "id": 46
     }
   },
   "Gnar": {
@@ -1592,9 +1396,6 @@
     },
     "La Ilusi\u00f3n Gnar": {
       "id": 31
-    },
-    "T1 Gnar": {
-      "id": 41
     }
   },
   "Gragas": {
@@ -1636,12 +1437,6 @@
     },
     "Space Groove Gragas": {
       "id": 20
-    },
-    "High Noon Gragas": {
-      "id": 29
-    },
-    "Music Fan Gragas": {
-      "id": 39
     }
   },
   "Graves": {
@@ -1683,9 +1478,6 @@
     },
     "EDG Graves": {
       "id": 42
-    },
-    "Porcelain Graves": {
-      "id": 45
     }
   },
   "Gwen": {
@@ -1700,12 +1492,6 @@
     },
     "Soul Fighter Gwen": {
       "id": 20
-    },
-    "Battle Queen Gwen": {
-      "id": 30
-    },
-    "Rain Shepherd Gwen": {
-      "id": 39
     }
   },
   "Hecarim": {
@@ -1744,9 +1530,6 @@
     },
     "Winterblessed Hecarim": {
       "id": 31
-    },
-    "Nightbringer Hecarim": {
-      "id": 41
     }
   },
   "Heimerdinger": {
@@ -1776,9 +1559,6 @@
     },
     "Heimerstinger": {
       "id": 24
-    },
-    "Arcane Professor Heimerdinger": {
-      "id": 33
     }
   },
   "Hwei": {
@@ -1787,9 +1567,6 @@
     },
     "Winterblessed Hwei": {
       "id": 1
-    },
-    "Spirit Blossom Hwei": {
-      "id": 11
     }
   },
   "Illaoi": {
@@ -1807,9 +1584,6 @@
     },
     "Snow Moon Illaoi": {
       "id": 18
-    },
-    "Battle Bear Illaoi": {
-      "id": 27
     }
   },
   "Irelia": {
@@ -1854,12 +1628,6 @@
     },
     "Mythmaker Irelia": {
       "id": 37
-    },
-    "Porcelain Irelia": {
-      "id": 45
-    },
-    "Spirit Blossom Irelia": {
-      "id": 55
     }
   },
   "Ivern": {
@@ -1877,9 +1645,6 @@
     },
     "Astronaut Ivern": {
       "id": 20
-    },
-    "Spirit Blossom Ivern": {
-      "id": 30
     }
   },
   "Janna": {
@@ -1927,15 +1692,9 @@
     },
     "Prestige Cyber Halo Janna": {
       "id": 46
-    },
-    "Heavenscale Janna": {
-      "id": 56
-    },
-    "Dawnbringer Janna": {
-      "id": 66
     }
   },
-  "JarvanIV": {
+  "Jarvan IV": {
     "default": {
       "id": 0
     },
@@ -1977,12 +1736,6 @@
     },
     "Nightbringer Jarvan IV": {
       "id": 35
-    },
-    "Mythmaker Jarvan IV": {
-      "id": 44
-    },
-    "Prestige Visions of the Fallen Jarvan IV": {
-      "id": 54
     }
   },
   "Jax": {
@@ -2033,9 +1786,6 @@
     },
     "Neo PAX Jax": {
       "id": 32
-    },
-    "PROJECT: Jax": {
-      "id": 33
     }
   },
   "Jayce": {
@@ -2060,23 +1810,11 @@
     "Resistance Jayce": {
       "id": 15
     },
-    "Arcane Inventor Jayce": {
+    "Arcane Jayce": {
       "id": 24
     },
     "Zenith Games Jayce": {
       "id": 25
-    },
-    "T1 Jayce": {
-      "id": 34
-    },
-    "Arcane Survivor Jayce": {
-      "id": 35
-    },
-    "Prestige T1 Jayce": {
-      "id": 36
-    },
-    "Petals of Spring Jayce": {
-      "id": 38
     }
   },
   "Jhin": {
@@ -2112,12 +1850,6 @@
     },
     "Dark Cosmic Erasure Jhin": {
       "id": 37
-    },
-    "Mythmaker Jhin": {
-      "id": 47
-    },
-    "Arcana Jhin": {
-      "id": 55
     }
   },
   "Jinx": {
@@ -2148,7 +1880,7 @@
     "Heartseeker Jinx": {
       "id": 29
     },
-    "Arcane Enemy Jinx": {
+    "Arcane Jinx": {
       "id": 37
     },
     "Battle Cat Jinx": {
@@ -2159,15 +1891,23 @@
     },
     "Cafe Cuties Jinx": {
       "id": 51
-    },
-    "Arcane Fractured Jinx": {
-      "id": 60
-    },
-    "T1 Jinx": {
-      "id": 62
     }
   },
-  "Kaisa": {
+  "K'Sante": {
+    "default": {
+      "id": 0
+    },
+    "Empyrean K'Sante": {
+      "id": 1
+    },
+    "Prestige Empyrean K'Sante": {
+      "id": 2
+    },
+    "HEARTSTEEL K'Sante": {
+      "id": 8
+    }
+  },
+  "Kai'Sa": {
     "default": {
       "id": 0
     },
@@ -2203,18 +1943,6 @@
     },
     "Inkshadow Kai'Sa": {
       "id": 48
-    },
-    "Heavenscale Kai'Sa": {
-      "id": 59
-    },
-    "Dark Star Kai'Sa": {
-      "id": 69
-    },
-    "Risen Legend Kai'Sa": {
-      "id": 70
-    },
-    "Immortalized Legend Kai'Sa": {
-      "id": 71
     }
   },
   "Kalista": {
@@ -2235,9 +1963,6 @@
     },
     "Faerie Court Kalista": {
       "id": 14
-    },
-    "Dawnbringer Kalista": {
-      "id": 24
     }
   },
   "Karma": {
@@ -2282,12 +2007,6 @@
     },
     "Faerie Queen Karma": {
       "id": 54
-    },
-    "Infernal Karma": {
-      "id": 61
-    },
-    "Spirit Blossom Karma": {
-      "id": 70
     }
   },
   "Karthus": {
@@ -2320,9 +2039,6 @@
     },
     "Elderwood Karthus": {
       "id": 26
-    },
-    "Arcana Karthus": {
-      "id": 35
     }
   },
   "Kassadin": {
@@ -2408,15 +2124,6 @@
     },
     "Prestige Faerie Court Katarina": {
       "id": 48
-    },
-    "Chosen of the Wolf Katarina": {
-      "id": 59
-    },
-    "Prestige Masque of the Black Rose Katarina": {
-      "id": 60
-    },
-    "Petals of Spring Katarina": {
-      "id": 70
     }
   },
   "Kayle": {
@@ -2464,15 +2171,6 @@
     },
     "Immortal Journey Kayle": {
       "id": 57
-    },
-    "Empyrean Kayle": {
-      "id": 66
-    },
-    "Prestige Empyrean Kayle": {
-      "id": 67
-    },
-    "Spirit Blossom Kayle": {
-      "id": 78
     }
   },
   "Kayn": {
@@ -2496,9 +2194,6 @@
     },
     "HEARTSTEEL Kayn": {
       "id": 20
-    },
-    "Battle Academia Kayn": {
-      "id": 26
     }
   },
   "Kennen": {
@@ -2536,7 +2231,7 @@
       "id": 25
     }
   },
-  "Khazix": {
+  "Kha'Zix": {
     "default": {
       "id": 0
     },
@@ -2560,9 +2255,6 @@
     },
     "Lunar Guardian Kha'Zix": {
       "id": 69
-    },
-    "Crystalis Indomitus Kha'Zix": {
-      "id": 79
     }
   },
   "Kindred": {
@@ -2586,12 +2278,6 @@
     },
     "DRX Kindred": {
       "id": 23
-    },
-    "Prestige Porcelain Kindred": {
-      "id": 33
-    },
-    "Chosen of the Wolf Kindred": {
-      "id": 34
     }
   },
   "Kled": {
@@ -2611,7 +2297,7 @@
       "id": 18
     }
   },
-  "KogMaw": {
+  "Kog'Maw": {
     "default": {
       "id": 0
     },
@@ -2656,26 +2342,9 @@
     },
     "Shan Hai Scrolls Kog'Maw": {
       "id": 46
-    },
-    "Victorious Kog'Maw": {
-      "id": 55
     }
   },
-  "KSante": {
-    "default": {
-      "id": 0
-    },
-    "Empyrean K'Sante": {
-      "id": 1
-    },
-    "Prestige Empyrean K'Sante": {
-      "id": 2
-    },
-    "HEARTSTEEL K'Sante": {
-      "id": 8
-    }
-  },
-  "Leblanc": {
+  "LeBlanc": {
     "default": {
       "id": 0
     },
@@ -2714,12 +2383,9 @@
     },
     "Bewitching LeBlanc": {
       "id": 45
-    },
-    "Risen Legend LeBlanc": {
-      "id": 55
     }
   },
-  "LeeSin": {
+  "Lee Sin": {
     "default": {
       "id": 0
     },
@@ -2767,18 +2433,6 @@
     },
     "Zenith Games Lee Sin": {
       "id": 41
-    },
-    "Heavenscale Lee Sin": {
-      "id": 51
-    },
-    "Divine Heavenscale Lee Sin": {
-      "id": 52
-    },
-    "T1 Lee Sin": {
-      "id": 68
-    },
-    "Inkshadow Lee Sin": {
-      "id": 72
     }
   },
   "Leona": {
@@ -2829,12 +2483,6 @@
     },
     "Crystalis Motus Leona": {
       "id": 50
-    },
-    "Battle Lion Leona": {
-      "id": 52
-    },
-    "Prestige Battle Lion Leona": {
-      "id": 53
     }
   },
   "Lillia": {
@@ -2849,15 +2497,6 @@
     },
     "Shan Hai Scrolls Lillia": {
       "id": 19
-    },
-    "Faerie Court Lillia": {
-      "id": 28
-    },
-    "Bowling League Lillia": {
-      "id": 37
-    },
-    "Petals of Spring Lillia": {
-      "id": 46
     }
   },
   "Lissandra": {
@@ -2887,9 +2526,6 @@
     },
     "Space Groove Lissandra": {
       "id": 34
-    },
-    "Flora Fatalis Lissandra": {
-      "id": 43
     }
   },
   "Lucian": {
@@ -2931,12 +2567,6 @@
     },
     "Winterblessed Lucian": {
       "id": 52
-    },
-    "Masked Justice Lucian": {
-      "id": 62
-    },
-    "Sunken Shadows Lucian": {
-      "id": 72
     }
   },
   "Lulu": {
@@ -2978,9 +2608,6 @@
     },
     "Cafe Cuties Lulu": {
       "id": 46
-    },
-    "Arcana Lulu": {
-      "id": 55
     }
   },
   "Lux": {
@@ -3043,15 +2670,6 @@
     },
     "Empyrean Lux": {
       "id": 42
-    },
-    "Faerie Court Lux": {
-      "id": 61
-    },
-    "Prestige Spirit Blossom Lux": {
-      "id": 70
-    },
-    "Panda Pal Lux": {
-      "id": 72
     }
   },
   "Malphite": {
@@ -3096,9 +2714,6 @@
     },
     "Lunar Guardian Malphite": {
       "id": 37
-    },
-    "Pool Party Malphite": {
-      "id": 48
     }
   },
   "Malzahar": {
@@ -3137,12 +2752,6 @@
     },
     "Three Honors Malzahar": {
       "id": 38
-    },
-    "Empyrean Malzahar": {
-      "id": 39
-    },
-    "Fatebreaker Malzahar": {
-      "id": 49
     }
   },
   "Maokai": {
@@ -3180,7 +2789,7 @@
       "id": 33
     }
   },
-  "MasterYi": {
+  "Master Yi": {
     "default": {
       "id": 0
     },
@@ -3228,23 +2837,6 @@
     },
     "Inkshadow Master Yi": {
       "id": 89
-    },
-    "Heavenscale Master Yi": {
-      "id": 96
-    },
-    "Victorious Master Yi": {
-      "id": 106
-    }
-  },
-  "Mel": {
-    "default": {
-      "id": 0
-    },
-    "Arcane Councilor Mel": {
-      "id": 1
-    },
-    "Prestige Winterblessed Mel": {
-      "id": 10
     }
   },
   "Milio": {
@@ -3253,15 +2845,9 @@
     },
     "Faerie Court Milio": {
       "id": 1
-    },
-    "Rain Shepherd Milio": {
-      "id": 11
-    },
-    "Winter Wonder Milio": {
-      "id": 20
     }
   },
-  "MissFortune": {
+  "Miss Fortune": {
     "default": {
       "id": 0
     },
@@ -3313,9 +2899,6 @@
     "Battle Bunny Miss Fortune": {
       "id": 31
     },
-    "Admiral Battle Bunny Miss Fortune": {
-      "id": 32
-    },
     "Prestige Bewitching Miss Fortune (2022)": {
       "id": 33
     },
@@ -3324,15 +2907,9 @@
     },
     "Prestige Broken Covenant Miss Fortune": {
       "id": 41
-    },
-    "Porcelain Miss Fortune": {
-      "id": 50
-    },
-    "Battle Queen Miss Fortune": {
-      "id": 60
     }
   },
-  "MonkeyKing": {
+  "Wukong": {
     "default": {
       "id": 0
     },
@@ -3359,9 +2936,6 @@
     },
     "Elderwood Wukong": {
       "id": 16
-    },
-    "Mecha Kingdoms Wukong": {
-      "id": 26
     }
   },
   "Mordekaiser": {
@@ -3400,9 +2974,6 @@
     },
     "Old God Mordekaiser": {
       "id": 44
-    },
-    "Sahn-Uzal Mordekaiser": {
-      "id": 54
     }
   },
   "Morgana": {
@@ -3450,15 +3021,6 @@
     },
     "Snow Moon Morgana": {
       "id": 60
-    },
-    "Porcelain Morgana": {
-      "id": 70
-    },
-    "Spirit Blossom Morgana": {
-      "id": 80
-    },
-    "Prestige Veiled Lady Morgana": {
-      "id": 81
     }
   },
   "Naafiri": {
@@ -3467,12 +3029,6 @@
     },
     "Soul Fighter Naafiri": {
       "id": 1
-    },
-    "PROJECT: Naafiri": {
-      "id": 11
-    },
-    "Glizzy Naafiri": {
-      "id": 20
     }
   },
   "Nami": {
@@ -3514,12 +3070,6 @@
     },
     "Coven Nami": {
       "id": 51
-    },
-    "Mythmaker Nami": {
-      "id": 58
-    },
-    "Sunken Shadows Nami": {
-      "id": 68
     }
   },
   "Nasus": {
@@ -3561,9 +3111,6 @@
     },
     "Nightbringer Nasus": {
       "id": 45
-    },
-    "Fatemaker Nasus": {
-      "id": 54
     }
   },
   "Nautilus": {
@@ -3596,12 +3143,6 @@
     },
     "Cosmic Paladin Nautilus": {
       "id": 27
-    },
-    "Crystalis Indomitus Nautilus": {
-      "id": 36
-    },
-    "Petricite Nautilus": {
-      "id": 39
     }
   },
   "Neeko": {
@@ -3628,12 +3169,6 @@
     },
     "Street Demons Neeko": {
       "id": 31
-    },
-    "Cosplayer Neeko": {
-      "id": 40
-    },
-    "Beeko": {
-      "id": 49
     }
   },
   "Nidalee": {
@@ -3684,9 +3219,6 @@
     },
     "La Ilusi\u00f3n Nidalee": {
       "id": 48
-    },
-    "Spirit Blossom Nidalee": {
-      "id": 58
     }
   },
   "Nilah": {
@@ -3698,9 +3230,6 @@
     },
     "Coven Nilah": {
       "id": 11
-    },
-    "Inkshadow Nilah": {
-      "id": 21
     }
   },
   "Nocturne": {
@@ -3733,12 +3262,9 @@
     },
     "Broken Covenant Nocturne": {
       "id": 17
-    },
-    "Empyrean Nocturne": {
-      "id": 26
     }
   },
-  "Nunu": {
+  "Nunu & Willump": {
     "default": {
       "id": 0
     },
@@ -3774,9 +3300,6 @@
     },
     "Cosmic Paladins Nunu & Willump": {
       "id": 35
-    },
-    "Fright Night Nunu & Willump": {
-      "id": 44
     }
   },
   "Olaf": {
@@ -3812,9 +3335,6 @@
     },
     "Pentakill III: Lost Chapter Olaf": {
       "id": 35
-    },
-    "Infernal Olaf": {
-      "id": 44
     }
   },
   "Orianna": {
@@ -3853,9 +3373,6 @@
     },
     "Star Guardian Orianna": {
       "id": 29
-    },
-    "T1 Orianna": {
-      "id": 38
     }
   },
   "Ornn": {
@@ -3870,12 +3387,6 @@
     },
     "Space Groove Ornn": {
       "id": 11
-    },
-    "Choo-Choo Ornn": {
-      "id": 20
-    },
-    "Aegis Frame Ornn": {
-      "id": 29
     }
   },
   "Pantheon": {
@@ -3917,9 +3428,6 @@
     },
     "Ashen Conqueror Pantheon": {
       "id": 36
-    },
-    "Chosen of the Wolf Pantheon": {
-      "id": 38
     }
   },
   "Poppy": {
@@ -3961,9 +3469,6 @@
     },
     "Cafe Cuties Poppy": {
       "id": 33
-    },
-    "Firecracker Poppy": {
-      "id": 42
     }
   },
   "Pyke": {
@@ -3996,15 +3501,6 @@
     },
     "Prestige Soul Fighter Pyke": {
       "id": 54
-    },
-    "Fright Night Pyke": {
-      "id": 64
-    },
-    "Inkshadow Pyke": {
-      "id": 74
-    },
-    "T1 Pyke": {
-      "id": 75
     }
   },
   "Qiyana": {
@@ -4034,9 +3530,6 @@
     },
     "La Ilusi\u00f3n Qiyana": {
       "id": 40
-    },
-    "Prestige Battle Academia Qiyana": {
-      "id": 50
     }
   },
   "Quinn": {
@@ -4098,9 +3591,6 @@
     },
     "Prestige Dragonmancer Rakan": {
       "id": 38
-    },
-    "Battle Academia Rakan": {
-      "id": 47
     }
   },
   "Rammus": {
@@ -4136,12 +3626,9 @@
     },
     "Astronaut Rammus": {
       "id": 17
-    },
-    "Durian Defender Rammus": {
-      "id": 26
     }
   },
-  "RekSai": {
+  "Rek'Sai": {
     "default": {
       "id": 0
     },
@@ -4156,9 +3643,6 @@
     },
     "Elderwood Rek'Sai": {
       "id": 17
-    },
-    "Primordian Rek'Sai": {
-      "id": 26
     }
   },
   "Rell": {
@@ -4170,15 +3654,9 @@
     },
     "Star Guardian Rell": {
       "id": 10
-    },
-    "High Noon Rell": {
-      "id": 20
-    },
-    "Grand Reckoning Rell": {
-      "id": 30
     }
   },
-  "Renata": {
+  "Renata Glasc": {
     "default": {
       "id": 0
     },
@@ -4193,9 +3671,6 @@
     },
     "Prestige La Ilusi\u00f3n Renata Glasc": {
       "id": 21
-    },
-    "Masque of the Black Rose Renata Glasc": {
-      "id": 31
     }
   },
   "Renekton": {
@@ -4243,9 +3718,6 @@
     },
     "Worlds 2023 Renekton": {
       "id": 42
-    },
-    "Inkshadow Renekton": {
-      "id": 48
     }
   },
   "Rengar": {
@@ -4328,9 +3800,6 @@
     },
     "Broken Covenant Riven": {
       "id": 55
-    },
-    "Primal Ambush Riven": {
-      "id": 63
     }
   },
   "Rumble": {
@@ -4398,9 +3867,6 @@
     },
     "Arcana Ryze": {
       "id": 20
-    },
-    "Blood Moon Ryze": {
-      "id": 29
     }
   },
   "Samira": {
@@ -4418,12 +3884,6 @@
     },
     "Soul Fighter Samira": {
       "id": 30
-    },
-    "Masque of the Black Rose Samira": {
-      "id": 33
-    },
-    "Battle Professor Samira": {
-      "id": 35
     }
   },
   "Sejuani": {
@@ -4497,9 +3957,6 @@
     },
     "Winterblessed Senna": {
       "id": 56
-    },
-    "Masked Justice Senna": {
-      "id": 63
     }
   },
   "Seraphine": {
@@ -4529,15 +3986,6 @@
     },
     "Star Guardian Seraphine": {
       "id": 34
-    },
-    "Battle Dove Seraphine": {
-      "id": 43
-    },
-    "Dumpling Darlings Seraphine": {
-      "id": 50
-    },
-    "Firecracker Seraphine": {
-      "id": 59
     }
   },
   "Sett": {
@@ -4567,12 +4015,6 @@
     },
     "HEARTSTEEL Sett": {
       "id": 56
-    },
-    "Radiant Serpent Sett": {
-      "id": 66
-    },
-    "Spirit Blossom Springs Sett": {
-      "id": 67
     }
   },
   "Shaco": {
@@ -4617,12 +4059,6 @@
     },
     "Prestige Soul Fighter Shaco": {
       "id": 44
-    },
-    "Fright Night Shaco": {
-      "id": 54
-    },
-    "Cat-in-the-Box Shaco": {
-      "id": 64
     }
   },
   "Shen": {
@@ -4661,9 +4097,6 @@
     },
     "Ashen Guardian Shen": {
       "id": 49
-    },
-    "Three Honors Shen": {
-      "id": 51
     }
   },
   "Shyvana": {
@@ -4731,9 +4164,6 @@
     },
     "Astronaut Singed": {
       "id": 19
-    },
-    "Arcane Shimmer Lab Singed": {
-      "id": 28
     }
   },
   "Sion": {
@@ -4766,9 +4196,6 @@
     },
     "Cosmic Paladin Sion": {
       "id": 40
-    },
-    "Grand Reckoning Sion": {
-      "id": 49
     }
   },
   "Sivir": {
@@ -4822,12 +4249,6 @@
     },
     "Prestige Mythmaker Sivir": {
       "id": 51
-    },
-    "Primal Ambush Sivir": {
-      "id": 61
-    },
-    "Ann-Sivir-sary": {
-      "id": 70
     }
   },
   "Skarner": {
@@ -4848,20 +4269,6 @@
     },
     "Cosmic Sting Skarner": {
       "id": 5
-    },
-    "Mecha Kingdoms Skarner": {
-      "id": 14
-    }
-  },
-  "Smolder": {
-    "default": {
-      "id": 0
-    },
-    "Heavenscale Smolder": {
-      "id": 1
-    },
-    "Reindeer Smolder": {
-      "id": 11
     }
   },
   "Sona": {
@@ -4906,12 +4313,6 @@
     },
     "Prestige Immortal Journey Sona": {
       "id": 46
-    },
-    "Victorious Sona": {
-      "id": 56
-    },
-    "Spirit Blossom Springs Sona": {
-      "id": 66
     }
   },
   "Soraka": {
@@ -4962,12 +4363,6 @@
     },
     "Immortal Journey Soraka": {
       "id": 37
-    },
-    "Faerie Court Soraka": {
-      "id": 44
-    },
-    "Flora Fatalis Soraka": {
-      "id": 53
     }
   },
   "Swain": {
@@ -4994,12 +4389,6 @@
     },
     "Winterblessed Swain": {
       "id": 21
-    },
-    "Chosen of the Wolf Swain": {
-      "id": 32
-    },
-    "Prestige Chosen of the Wolf Swain": {
-      "id": 33
     }
   },
   "Sylas": {
@@ -5026,12 +4415,6 @@
     },
     "Winterblessed Sylas": {
       "id": 36
-    },
-    "Dark Star Sylas": {
-      "id": 46
-    },
-    "Prestige T1 Sylas": {
-      "id": 53
     }
   },
   "Syndra": {
@@ -5073,12 +4456,9 @@
     },
     "Coven Syndra": {
       "id": 54
-    },
-    "Dumpling Darlings Syndra": {
-      "id": 65
     }
   },
-  "TahmKench": {
+  "Tahm Kench": {
     "default": {
       "id": 0
     },
@@ -5119,9 +4499,6 @@
     },
     "Crystalis Motus Taliyah": {
       "id": 21
-    },
-    "Durand's Legacy Taliyah": {
-      "id": 24
     }
   },
   "Talon": {
@@ -5157,12 +4534,6 @@
     },
     "Prestige High Noon Talon": {
       "id": 39
-    },
-    "Primal Ambush Talon": {
-      "id": 49
-    },
-    "Grand Reckoning Talon": {
-      "id": 59
     }
   },
   "Taric": {
@@ -5186,9 +4557,6 @@
     },
     "Space Groove Taric": {
       "id": 18
-    },
-    "Fatebreaker Taric": {
-      "id": 27
     }
   },
   "Teemo": {
@@ -5236,9 +4604,6 @@
     },
     "Space Groove Teemo": {
       "id": 47
-    },
-    "Spirit Blossom Springs Teemo": {
-      "id": 54
     }
   },
   "Thresh": {
@@ -5289,9 +4654,6 @@
     },
     "Winterblessed Thresh": {
       "id": 49
-    },
-    "Janitor Thresh": {
-      "id": 59
     }
   },
   "Tristana": {
@@ -5339,12 +4701,6 @@
     },
     "Spirit Blossom Tristana": {
       "id": 51
-    },
-    "Faerie Court Tristana": {
-      "id": 61
-    },
-    "Rain Shepherd Tristana": {
-      "id": 70
     }
   },
   "Trundle": {
@@ -5371,9 +4727,6 @@
     },
     "Fright Night Trundle": {
       "id": 12
-    },
-    "Esports Fan Trundle": {
-      "id": 21
     }
   },
   "Tryndamere": {
@@ -5412,15 +4765,9 @@
     },
     "Nightbringer Tryndamere": {
       "id": 18
-    },
-    "Victorious Tryndamere": {
-      "id": 27
-    },
-    "Visions of the Fallen Tryndamere": {
-      "id": 37
     }
   },
-  "TwistedFate": {
+  "Twisted Fate": {
     "default": {
       "id": 0
     },
@@ -5468,9 +4815,6 @@
     },
     "Space Groove Twisted Fate": {
       "id": 36
-    },
-    "Victorious Twisted Fate": {
-      "id": 45
     }
   },
   "Twitch": {
@@ -5512,12 +4856,6 @@
     },
     "High Noon Twitch": {
       "id": 45
-    },
-    "Cheddar Chief Twitch": {
-      "id": 55
-    },
-    "Pool Party Twitch": {
-      "id": 64
     }
   },
   "Udyr": {
@@ -5564,9 +4902,6 @@
     },
     "Fright Night Urgot": {
       "id": 23
-    },
-    "Urgot the Clogfather": {
-      "id": 32
     }
   },
   "Varus": {
@@ -5608,15 +4943,6 @@
     },
     "Snow Moon Varus": {
       "id": 44
-    },
-    "Empyrean Varus": {
-      "id": 53
-    },
-    "Spirit Blossom Varus": {
-      "id": 60
-    },
-    "T1 Varus": {
-      "id": 69
     }
   },
   "Vayne": {
@@ -5673,9 +4999,6 @@
     },
     "Dragonmancer Vayne": {
       "id": 55
-    },
-    "Risen Legend Vayne": {
-      "id": 64
     }
   },
   "Veigar": {
@@ -5723,12 +5046,9 @@
     },
     "King Beegar": {
       "id": 51
-    },
-    "Fright Night Veigar": {
-      "id": 60
     }
   },
-  "Velkoz": {
+  "Vel'Koz": {
     "default": {
       "id": 0
     },
@@ -5760,9 +5080,6 @@
     },
     "Empyrean Vex": {
       "id": 10
-    },
-    "Stargazer Vex": {
-      "id": 20
     }
   },
   "Vi": {
@@ -5793,20 +5110,11 @@
     "PsyOps Vi": {
       "id": 20
     },
-    "Arcane Undercity Vi": {
+    "Arcane Vi": {
       "id": 29
     },
     "Heartache Vi": {
       "id": 30
-    },
-    "Primal Ambush Vi": {
-      "id": 39
-    },
-    "Arcane Brawler Vi": {
-      "id": 48
-    },
-    "T1 Vi": {
-      "id": 49
     }
   },
   "Viego": {
@@ -5827,12 +5135,6 @@
     },
     "Soul Fighter Viego": {
       "id": 30
-    },
-    "Worlds 2024 Viego": {
-      "id": 37
-    },
-    "Revenant Reign Viego": {
-      "id": 43
     }
   },
   "Viktor": {
@@ -5856,12 +5158,6 @@
     },
     "High Noon Viktor": {
       "id": 14
-    },
-    "Arcane Savior Viktor": {
-      "id": 24
-    },
-    "Machine Herald Viktor": {
-      "id": 25
     }
   },
   "Vladimir": {
@@ -5903,9 +5199,6 @@
     },
     "Broken Covenant Vladimir": {
       "id": 39
-    },
-    "Masque of the Black Rose Vladimir": {
-      "id": 48
     }
   },
   "Volibear": {
@@ -5938,9 +5231,6 @@
     },
     "Inkshadow Volibear": {
       "id": 19
-    },
-    "Spirit Blossom Springs Volibear": {
-      "id": 29
     }
   },
   "Warwick": {
@@ -5988,9 +5278,6 @@
     },
     "Prestige Winterblessed Warwick": {
       "id": 46
-    },
-    "Arcane Vander Warwick": {
-      "id": 56
     }
   },
   "Xayah": {
@@ -6026,12 +5313,6 @@
     },
     "Redeemed Star Guardian Xayah": {
       "id": 38
-    },
-    "Battle Bat Xayah": {
-      "id": 47
-    },
-    "Battle Academia Xayah": {
-      "id": 57
     }
   },
   "Xerath": {
@@ -6058,12 +5339,9 @@
     },
     "Astronaut Xerath": {
       "id": 21
-    },
-    "Crystalis Indomitus Xerath": {
-      "id": 30
     }
   },
-  "XinZhao": {
+  "Xin Zhao": {
     "default": {
       "id": 0
     },
@@ -6096,9 +5374,6 @@
     },
     "Firecracker Xin Zhao": {
       "id": 36
-    },
-    "Trials of Twilight Xin Zhao": {
-      "id": 47
     }
   },
   "Yasuo": {
@@ -6146,18 +5421,6 @@
     },
     "Prestige Inkshadow Yasuo": {
       "id": 57
-    },
-    "Foreseen Yasuo": {
-      "id": 68
-    },
-    "Battle Wolf Yasuo": {
-      "id": 77
-    },
-    "Genesis Nightbringer Yasuo": {
-      "id": 87
-    },
-    "Petals of Spring Yasuo": {
-      "id": 88
     }
   },
   "Yone": {
@@ -6184,18 +5447,6 @@
     },
     "Prestige HEARTSTEEL Yone": {
       "id": 46
-    },
-    "High Noon Yone": {
-      "id": 55
-    },
-    "Peacemaker High Noon Yone": {
-      "id": 58
-    },
-    "Masked Justice Yone": {
-      "id": 65
-    },
-    "T1 Yone": {
-      "id": 74
     }
   },
   "Yorick": {
@@ -6222,20 +5473,6 @@
     },
     "Spirit Blossom Yorick": {
       "id": 30
-    },
-    "Dark Star Yorick": {
-      "id": 40
-    },
-    "High Noon Yorick": {
-      "id": 50
-    }
-  },
-  "Yunara": {
-    "default": {
-      "id": 0
-    },
-    "Spirit Blossom Springs Yunara": {
-      "id": 1
     }
   },
   "Yuumi": {
@@ -6259,26 +5496,6 @@
     },
     "Shiba Yuumi": {
       "id": 39
-    },
-    "Cyber Cat Yuumi": {
-      "id": 49
-    },
-    "Prestige Cyber Cat Yuumi": {
-      "id": 50
-    },
-    "Nightbringer Yuumi": {
-      "id": 61
-    },
-    "Firecracker Yuumi": {
-      "id": 70
-    }
-  },
-  "Zaahen": {
-    "default": {
-      "id": 0
-    },
-    "Immortal Journey Zaahen": {
-      "id": 1
     }
   },
   "Zac": {
@@ -6299,9 +5516,6 @@
     },
     "Empyrean Zac": {
       "id": 14
-    },
-    "Zesty Dip Zac": {
-      "id": 24
     }
   },
   "Zed": {
@@ -6340,15 +5554,6 @@
     },
     "Immortal Journey Zed": {
       "id": 49
-    },
-    "Blood Moon Zed": {
-      "id": 58
-    },
-    "Quantum Galaxy Slayer Zed": {
-      "id": 68
-    },
-    "Prestige Spirit Blossom Zed": {
-      "id": 69
     }
   },
   "Zeri": {
@@ -6363,15 +5568,6 @@
     },
     "Immortal Journey Zeri": {
       "id": 19
-    },
-    "Fright Night Zeri": {
-      "id": 28
-    },
-    "Prestige Fright Night Zeri": {
-      "id": 29
-    },
-    "Winter Wonder Zeri": {
-      "id": 40
     }
   },
   "Ziggs": {
@@ -6410,9 +5606,6 @@
     },
     "La Ilusi\u00f3n Ziggs": {
       "id": 33
-    },
-    "Firecracker Ziggs": {
-      "id": 43
     }
   },
   "Zilean": {
@@ -6439,9 +5632,6 @@
     },
     "Winterblessed Zilean": {
       "id": 14
-    },
-    "Arcana Zilean": {
-      "id": 24
     }
   },
   "Zoe": {
@@ -6468,12 +5658,6 @@
     },
     "Winterblessed Zoe": {
       "id": 22
-    },
-    "Dark Star Zoe": {
-      "id": 33
-    },
-    "Prestige Eternal Aspect Zoe": {
-      "id": 43
     }
   },
   "Zyra": {
@@ -6509,12 +5693,6 @@
     },
     "Street Demons Zyra": {
       "id": 46
-    },
-    "Blood Moon Zyra": {
-      "id": 55
-    },
-    "Spirit Blossom Zyra": {
-      "id": 64
     }
   }
 }

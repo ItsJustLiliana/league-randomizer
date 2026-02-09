@@ -1,3 +1,5 @@
-/assets
-user_data.json
 /__pycache__
+/assets
+_tmp_champs.json
+_tmp_detail.json
+user_data.json
