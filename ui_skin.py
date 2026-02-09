@@ -4,16 +4,11 @@ from assets_manager import get_splash
 import threading
 import random
 from PIL import Image, ImageTk
-
-BG = "#0A1428"
-CARD = "#1F2933"
-TEXT = "#E5E7EB"
-ACCENT = "#C89B3C"
-
+from theme import BG, CARD, TEXT, ACCENT, APP_PADDING, FONT_HEADER, FONT_TEXT, FONT_BUTTON
 
 class SkinUI(tk.Frame):
     def __init__(self, master, champion, main_ui):
-        super().__init__(master, bg=BG)
+        super().__init__(master, bg=BG, padx=APP_PADDING, pady=APP_PADDING)
         self.master = master
         self.champion = champion
         self.main_ui = main_ui
@@ -22,108 +17,90 @@ class SkinUI(tk.Frame):
         self.user_data = load_user_data()
         self.user_data.setdefault(self.champion, {})
 
-        self.image_cache = {}  # PIL.Image objects
-        self.photo_cache = {}  # ImageTk.PhotoImage objects
+        self.image_cache = {}  # PIL.Image
+        self.photo_cache = {}  # ImageTk.PhotoImage
 
         self.build_layout()
         self.populate_skins()
-
         self.master.bind("<Configure>", self.on_resize)
 
     # ---------------- LAYOUT ----------------
     def build_layout(self):
         top = tk.Frame(self, bg=BG)
-        top.pack(fill="x", pady=5)
-        tk.Button(top, text="← Back", bg=ACCENT, fg="black", command=self.go_back).pack(side="left", padx=10)
-        tk.Label(top, text=f"{self.champion} Skins", fg=ACCENT, bg=BG, font=("Segoe UI", 18, "bold")).pack(side="left", padx=20)
+        top.pack(fill="x", pady=(0,5))
+        tk.Button(top, text="← Back", bg=ACCENT, fg="black", font=FONT_BUTTON, command=self.go_back).pack(side="left", padx=10)
+        tk.Label(top, text=f"{self.champion} Skins", fg=ACCENT, bg=BG, font=FONT_HEADER).pack(side="left", padx=20, pady=5)
 
         content = tk.Frame(self, bg=BG)
         content.pack(fill="both", expand=True)
 
         # ---- LEFT: scrollable skin list ----
         left = tk.Frame(content, bg=BG)
-        left.pack(side="left", fill="y", padx=10, pady=10)
+        left.pack(side="left", fill="y", pady=10)
 
-        # Select/Deselect All buttons above the list
+        # Select/Deselect All buttons
         btn_frame = tk.Frame(left, bg=BG)
-        btn_frame.pack(fill="x", pady=(0, 5))
-        tk.Button(btn_frame, text="Select All", bg=ACCENT, fg="black", command=self.select_all).pack(side="left", padx=2)
-        tk.Button(btn_frame, text="Deselect All", bg=ACCENT, fg="black", command=self.deselect_all).pack(side="left", padx=2)
+        btn_frame.pack(fill="x", pady=(0,5))
+        tk.Button(btn_frame, text="Select All", bg=ACCENT, fg="black", font=FONT_BUTTON, command=self.select_all).pack(side="left", padx=2)
+        tk.Button(btn_frame, text="Deselect All", bg=ACCENT, fg="black", font=FONT_BUTTON, command=self.deselect_all).pack(side="left", padx=2)
 
         # Scrollable canvas
-        self.canvas = tk.Canvas(left, bg=BG, highlightthickness=0, width=360)
-        scroll = tk.Scrollbar(left, orient="vertical", command=self.canvas.yview)
-        self.canvas.configure(yscrollcommand=scroll.set)
+        self.canvas = tk.Canvas(left, bg=BG, highlightthickness=0)
+        self.scroll = tk.Scrollbar(left, orient="vertical", command=self.canvas.yview)
+        self.canvas.configure(yscrollcommand=self.scroll.set, width=360)
 
-        scroll.pack(side="right", fill="y")
+        self.scroll.pack(side="right", fill="y")
         self.canvas.pack(side="left", fill="y", expand=True)
 
         self.list_frame = tk.Frame(self.canvas, bg=BG)
-        self.window_id = self.canvas.create_window((0, 0), window=self.list_frame, anchor="nw")
-        self.list_frame.bind("<Configure>", lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
+        self.window_id = self.canvas.create_window((0,0), window=self.list_frame, anchor="nw")
+        self.list_frame.bind("<Configure>", self.on_list_frame_configure)
 
         # Bind scroll recursively
         self.bind_scroll_recursive(self.list_frame)
 
         # ---- RIGHT: splash + randomize ----
         right = tk.Frame(content, bg=BG)
-        right.pack(side="right", fill="both", expand=True)
+        right.pack(side="right", fill="both", expand=True, padx=(10,0))
 
         self.splash_frame = tk.Frame(right, bg=BG)
         self.splash_frame.pack(fill="both", expand=True, pady=20, padx=20)
 
-        self.splash_label = tk.Label(
-            self.splash_frame,
-            bg=BG,
-            fg=TEXT,
-            text="Select a skin to preview!",
-            font=("Segoe UI", 20, "bold")
-        )
+        self.splash_label = tk.Label(self.splash_frame, bg=BG, fg=TEXT,
+                                     text="Select a skin to preview!", font=FONT_HEADER)
         self.splash_label.place(relx=0.5, rely=0.45, anchor="center")
 
-        self.splash_name_label = tk.Label(
-            self.splash_frame,
-            bg=BG,
-            fg=TEXT,
-            text="",  # initially empty
-            font=("Segoe UI", 16, "bold")
-        )
+        self.splash_name_label = tk.Label(self.splash_frame, bg=BG, fg=TEXT,
+                                          text="", font=FONT_TEXT)
         self.splash_name_label.place(relx=0.5, rely=0.75, anchor="center")
 
-        # Loading overlay (hidden by default)
-        self.loading_overlay = tk.Label(
-            self.splash_frame,
-            text="Loading...",
-            fg=TEXT,
-            bg="#000000",
-            font=("Segoe UI", 16, "bold")
-        )
-        self.loading_overlay.place_forget()  # hide initially
+        self.loading_overlay = tk.Label(self.splash_frame, text="Loading...", fg=TEXT, bg=BG, font=FONT_TEXT)
+        self.loading_overlay.place_forget()
 
-        tk.Button(
-            right,
-            text="🎲 Randomize Skin",
-            bg=ACCENT,
-            fg="black",
-            font=("Segoe UI", 12, "bold"),
-            command=self.randomize
-        ).pack(pady=10)
+        tk.Button(right, text="🎲 Randomize Skin", bg=ACCENT, fg="black",
+                  font=FONT_BUTTON, command=self.randomize).pack(pady=10)
 
     # ---------------- SCROLL ----------------
     def on_mousewheel(self, event):
-        if event.delta:  # Windows / MacOS
+        if event.delta:
             self.canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
-        elif event.num == 4:  # Linux scroll up
+        elif event.num == 4:
             self.canvas.yview_scroll(-3, "units")
-        elif event.num == 5:  # Linux scroll down
+        elif event.num == 5:
             self.canvas.yview_scroll(3, "units")
 
     def bind_scroll_recursive(self, widget):
-        """Bind scroll to all children so canvas scroll works anywhere"""
         widget.bind("<Enter>", lambda e: self.canvas.bind_all("<MouseWheel>", self.on_mousewheel))
         widget.bind("<Leave>", lambda e: self.canvas.unbind_all("<MouseWheel>"))
         for child in widget.winfo_children():
             self.bind_scroll_recursive(child)
+
+    def on_list_frame_configure(self, event):
+        # Update scrollregion
+        self.canvas.configure(scrollregion=self.canvas.bbox("all"))
+        # Make canvas width at least as wide as the widest child
+        required_width = max(self.list_frame.winfo_reqwidth(), self.canvas.winfo_width())
+        self.canvas.itemconfig(self.window_id, width=required_width)
 
     # ---------------- SKINS ----------------
     def populate_skins(self):
@@ -142,15 +119,15 @@ class SkinUI(tk.Frame):
             fav = tk.BooleanVar(value=self.user_data[self.champion][skin_name]["favorite"])
 
             chk = tk.Checkbutton(row, variable=owned, bg=CARD, fg=TEXT, selectcolor=CARD,
-                                 font=("Segoe UI", 11, "bold"), command=self.save, anchor="w")
+                                 font=FONT_TEXT, command=self.save, anchor="w")
             chk.pack(side="left", padx=8)
 
-            lbl = tk.Label(row, text=display_name, bg=CARD, fg=TEXT, font=("Segoe UI", 11, "bold"))
+            lbl = tk.Label(row, text=display_name, bg=CARD, fg=TEXT, font=FONT_TEXT)
             lbl.pack(side="left", padx=4, fill="x", expand=True)
             lbl.bind("<Button-1>", lambda e, s=skin_name: self.show_skin(s))
 
-            star = tk.Checkbutton(row, text="⭐", variable=fav, bg=CARD, fg=ACCENT, selectcolor=CARD,
-                                  font=("Segoe UI", 14, "bold"), command=self.save)
+            star = tk.Checkbutton(row, text="⭐", variable=fav, bg=CARD, fg=ACCENT,
+                                  selectcolor=CARD, font=FONT_BUTTON, command=self.save)
             star.pack(side="right", padx=8)
 
             self.vars[skin_name] = owned
@@ -159,27 +136,22 @@ class SkinUI(tk.Frame):
             if first_skin_to_show is None and (owned.get() or fav.get()):
                 first_skin_to_show = skin_name
 
-        # Bind scroll for all new widgets
         self.bind_scroll_recursive(self.list_frame)
-
         if first_skin_to_show:
             self.show_skin(first_skin_to_show)
 
-    # ---------------- SELECT / DESELECT ALL ----------------
+    # ---------------- SELECT / DESELECT ----------------
     def select_all(self):
-        for var in self.vars.values():
-            var.set(True)
+        for var in self.vars.values(): var.set(True)
         self.save()
 
     def deselect_all(self):
-        for var in self.vars.values():
-            var.set(False)
+        for var in self.vars.values(): var.set(False)
         self.save()
 
     # ---------------- SHOW SPLASH ----------------
     def show_skin(self, skin):
         if skin in self.photo_cache:
-            # Cached → show immediately
             self.splash_label.config(image=self.photo_cache[skin], text="")
             self.splash_label.image = self.photo_cache[skin]
             self.loading_overlay.place_forget()
@@ -187,7 +159,6 @@ class SkinUI(tk.Frame):
             self.splash_name_label.config(text=display_name)
             return
 
-        # Show overlay only when loading new image
         self.loading_overlay.place(relx=0.5, rely=0.5, anchor="center")
 
         def load_image():

@@ -7,12 +7,7 @@ import threading
 import re
 import os
 from PIL import ImageTk
-
-BG = "#0A1428"
-CARD = "#1F2933"
-TEXT = "#E5E7EB"
-ACCENT = "#C89B3C"
-PLACEHOLDER_COLOR = "#1F2933"
+from theme import *
 
 HARDCODE_ASSET_MAP = {
     "Bel'Veth": "Belveth",
@@ -38,23 +33,23 @@ class ChampionCard:
 
 class MainUI(tk.Frame):
     def __init__(self, master):
-        super().__init__(master, bg=BG)
+        super().__init__(master, bg=BG, padx=APP_PADDING, pady=APP_PADDING)
         self.master = master
 
         self.champions = {}
         self.filtered_champions = {}
-        self.card_refs = {}          # champ_name -> ChampionCard
+        self.card_refs = {}
         self.favorite_champs = set()
-        self.card_image_cache = {}   # champ_name -> PhotoImage
+        self.card_image_cache = {}
         self._last_width = None
         self._resize_job = None
 
         self.build_header()
         self.build_canvas()
         self.load_favorites()
-        
+
         if not load_champions():
-            self.show_first_start_overlay()
+            self.reload_champions()
         else:
             self.load_and_render()
 
@@ -64,36 +59,41 @@ class MainUI(tk.Frame):
     def build_header(self):
         top = tk.Frame(self, bg=BG)
         top.pack(fill="x", pady=5)
-        tk.Label(top, text="Choose your Champion", fg=ACCENT, bg=BG, font=("Segoe UI", 20, "bold")).pack(side="left", padx=10)
+        tk.Label(top, text="Choose your Champion", fg=ACCENT, bg=BG, font=FONT_HEADER).pack(side="left", padx=10, pady=(0,5))
 
         btn_frame = tk.Frame(top, bg=BG)
         btn_frame.pack(side="right", padx=10)
 
-        tk.Button(btn_frame, text="🗑 Delete Skin Assets", command=self.delete_skin_assets, bg=ACCENT, fg="black").pack(side="right", padx=5)
-        tk.Button(btn_frame, text="🗑 Delete ALL Assets", command=self.delete_all_assets, bg=ACCENT, fg="black").pack(side="right", padx=5)
-        tk.Button(btn_frame, text="🔄 Refresh Champions", command=self.refresh_prompt, bg=ACCENT, fg="black").pack(side="right", padx=5)
+        tk.Button(btn_frame, text="🗑 Delete Skin Assets", bg=BUTTON_BG, fg=BUTTON_FG, font=FONT_BUTTON,
+                  command=self.delete_skin_assets).pack(side="right", padx=5)
+        tk.Button(btn_frame, text="🗑 Delete ALL Assets", bg=BUTTON_BG, fg=BUTTON_FG, font=FONT_BUTTON,
+                  command=self.delete_all_assets).pack(side="right", padx=5)
+        tk.Button(btn_frame, text="🔄 Reload Champions", bg=BUTTON_BG, fg=BUTTON_FG, font=FONT_BUTTON,
+                  command=self.reload_champions).pack(side="right", padx=5)
 
         self.search_var = tk.StringVar()
         self.search_var.trace_add("write", self.apply_search_filter)
-        tk.Entry(btn_frame, textvariable=self.search_var, font=("Segoe UI", 12)).pack(side="right", padx=(5,5))
+        tk.Entry(btn_frame, textvariable=self.search_var, font=FONT_TEXT).pack(side="right", padx=(5,5))
 
     # ---------------- CANVAS ----------------
     def build_canvas(self):
-        self.canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
-        self.scroll = tk.Scrollbar(self, orient="vertical", command=self.canvas.yview)
-        self.canvas.configure(yscrollcommand=self.scroll.set)
+        outer = tk.Frame(self, bg=BG)
+        outer.pack(fill="both", expand=True)
 
-        self.scroll.pack(side="right", fill="y")
+        self.canvas = tk.Canvas(outer, bg=BG, highlightthickness=0)
+        self.scrollbar = tk.Scrollbar(outer, orient="vertical", command=self.canvas.yview, width=SCROLLBAR_WIDTH)
+        self.canvas.configure(yscrollcommand=self.scrollbar.set)
+
+        self.scrollbar.pack(side="right", fill="y")
         self.canvas.pack(side="left", fill="both", expand=True)
 
         self.container = tk.Frame(self.canvas, bg=BG)
         self.window_id = self.canvas.create_window((0,0), window=self.container, anchor="nw")
         self.container.bind("<Configure>", lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
 
+        # Scroll binding
         self.canvas.bind("<Enter>", lambda e: self.canvas.bind_all("<MouseWheel>", self.on_mousewheel))
         self.canvas.bind("<Leave>", lambda e: self.canvas.unbind_all("<MouseWheel>"))
-        self.canvas.bind("<Button-4>", self.on_mousewheel)
-        self.canvas.bind("<Button-5>", self.on_mousewheel)
 
     # ---------------- DATA ----------------
     def load_and_render(self):
@@ -116,7 +116,7 @@ class MainUI(tk.Frame):
         self.card_refs.clear()
 
         if not self.filtered_champions:
-            tk.Label(self.container, text="No champions found.\nPress Refresh.", fg=TEXT, bg=BG, font=("Segoe UI",14)).pack(pady=50)
+            tk.Label(self.container, text="No champions found.\nPress Reload.", fg=TEXT, bg=BG, font=FONT_TEXT).pack(pady=50)
             return
 
         sorted_champs = sorted(
@@ -130,7 +130,7 @@ class MainUI(tk.Frame):
 
         row = col = 0
         for champ in sorted_champs:
-            card = tk.Frame(self.container, bg=CARD, width=340, height=250)
+            card = tk.Frame(self.container, bg=CARD, width=340, height=250, relief="raised", bd=1)
             card.grid(row=row, column=col, padx=10, pady=10, sticky="n")
             card.grid_propagate(False)
 
@@ -140,15 +140,17 @@ class MainUI(tk.Frame):
             lbl = tk.Label(card, bg=CARD)
             lbl.pack()
 
-            tk.Label(card, text=champ, fg=TEXT, bg=CARD, font=("Segoe UI",13,"bold")).pack()
+            tk.Label(card, text=champ, fg=TEXT, bg=CARD, font=FONT_TEXT).pack()
 
             btn_frame = tk.Frame(card, bg=CARD)
             btn_frame.pack(pady=5)
 
-            open_btn = tk.Button(btn_frame, text="Open Skins", bg=ACCENT, fg="black", command=lambda c=champ: self.open_skin(c))
+            open_btn = tk.Button(btn_frame, text="Open Skins", bg=BUTTON_BG, fg=BUTTON_FG, font=FONT_BUTTON,
+                                 command=lambda c=champ: self.open_skin(c))
             open_btn.pack(side="left", padx=(0,5))
 
-            fav_btn = tk.Button(btn_frame, text="★" if champ in self.favorite_champs else "☆", bg=ACCENT, fg="black")
+            fav_btn = tk.Button(btn_frame, text="★" if champ in self.favorite_champs else "☆",
+                                bg=BUTTON_BG, fg=BUTTON_FG, font=FONT_BUTTON)
             fav_btn.config(command=lambda c=champ, b=fav_btn: self.toggle_favorite(c,b))
             fav_btn.pack(side="left")
 
@@ -185,8 +187,8 @@ class MainUI(tk.Frame):
                 img = self.card_image_cache[cache_key]
             else:
                 norm_name = HARDCODE_ASSET_MAP.get(champ, re.sub(r"[^A-Za-z0-9]", "", champ))
-                pil_img = get_splash(norm_name, 0, size=(340,210))  # PIL.Image
-                img = ImageTk.PhotoImage(pil_img)                   # convert for Tkinter
+                pil_img = get_splash(norm_name, 0, size=(340,210))
+                img = ImageTk.PhotoImage(pil_img)
                 self.card_image_cache[cache_key] = img
         except Exception:
             img = tk.PhotoImage(width=340, height=210)
@@ -251,7 +253,7 @@ class MainUI(tk.Frame):
             self.champions.clear()
             self.filtered_champions.clear()
             self.render_cards()
-            self.show_first_start_overlay()
+            self.reload_champions()
 
     def delete_skin_assets(self):
         if messagebox.askyesno("Delete Skin Assets", "Delete all skin assets?"):
@@ -264,39 +266,42 @@ class MainUI(tk.Frame):
                     except:
                         pass
             messagebox.showinfo("Done", f"Deleted {deleted_count} skin assets.")
-            self.load_and_render()
+            self.reload_champions()
 
-    # ---------------- REFRESH ----------------
-    def refresh_prompt(self):
-        if not messagebox.askyesno("Refresh champions", "This will download champion & skin data.\nContinue?"):
-            return
-        def progress(current,total,champ):
-            self.update_idletasks()
+    # ---------------- RELOAD CHAMPIONS ----------------
+    def reload_champions(self):
+        """Reload champions with overlay and ETA"""
+        # Remove existing overlay
+        if hasattr(self, 'loading_overlay') and self.loading_overlay.winfo_exists():
+            self.loading_overlay.destroy()
+
+        self.loading_overlay = tk.Frame(self.master, bg="black")
+        self.loading_overlay.place(relx=0, rely=0, relwidth=1, relheight=1)
+
+        progress_bar = tk.Label(self.loading_overlay, bg=ACCENT)
+        progress_bar.place(relx=0.05, rely=0.45, relwidth=0, relheight=0.03)
+
+        progress_label = tk.Label(self.loading_overlay, text="Loading Champions...", fg=TEXT, bg="black", font=FONT_TEXT)
+        progress_label.place(relx=0.5, rely=0.5, anchor="center")
+
+        def progress(current, total, champ):
+            pct = current / total
+            self.after(0, lambda: [
+                progress_bar.place_configure(relwidth=pct*0.9),
+                progress_label.config(text=f"Loading Champions... {int(pct*100)}%")
+            ])
+
         def done(success):
-            if success:
-                self.load_and_render()
-            else:
-                messagebox.showerror("Error","Refresh failed.")
-        refresh_champions(progress,done)
+            def finish():
+                if hasattr(self, 'loading_overlay') and self.loading_overlay.winfo_exists():
+                    self.loading_overlay.destroy()
+                if success:
+                    self.load_and_render()
+                else:
+                    messagebox.showerror("Error","Failed to reload champions.")
+            self.after(0, finish)
 
-    # ---------------- FIRST START ----------------
-    def show_first_start_overlay(self):
-        self.overlay = tk.Frame(self, bg="#000000")
-        self.overlay.place(relx=0,rely=0,relwidth=1,relheight=1)
-        tk.Label(self.overlay,text="No champions found.\nPress the button below to load them for the first time.",
-                 fg="white",bg="#000000",font=("Segoe UI",16,"bold"),justify="center").pack(pady=30)
-        tk.Button(self.overlay,text="🔄 Load Champions",bg=ACCENT,fg="black",
-                  font=("Segoe UI",14,"bold"),command=self.first_start_refresh).pack(pady=20)
-
-    def first_start_refresh(self):
-        self.overlay.destroy()
-        def progress(current,total,champ): self.update_idletasks()
-        def done(success):
-            if success: self.load_and_render()
-            else:
-                messagebox.showerror("Error","Failed to download champions. Try again.")
-                self.show_first_start_overlay()
-        refresh_champions(progress,done)
+        threading.Thread(target=lambda: refresh_champions(progress, done), daemon=True).start()
 
     # ---------------- EVENTS ----------------
     def on_mousewheel(self,event):
