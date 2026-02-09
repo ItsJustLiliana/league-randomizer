@@ -1,0 +1,6520 @@
+{
+  "Aatrox": {
+    "default": {
+      "id": 0
+    },
+    "Justicar Aatrox": {
+      "id": 1
+    },
+    "Mecha Aatrox": {
+      "id": 2
+    },
+    "Sea Hunter Aatrox": {
+      "id": 3
+    },
+    "Blood Moon Aatrox": {
+      "id": 7
+    },
+    "Prestige Blood Moon Aatrox": {
+      "id": 8
+    },
+    "Victorious Aatrox": {
+      "id": 9
+    },
+    "Odyssey Aatrox": {
+      "id": 11
+    },
+    "Prestige Blood Moon Aatrox (2022)": {
+      "id": 20
+    },
+    "Lunar Eclipse Aatrox": {
+      "id": 21
+    },
+    "DRX Aatrox": {
+      "id": 30
+    },
+    "Prestige DRX Aatrox": {
+      "id": 31
+    },
+    "Primordian Aatrox": {
+      "id": 33
+    }
+  },
+  "Ahri": {
+    "default": {
+      "id": 0
+    },
+    "Dynasty Ahri": {
+      "id": 1
+    },
+    "Midnight Ahri": {
+      "id": 2
+    },
+    "Foxfire Ahri": {
+      "id": 3
+    },
+    "Popstar Ahri": {
+      "id": 4
+    },
+    "Challenger Ahri": {
+      "id": 5
+    },
+    "Academy Ahri": {
+      "id": 6
+    },
+    "Arcade Ahri": {
+      "id": 7
+    },
+    "Star Guardian Ahri": {
+      "id": 14
+    },
+    "K/DA Ahri": {
+      "id": 15
+    },
+    "Prestige K/DA Ahri": {
+      "id": 16
+    },
+    "Elderwood Ahri": {
+      "id": 17
+    },
+    "Spirit Blossom Ahri": {
+      "id": 27
+    },
+    "K/DA ALL OUT Ahri": {
+      "id": 28
+    },
+    "Coven Ahri": {
+      "id": 42
+    },
+    "Prestige K/DA Ahri (2022)": {
+      "id": 65
+    },
+    "Arcana Ahri": {
+      "id": 66
+    },
+    "Snow Moon Ahri": {
+      "id": 76
+    },
+    "Risen Legend Ahri": {
+      "id": 85
+    },
+    "Immortalized Legend Ahri": {
+      "id": 86
+    },
+    "Spirit Blossom Springs Ahri": {
+      "id": 88
+    },
+    "After Hours Spirit Blossom Springs Ahri": {
+      "id": 89
+    }
+  },
+  "Akali": {
+    "default": {
+      "id": 0
+    },
+    "Stinger Akali": {
+      "id": 1
+    },
+    "Infernal Akali": {
+      "id": 2
+    },
+    "All-star Akali": {
+      "id": 3
+    },
+    "Nurse Akali": {
+      "id": 4
+    },
+    "Blood Moon Akali": {
+      "id": 5
+    },
+    "Silverfang Akali": {
+      "id": 6
+    },
+    "Headhunter Akali": {
+      "id": 7
+    },
+    "Sashimi Akali": {
+      "id": 8
+    },
+    "K/DA Akali": {
+      "id": 9
+    },
+    "Prestige K/DA Akali": {
+      "id": 13
+    },
+    "PROJECT: Akali": {
+      "id": 14
+    },
+    "True Damage Akali": {
+      "id": 15
+    },
+    "K/DA ALL OUT Akali": {
+      "id": 32
+    },
+    "Crime City Nightmare Akali": {
+      "id": 50
+    },
+    "Prestige K/DA Akali (2022)": {
+      "id": 60
+    },
+    "Star Guardian Akali": {
+      "id": 61
+    },
+    "DRX Akali": {
+      "id": 68
+    },
+    "Coven Akali": {
+      "id": 70
+    },
+    "Prestige Coven Akali": {
+      "id": 71
+    },
+    "Empyrean Akali": {
+      "id": 82
+    },
+    "Spirit Blossom Akali": {
+      "id": 92
+    }
+  },
+  "Akshan": {
+    "default": {
+      "id": 0
+    },
+    "Cyber Pop Akshan": {
+      "id": 1
+    },
+    "Crystal Rose Akshan": {
+      "id": 10
+    },
+    "Three Honors Akshan": {
+      "id": 20
+    }
+  },
+  "Alistar": {
+    "default": {
+      "id": 0
+    },
+    "Black Alistar": {
+      "id": 1
+    },
+    "Golden Alistar": {
+      "id": 2
+    },
+    "Matador Alistar": {
+      "id": 3
+    },
+    "Longhorn Alistar": {
+      "id": 4
+    },
+    "Unchained Alistar": {
+      "id": 5
+    },
+    "Infernal Alistar": {
+      "id": 6
+    },
+    "Sweeper Alistar": {
+      "id": 7
+    },
+    "Marauder Alistar": {
+      "id": 8
+    },
+    "SKT T1 Alistar": {
+      "id": 9
+    },
+    "Moo Cow Alistar": {
+      "id": 10
+    },
+    "Hextech Alistar": {
+      "id": 19
+    },
+    "Conqueror Alistar": {
+      "id": 20
+    },
+    "Blackfrost Alistar": {
+      "id": 22
+    },
+    "Lunar Beast Alistar": {
+      "id": 29
+    },
+    "Elderwood Alistar": {
+      "id": 40
+    }
+  },
+  "Ambessa": {
+    "default": {
+      "id": 0
+    },
+    "Chosen of the Wolf Ambessa": {
+      "id": 1
+    }
+  },
+  "Amumu": {
+    "default": {
+      "id": 0
+    },
+    "Pharaoh Amumu": {
+      "id": 1
+    },
+    "Vancouver Amumu": {
+      "id": 2
+    },
+    "Emumu": {
+      "id": 3
+    },
+    "Re-Gifted Amumu": {
+      "id": 4
+    },
+    "Almost-Prom King Amumu": {
+      "id": 5
+    },
+    "Little Knight Amumu": {
+      "id": 6
+    },
+    "Sad Robot Amumu": {
+      "id": 7
+    },
+    "Surprise Party Amumu": {
+      "id": 8
+    },
+    "Infernal Amumu": {
+      "id": 17
+    },
+    "Hextech Amumu": {
+      "id": 23
+    },
+    "Pumpkin Prince Amumu": {
+      "id": 24
+    },
+    "Porcelain Amumu": {
+      "id": 34
+    },
+    "Heartache Amumu": {
+      "id": 44
+    },
+    "Dumpling Darlings Amumu": {
+      "id": 53
+    }
+  },
+  "Anivia": {
+    "default": {
+      "id": 0
+    },
+    "Team Spirit Anivia": {
+      "id": 1
+    },
+    "Bird of Prey Anivia": {
+      "id": 2
+    },
+    "Noxus Hunter Anivia": {
+      "id": 3
+    },
+    "Hextech Anivia": {
+      "id": 4
+    },
+    "Blackfrost Anivia": {
+      "id": 5
+    },
+    "Prehistoric Anivia": {
+      "id": 6
+    },
+    "Festival Queen Anivia": {
+      "id": 7
+    },
+    "Papercraft Anivia": {
+      "id": 8
+    },
+    "Cosmic Flight Anivia": {
+      "id": 17
+    },
+    "Divine Phoenix Anivia": {
+      "id": 27
+    },
+    "Bewitching Batnivia": {
+      "id": 37
+    },
+    "Victorious Anivia": {
+      "id": 46
+    }
+  },
+  "Annie": {
+    "default": {
+      "id": 0
+    },
+    "Goth Annie": {
+      "id": 1
+    },
+    "Red Riding Annie": {
+      "id": 2
+    },
+    "Annie in Wonderland": {
+      "id": 3
+    },
+    "Prom Queen Annie": {
+      "id": 4
+    },
+    "Frostfire Annie": {
+      "id": 5
+    },
+    "Reverse Annie": {
+      "id": 6
+    },
+    "FrankenTibbers Annie": {
+      "id": 7
+    },
+    "Panda Annie": {
+      "id": 8
+    },
+    "Sweetheart Annie": {
+      "id": 9
+    },
+    "Hextech Annie": {
+      "id": 10
+    },
+    "Super Galaxy Annie": {
+      "id": 11
+    },
+    "Annie-Versary": {
+      "id": 12
+    },
+    "Lunar Beast Annie": {
+      "id": 13
+    },
+    "Cafe Cuties Annie": {
+      "id": 22
+    },
+    "Fright Night Annie": {
+      "id": 31
+    },
+    "Winterblessed Annie": {
+      "id": 40
+    },
+    "Battle Princess Annie": {
+      "id": 50
+    }
+  },
+  "Aphelios": {
+    "default": {
+      "id": 0
+    },
+    "Nightbringer Aphelios": {
+      "id": 1
+    },
+    "Lunar Beast Aphelios": {
+      "id": 9
+    },
+    "EDG Aphelios": {
+      "id": 18
+    },
+    "Spirit Blossom Aphelios": {
+      "id": 20
+    },
+    "HEARTSTEEL Aphelios": {
+      "id": 30
+    },
+    "Prestige Spirit Blossom Springs Aphelios": {
+      "id": 40
+    }
+  },
+  "Ashe": {
+    "default": {
+      "id": 0
+    },
+    "Freljord Ashe": {
+      "id": 1
+    },
+    "Sherwood Forest Ashe": {
+      "id": 2
+    },
+    "Woad Ashe": {
+      "id": 3
+    },
+    "Queen Ashe": {
+      "id": 4
+    },
+    "Amethyst Ashe": {
+      "id": 5
+    },
+    "Heartseeker Ashe": {
+      "id": 6
+    },
+    "Marauder Ashe": {
+      "id": 7
+    },
+    "PROJECT: Ashe": {
+      "id": 8
+    },
+    "Worlds 2017 Ashe": {
+      "id": 9
+    },
+    "Cosmic Queen Ashe": {
+      "id": 11
+    },
+    "High Noon Ashe": {
+      "id": 17
+    },
+    "Fae Dragon Ashe": {
+      "id": 23
+    },
+    "Coven Ashe": {
+      "id": 32
+    },
+    "Ocean Song Ashe": {
+      "id": 43
+    },
+    "Lunar Empress Ashe": {
+      "id": 52
+    },
+    "DRX Ashe": {
+      "id": 63
+    },
+    "Crystalis Motus Ashe": {
+      "id": 65
+    },
+    "Infernal Ashe": {
+      "id": 67
+    },
+    "Spirit Blossom Ashe": {
+      "id": 76
+    },
+    "Firecracker Ashe": {
+      "id": 84
+    }
+  },
+  "AurelionSol": {
+    "default": {
+      "id": 0
+    },
+    "Ashen Lord Aurelion Sol": {
+      "id": 1
+    },
+    "Mecha Aurelion Sol": {
+      "id": 2
+    },
+    "Storm Dragon Aurelion Sol": {
+      "id": 11
+    },
+    "Inkshadow Aurelion Sol": {
+      "id": 21
+    },
+    "Porcelain Protector Aurelion Sol": {
+      "id": 31
+    },
+    "Divine Architect Porcelain Aurelion Sol": {
+      "id": 38
+    }
+  },
+  "Aurora": {
+    "default": {
+      "id": 0
+    },
+    "Battle Bunny Aurora": {
+      "id": 1
+    },
+    "Arcana Aurora": {
+      "id": 11
+    }
+  },
+  "Azir": {
+    "default": {
+      "id": 0
+    },
+    "Galactic Azir": {
+      "id": 1
+    },
+    "Gravelord Azir": {
+      "id": 2
+    },
+    "SKT T1 Azir": {
+      "id": 3
+    },
+    "Warring Kingdoms Azir": {
+      "id": 4
+    },
+    "Elderwood Azir": {
+      "id": 5
+    },
+    "Worlds 2022 Azir": {
+      "id": 14
+    },
+    "Attorney Azir": {
+      "id": 19
+    }
+  },
+  "Bard": {
+    "default": {
+      "id": 0
+    },
+    "Elderwood Bard": {
+      "id": 1
+    },
+    "Snow Day Bard": {
+      "id": 5
+    },
+    "Bard Bard": {
+      "id": 6
+    },
+    "Astronaut Bard": {
+      "id": 8
+    },
+    "Cafe Cuties Bard": {
+      "id": 17
+    },
+    "Shan Hai Scrolls Bard": {
+      "id": 26
+    },
+    "T1 Bard": {
+      "id": 35
+    },
+    "Spirit Blossom Bard": {
+      "id": 37
+    }
+  },
+  "Belveth": {
+    "default": {
+      "id": 0
+    },
+    "Battle Boss Bel'Veth": {
+      "id": 1
+    },
+    "Cosmic Matriarch Bel'Veth": {
+      "id": 10
+    },
+    "Primordian Bel'Veth": {
+      "id": 19
+    }
+  },
+  "Blitzcrank": {
+    "default": {
+      "id": 0
+    },
+    "Rusty Blitzcrank": {
+      "id": 1
+    },
+    "Goalkeeper Blitzcrank": {
+      "id": 2
+    },
+    "Boom Boom Blitzcrank": {
+      "id": 3
+    },
+    "Piltover Customs Blitzcrank": {
+      "id": 4
+    },
+    "Definitely Not Blitzcrank": {
+      "id": 5
+    },
+    "iBlitzcrank": {
+      "id": 6
+    },
+    "Riot Blitzcrank": {
+      "id": 7
+    },
+    "Battle Boss Blitzcrank": {
+      "id": 11
+    },
+    "Lancer Rogue Blitzcrank": {
+      "id": 20
+    },
+    "Lancer Paragon Blitzcrank": {
+      "id": 21
+    },
+    "Witch's Brew Blitzcrank": {
+      "id": 22
+    },
+    "Space Groove Blitz & Crank": {
+      "id": 29
+    },
+    "Victorious Blitzcrank": {
+      "id": 36
+    },
+    "Zenith Games Blitzcrank": {
+      "id": 47
+    },
+    "Beezcrank": {
+      "id": 56
+    }
+  },
+  "Brand": {
+    "default": {
+      "id": 0
+    },
+    "Apocalyptic Brand": {
+      "id": 1
+    },
+    "Vandal Brand": {
+      "id": 2
+    },
+    "Cryocore Brand": {
+      "id": 3
+    },
+    "Zombie Brand": {
+      "id": 4
+    },
+    "Spirit Fire Brand": {
+      "id": 5
+    },
+    "Battle Boss Brand": {
+      "id": 6
+    },
+    "Arclight Brand": {
+      "id": 7
+    },
+    "Eternal Dragon Brand": {
+      "id": 8
+    },
+    "Debonair Brand": {
+      "id": 21
+    },
+    "Prestige Debonair Brand": {
+      "id": 22
+    },
+    "Street Demons Brand": {
+      "id": 33
+    },
+    "Empyrean Brand": {
+      "id": 42
+    }
+  },
+  "Braum": {
+    "default": {
+      "id": 0
+    },
+    "Dragonslayer Braum": {
+      "id": 1
+    },
+    "El Tigre Braum": {
+      "id": 2
+    },
+    "Braum Lionheart": {
+      "id": 3
+    },
+    "Santa Braum": {
+      "id": 10
+    },
+    "Crime City Braum": {
+      "id": 11
+    },
+    "Sugar Rush Braum": {
+      "id": 24
+    },
+    "Pool Party Braum": {
+      "id": 33
+    },
+    "Grill Master Braum": {
+      "id": 42
+    }
+  },
+  "Briar": {
+    "default": {
+      "id": 0
+    },
+    "Street Demons Briar": {
+      "id": 1
+    },
+    "Primordian Briar": {
+      "id": 10
+    },
+    "Battle Academia Briar": {
+      "id": 20
+    }
+  },
+  "Caitlyn": {
+    "default": {
+      "id": 0
+    },
+    "Resistance Caitlyn": {
+      "id": 1
+    },
+    "Sheriff Caitlyn": {
+      "id": 2
+    },
+    "Safari Caitlyn": {
+      "id": 3
+    },
+    "Arctic Warfare Caitlyn": {
+      "id": 4
+    },
+    "Officer Caitlyn": {
+      "id": 5
+    },
+    "Headhunter Caitlyn": {
+      "id": 6
+    },
+    "Lunar Wraith Caitlyn": {
+      "id": 10
+    },
+    "Pulsefire Caitlyn": {
+      "id": 11
+    },
+    "Pool Party Caitlyn": {
+      "id": 13
+    },
+    "Arcade Caitlyn": {
+      "id": 19
+    },
+    "Prestige Arcade Caitlyn": {
+      "id": 20
+    },
+    "Battle Academia Caitlyn": {
+      "id": 22
+    },
+    "Arcane Enforcer Caitlyn": {
+      "id": 28
+    },
+    "Prestige Arcade Caitlyn (2022)": {
+      "id": 29
+    },
+    "Snow Moon Caitlyn": {
+      "id": 30
+    },
+    "Heartthrob Caitlyn": {
+      "id": 39
+    },
+    "DRX Caitlyn": {
+      "id": 48
+    },
+    "Arcane Commander Caitlyn": {
+      "id": 50
+    },
+    "Prestige Arcane Commander Caitlyn": {
+      "id": 51
+    },
+    "Firecracker Caitlyn": {
+      "id": 54
+    }
+  },
+  "Camille": {
+    "default": {
+      "id": 0
+    },
+    "Program Camille": {
+      "id": 1
+    },
+    "Coven Camille": {
+      "id": 2
+    },
+    "iG Camille": {
+      "id": 10
+    },
+    "Arcana Camille": {
+      "id": 11
+    },
+    "Strike Commander Camille": {
+      "id": 21
+    },
+    "Winterblessed Camille": {
+      "id": 31
+    },
+    "Prestige Winterblessed Camille": {
+      "id": 32
+    },
+    "Petals of Spring Camille": {
+      "id": 44
+    }
+  },
+  "Cassiopeia": {
+    "default": {
+      "id": 0
+    },
+    "Desperada Cassiopeia": {
+      "id": 1
+    },
+    "Siren Cassiopeia": {
+      "id": 2
+    },
+    "Mythic Cassiopeia": {
+      "id": 3
+    },
+    "Jade Fang Cassiopeia": {
+      "id": 4
+    },
+    "Eternum Cassiopeia": {
+      "id": 8
+    },
+    "Spirit Blossom Cassiopeia": {
+      "id": 9
+    },
+    "Coven Cassiopeia": {
+      "id": 18
+    },
+    "Bewitching Cassiopeia": {
+      "id": 28
+    },
+    "Prestige Mythmaker Cassiopeia": {
+      "id": 38
+    }
+  },
+  "Chogath": {
+    "default": {
+      "id": 0
+    },
+    "Nightmare Cho'Gath": {
+      "id": 1
+    },
+    "Gentleman Cho'Gath": {
+      "id": 2
+    },
+    "Loch Ness Cho'Gath": {
+      "id": 3
+    },
+    "Jurassic Cho'Gath": {
+      "id": 4
+    },
+    "Battlecast Prime Cho'Gath": {
+      "id": 5
+    },
+    "Prehistoric Cho'Gath": {
+      "id": 6
+    },
+    "Dark Star Cho'Gath": {
+      "id": 7
+    },
+    "Shan Hai Scrolls Cho'Gath": {
+      "id": 14
+    },
+    "Broken Covenant Cho'Gath": {
+      "id": 23
+    },
+    "Toy Terror Cho'Gath": {
+      "id": 32
+    },
+    "Petricite Cho'Gath": {
+      "id": 41
+    }
+  },
+  "Corki": {
+    "default": {
+      "id": 0
+    },
+    "UFO Corki": {
+      "id": 1
+    },
+    "Ice Toboggan Corki": {
+      "id": 2
+    },
+    "Red Baron Corki": {
+      "id": 3
+    },
+    "Hot Rod Corki": {
+      "id": 4
+    },
+    "Urfrider Corki": {
+      "id": 5
+    },
+    "Dragonwing Corki": {
+      "id": 6
+    },
+    "Fnatic Corki": {
+      "id": 7
+    },
+    "Arcade Corki": {
+      "id": 8
+    },
+    "Corgi Corki": {
+      "id": 18
+    },
+    "Astronaut Corki": {
+      "id": 26
+    },
+    "Brick Toy Corki": {
+      "id": 36
+    }
+  },
+  "Darius": {
+    "default": {
+      "id": 0
+    },
+    "Lord Darius": {
+      "id": 1
+    },
+    "Bioforge Darius": {
+      "id": 2
+    },
+    "Woad King Darius": {
+      "id": 3
+    },
+    "Dunkmaster Darius": {
+      "id": 4
+    },
+    "Academy Darius": {
+      "id": 8
+    },
+    "Dreadnova Darius": {
+      "id": 14
+    },
+    "God-King Darius": {
+      "id": 15
+    },
+    "High Noon Darius": {
+      "id": 16
+    },
+    "Lunar Beast Darius": {
+      "id": 24
+    },
+    "Crime City Nightmare Darius": {
+      "id": 33
+    },
+    "Spirit Blossom Darius": {
+      "id": 43
+    },
+    "Porcelain Darius": {
+      "id": 54
+    },
+    "Divine God-King Darius": {
+      "id": 64
+    },
+    "Prestige Triumphant General Darius": {
+      "id": 65
+    },
+    "Mecha Kingdoms Darius": {
+      "id": 67
+    }
+  },
+  "Diana": {
+    "default": {
+      "id": 0
+    },
+    "Dark Valkyrie Diana": {
+      "id": 1
+    },
+    "Lunar Goddess Diana": {
+      "id": 2
+    },
+    "Infernal Diana": {
+      "id": 3
+    },
+    "Blood Moon Diana": {
+      "id": 11
+    },
+    "Dark Waters Diana": {
+      "id": 12
+    },
+    "Dragonslayer Diana": {
+      "id": 18
+    },
+    "Battle Queen Diana": {
+      "id": 25
+    },
+    "Prestige Battle Queen Diana": {
+      "id": 26
+    },
+    "Sentinel Diana": {
+      "id": 27
+    },
+    "Firecracker Diana": {
+      "id": 37
+    },
+    "Winterblessed Diana": {
+      "id": 47
+    },
+    "Heavenscale Diana": {
+      "id": 54
+    },
+    "Dark Cosmic Diana": {
+      "id": 64
+    },
+    "Prestige Dark Cosmic Diana": {
+      "id": 65
+    }
+  },
+  "Draven": {
+    "default": {
+      "id": 0
+    },
+    "Soul Reaver Draven": {
+      "id": 1
+    },
+    "Gladiator Draven": {
+      "id": 2
+    },
+    "Primetime Draven": {
+      "id": 3
+    },
+    "Pool Party Draven": {
+      "id": 4
+    },
+    "Beast Hunter Draven": {
+      "id": 5
+    },
+    "Draven Draven": {
+      "id": 6
+    },
+    "Santa Draven": {
+      "id": 12
+    },
+    "Mecha Kingdoms Draven": {
+      "id": 13
+    },
+    "Ruined Draven": {
+      "id": 20
+    },
+    "Debonair Draven": {
+      "id": 29
+    },
+    "Fright Night Draven": {
+      "id": 39
+    },
+    "La Ilusi\u00f3n Draven": {
+      "id": 48
+    },
+    "Grand Reckoning Draven": {
+      "id": 58
+    },
+    "Victorious Draven": {
+      "id": 68
+    }
+  },
+  "DrMundo": {
+    "default": {
+      "id": 0
+    },
+    "Toxic Dr. Mundo": {
+      "id": 1
+    },
+    "Mr. Mundoverse": {
+      "id": 2
+    },
+    "Corporate Mundo": {
+      "id": 3
+    },
+    "Mundo Mundo": {
+      "id": 4
+    },
+    "Executioner Mundo": {
+      "id": 5
+    },
+    "Rageborn Mundo": {
+      "id": 6
+    },
+    "TPA Mundo": {
+      "id": 7
+    },
+    "Pool Party Mundo": {
+      "id": 8
+    },
+    "El Macho Mundo": {
+      "id": 9
+    },
+    "Frozen Prince Mundo": {
+      "id": 10
+    },
+    "Street Demons Dr. Mundo": {
+      "id": 21
+    }
+  },
+  "Ekko": {
+    "default": {
+      "id": 0
+    },
+    "Sandstorm Ekko": {
+      "id": 1
+    },
+    "Academy Ekko": {
+      "id": 2
+    },
+    "PROJECT: Ekko": {
+      "id": 3
+    },
+    "SKT T1 Ekko": {
+      "id": 11
+    },
+    "Trick or Treat Ekko": {
+      "id": 12
+    },
+    "True Damage Ekko": {
+      "id": 19
+    },
+    "Pulsefire Ekko": {
+      "id": 28
+    },
+    "Arcane Firelight Ekko": {
+      "id": 36
+    },
+    "Star Guardian Ekko": {
+      "id": 45
+    },
+    "Prestige Star Guardian Ekko": {
+      "id": 46
+    },
+    "Breakout True Damage Ekko": {
+      "id": 56
+    },
+    "Arcane Last Stand Ekko": {
+      "id": 57
+    }
+  },
+  "Elise": {
+    "default": {
+      "id": 0
+    },
+    "Death Blossom Elise": {
+      "id": 1
+    },
+    "Victorious Elise": {
+      "id": 2
+    },
+    "Blood Moon Elise": {
+      "id": 3
+    },
+    "SKT T1 Elise": {
+      "id": 4
+    },
+    "Super Galaxy Elise": {
+      "id": 5
+    },
+    "Bewitching Elise": {
+      "id": 6
+    },
+    "Withered Rose Elise": {
+      "id": 15
+    },
+    "Coven Elise": {
+      "id": 24
+    },
+    "Masque of the Black Rose Elise": {
+      "id": 34
+    }
+  },
+  "Evelynn": {
+    "default": {
+      "id": 0
+    },
+    "Shadow Evelynn": {
+      "id": 1
+    },
+    "Masquerade Evelynn": {
+      "id": 2
+    },
+    "Tango Evelynn": {
+      "id": 3
+    },
+    "Safecracker Evelynn": {
+      "id": 4
+    },
+    "Blood Moon Evelynn": {
+      "id": 5
+    },
+    "K/DA Evelynn": {
+      "id": 6
+    },
+    "Prestige K/DA Evelynn": {
+      "id": 7
+    },
+    "Sugar Rush Evelynn": {
+      "id": 8
+    },
+    "K/DA ALL OUT Evelynn": {
+      "id": 15
+    },
+    "Coven Evelynn": {
+      "id": 24
+    },
+    "Prestige K/DA Evelynn (2022)": {
+      "id": 31
+    },
+    "Spirit Blossom Evelynn": {
+      "id": 32
+    },
+    "Soul Fighter Evelynn": {
+      "id": 42
+    },
+    "High Noon Evelynn": {
+      "id": 52
+    },
+    "Prestige High Noon Evelynn": {
+      "id": 53
+    },
+    "Nightbringer Evelynn": {
+      "id": 64
+    }
+  },
+  "Ezreal": {
+    "default": {
+      "id": 0
+    },
+    "Nottingham Ezreal": {
+      "id": 1
+    },
+    "Striker Ezreal": {
+      "id": 2
+    },
+    "Frosted Ezreal": {
+      "id": 3
+    },
+    "Explorer Ezreal": {
+      "id": 4
+    },
+    "Pulsefire Ezreal": {
+      "id": 5
+    },
+    "TPA Ezreal": {
+      "id": 6
+    },
+    "Debonair Ezreal": {
+      "id": 7
+    },
+    "Ace of Spades Ezreal": {
+      "id": 8
+    },
+    "Arcade Ezreal": {
+      "id": 9
+    },
+    "Star Guardian Ezreal": {
+      "id": 18
+    },
+    "SSG Ezreal": {
+      "id": 19
+    },
+    "Pajama Guardian Ezreal": {
+      "id": 20
+    },
+    "Battle Academia Ezreal": {
+      "id": 21
+    },
+    "PsyOps Ezreal": {
+      "id": 22
+    },
+    "Prestige PsyOps Ezreal": {
+      "id": 23
+    },
+    "Porcelain Protector Ezreal": {
+      "id": 25
+    },
+    "Faerie Court Ezreal": {
+      "id": 33
+    },
+    "HEARTSTEEL Ezreal": {
+      "id": 43
+    },
+    "Heavenscale Ezreal": {
+      "id": 44
+    },
+    "Prestige Heavenscale Ezreal": {
+      "id": 54
+    },
+    "Masque of the Black Rose Ezreal": {
+      "id": 65
+    }
+  },
+  "Fiddlesticks": {
+    "default": {
+      "id": 0
+    },
+    "Spectral Fiddlesticks": {
+      "id": 1
+    },
+    "Union Jack Fiddlesticks": {
+      "id": 2
+    },
+    "Bandito Fiddlesticks": {
+      "id": 3
+    },
+    "Pumpkinhead Fiddlesticks": {
+      "id": 4
+    },
+    "Fiddle Me Timbers": {
+      "id": 5
+    },
+    "Surprise Party Fiddlesticks": {
+      "id": 6
+    },
+    "Dark Candy Fiddlesticks": {
+      "id": 7
+    },
+    "Risen Fiddlesticks": {
+      "id": 8
+    },
+    "Praetorian Fiddlesticks": {
+      "id": 9
+    },
+    "Star Nemesis Fiddlesticks": {
+      "id": 27
+    },
+    "Blood Moon Fiddlesticks": {
+      "id": 37
+    },
+    "Flora Fatalis Fiddlesticks": {
+      "id": 46
+    }
+  },
+  "Fiora": {
+    "default": {
+      "id": 0
+    },
+    "Royal Guard Fiora": {
+      "id": 1
+    },
+    "Nightraven Fiora": {
+      "id": 2
+    },
+    "Headmistress Fiora": {
+      "id": 3
+    },
+    "PROJECT: Fiora": {
+      "id": 4
+    },
+    "Pool Party Fiora": {
+      "id": 5
+    },
+    "Soaring Sword Fiora": {
+      "id": 22
+    },
+    "Heartpiercer Fiora": {
+      "id": 23
+    },
+    "iG Fiora": {
+      "id": 31
+    },
+    "Pulsefire Fiora": {
+      "id": 41
+    },
+    "Lunar Beast Fiora": {
+      "id": 50
+    },
+    "Prestige Lunar Beast Fiora": {
+      "id": 51
+    },
+    "Bewitching Fiora": {
+      "id": 60
+    },
+    "Faerie Court Fiora": {
+      "id": 69
+    },
+    "Dragonmancer Fiora": {
+      "id": 80
+    },
+    "Battle Queen Fiora": {
+      "id": 89
+    },
+    "Victorious Fiora": {
+      "id": 98
+    }
+  },
+  "Fizz": {
+    "default": {
+      "id": 0
+    },
+    "Atlantean Fizz": {
+      "id": 1
+    },
+    "Tundra Fizz": {
+      "id": 2
+    },
+    "Fisherman Fizz": {
+      "id": 3
+    },
+    "Void Fizz": {
+      "id": 4
+    },
+    "Cottontail Fizz": {
+      "id": 8
+    },
+    "Super Galaxy Fizz": {
+      "id": 9
+    },
+    "Omega Squad Fizz": {
+      "id": 10
+    },
+    "Fuzz Fizz": {
+      "id": 14
+    },
+    "Prestige Fuzz Fizz": {
+      "id": 15
+    },
+    "Little Devil Fizz": {
+      "id": 16
+    },
+    "Prestige Fuzz Fizz (2022)": {
+      "id": 25
+    },
+    "Astronaut Fizz": {
+      "id": 26
+    },
+    "Rain Shepherd Fizz": {
+      "id": 35
+    }
+  },
+  "Galio": {
+    "default": {
+      "id": 0
+    },
+    "Enchanted Galio": {
+      "id": 1
+    },
+    "Hextech Galio": {
+      "id": 2
+    },
+    "Commando Galio": {
+      "id": 3
+    },
+    "Gatekeeper Galio": {
+      "id": 4
+    },
+    "Debonair Galio": {
+      "id": 5
+    },
+    "Birdio": {
+      "id": 6
+    },
+    "Infernal Galio": {
+      "id": 13
+    },
+    "Dragon Guardian Galio": {
+      "id": 19
+    },
+    "Mythmaker Galio": {
+      "id": 28
+    },
+    "Aegis Frame Galio": {
+      "id": 40
+    }
+  },
+  "Gangplank": {
+    "default": {
+      "id": 0
+    },
+    "Spooky Gangplank": {
+      "id": 1
+    },
+    "Minuteman Gangplank": {
+      "id": 2
+    },
+    "Sailor Gangplank": {
+      "id": 3
+    },
+    "Toy Soldier Gangplank": {
+      "id": 4
+    },
+    "Special Forces Gangplank": {
+      "id": 5
+    },
+    "Sultan Gangplank": {
+      "id": 6
+    },
+    "Captain Gangplank": {
+      "id": 7
+    },
+    "Dreadnova Gangplank": {
+      "id": 8
+    },
+    "Pool Party Gangplank": {
+      "id": 14
+    },
+    "FPX Gangplank": {
+      "id": 21
+    },
+    "Gangplank the Betrayer": {
+      "id": 23
+    },
+    "PROJECT: Gangplank": {
+      "id": 33
+    }
+  },
+  "Garen": {
+    "default": {
+      "id": 0
+    },
+    "Sanguine Garen": {
+      "id": 1
+    },
+    "Desert Trooper Garen": {
+      "id": 2
+    },
+    "Commando Garen": {
+      "id": 3
+    },
+    "Dreadknight Garen": {
+      "id": 4
+    },
+    "Rugged Garen": {
+      "id": 5
+    },
+    "Steel Legion Garen": {
+      "id": 6
+    },
+    "Rogue Admiral Garen": {
+      "id": 10
+    },
+    "Warring Kingdoms Garen": {
+      "id": 11
+    },
+    "God-King Garen": {
+      "id": 13
+    },
+    "Demacia Vice Garen": {
+      "id": 14
+    },
+    "Mecha Kingdoms Garen": {
+      "id": 22
+    },
+    "Prestige Mecha Kingdoms Garen": {
+      "id": 23
+    },
+    "Battle Academia Garen": {
+      "id": 24
+    },
+    "Mythmaker Garen": {
+      "id": 33
+    },
+    "Fallen God-King Garen": {
+      "id": 44
+    },
+    "Visions of the Fallen Garen": {
+      "id": 46
+    }
+  },
+  "Gnar": {
+    "default": {
+      "id": 0
+    },
+    "Dino Gnar": {
+      "id": 1
+    },
+    "Gentleman Gnar": {
+      "id": 2
+    },
+    "Snow Day Gnar": {
+      "id": 3
+    },
+    "El Le\u00f3n Gnar": {
+      "id": 4
+    },
+    "Super Galaxy Gnar": {
+      "id": 13
+    },
+    "SSG Gnar": {
+      "id": 14
+    },
+    "Astronaut Gnar": {
+      "id": 15
+    },
+    "Elderwood Gnar": {
+      "id": 22
+    },
+    "La Ilusi\u00f3n Gnar": {
+      "id": 31
+    },
+    "T1 Gnar": {
+      "id": 41
+    }
+  },
+  "Gragas": {
+    "default": {
+      "id": 0
+    },
+    "Scuba Gragas": {
+      "id": 1
+    },
+    "Hillbilly Gragas": {
+      "id": 2
+    },
+    "Santa Gragas": {
+      "id": 3
+    },
+    "Gragas, Esq.": {
+      "id": 4
+    },
+    "Vandal Gragas": {
+      "id": 5
+    },
+    "Oktoberfest Gragas": {
+      "id": 6
+    },
+    "Superfan Gragas": {
+      "id": 7
+    },
+    "Fnatic Gragas": {
+      "id": 8
+    },
+    "Gragas Caskbreaker": {
+      "id": 9
+    },
+    "Arctic Ops Gragas": {
+      "id": 10
+    },
+    "Warden Gragas": {
+      "id": 11
+    },
+    "Space Groove Gragas": {
+      "id": 20
+    },
+    "High Noon Gragas": {
+      "id": 29
+    },
+    "Music Fan Gragas": {
+      "id": 39
+    }
+  },
+  "Graves": {
+    "default": {
+      "id": 0
+    },
+    "Hired Gun Graves": {
+      "id": 1
+    },
+    "Jailbreak Graves": {
+      "id": 2
+    },
+    "Crime City Graves": {
+      "id": 3
+    },
+    "Riot Graves": {
+      "id": 4
+    },
+    "Pool Party Graves": {
+      "id": 5
+    },
+    "Cutthroat Graves": {
+      "id": 6
+    },
+    "Snow Day Graves": {
+      "id": 7
+    },
+    "Victorious Graves": {
+      "id": 14
+    },
+    "Praetorian Graves": {
+      "id": 18
+    },
+    "Battle Professor Graves": {
+      "id": 25
+    },
+    "Sentinel Graves": {
+      "id": 35
+    },
+    "EDG Graves": {
+      "id": 42
+    },
+    "Porcelain Graves": {
+      "id": 45
+    }
+  },
+  "Gwen": {
+    "default": {
+      "id": 0
+    },
+    "Space Groove Gwen": {
+      "id": 1
+    },
+    "Cafe Cuties Gwen": {
+      "id": 11
+    },
+    "Soul Fighter Gwen": {
+      "id": 20
+    },
+    "Battle Queen Gwen": {
+      "id": 30
+    },
+    "Rain Shepherd Gwen": {
+      "id": 39
+    }
+  },
+  "Hecarim": {
+    "default": {
+      "id": 0
+    },
+    "Blood Knight Hecarim": {
+      "id": 1
+    },
+    "Reaper Hecarim": {
+      "id": 2
+    },
+    "Headless Hecarim": {
+      "id": 3
+    },
+    "Arcade Hecarim": {
+      "id": 4
+    },
+    "Elderwood Hecarim": {
+      "id": 5
+    },
+    "Worldbreaker Hecarim": {
+      "id": 6
+    },
+    "Lancer Zero Hecarim": {
+      "id": 7
+    },
+    "High Noon Hecarim": {
+      "id": 8
+    },
+    "Cosmic Charger Hecarim": {
+      "id": 14
+    },
+    "Arcana Hecarim": {
+      "id": 22
+    },
+    "Winterblessed Hecarim": {
+      "id": 31
+    },
+    "Nightbringer Hecarim": {
+      "id": 41
+    }
+  },
+  "Heimerdinger": {
+    "default": {
+      "id": 0
+    },
+    "Alien Invader Heimerdinger": {
+      "id": 1
+    },
+    "Blast Zone Heimerdinger": {
+      "id": 2
+    },
+    "Piltover Customs Heimerdinger": {
+      "id": 3
+    },
+    "Snowmerdinger": {
+      "id": 4
+    },
+    "Hazmat Heimerdinger": {
+      "id": 5
+    },
+    "Dragon Trainer Heimerdinger": {
+      "id": 6
+    },
+    "Pool Party Heimerdinger": {
+      "id": 15
+    },
+    "Heimerstinger": {
+      "id": 24
+    },
+    "Arcane Professor Heimerdinger": {
+      "id": 33
+    }
+  },
+  "Hwei": {
+    "default": {
+      "id": 0
+    },
+    "Winterblessed Hwei": {
+      "id": 1
+    },
+    "Spirit Blossom Hwei": {
+      "id": 11
+    }
+  },
+  "Illaoi": {
+    "default": {
+      "id": 0
+    },
+    "Void Bringer Illaoi": {
+      "id": 1
+    },
+    "Resistance Illaoi": {
+      "id": 2
+    },
+    "Cosmic Invoker Illaoi": {
+      "id": 10
+    },
+    "Snow Moon Illaoi": {
+      "id": 18
+    },
+    "Battle Bear Illaoi": {
+      "id": 27
+    }
+  },
+  "Irelia": {
+    "default": {
+      "id": 0
+    },
+    "Nightblade Irelia": {
+      "id": 1
+    },
+    "Aviator Irelia": {
+      "id": 2
+    },
+    "Infiltrator Irelia": {
+      "id": 3
+    },
+    "Frostblade Irelia": {
+      "id": 4
+    },
+    "Order of the Lotus Irelia": {
+      "id": 5
+    },
+    "Divine Sword Irelia": {
+      "id": 6
+    },
+    "iG Irelia": {
+      "id": 15
+    },
+    "PROJECT: Irelia": {
+      "id": 16
+    },
+    "Prestige PROJECT: Irelia": {
+      "id": 17
+    },
+    "High Noon Irelia": {
+      "id": 18
+    },
+    "Sentinel Irelia": {
+      "id": 26
+    },
+    "Prestige PROJECT: Irelia (2022)": {
+      "id": 36
+    },
+    "Mythmaker Irelia": {
+      "id": 37
+    },
+    "Porcelain Irelia": {
+      "id": 45
+    },
+    "Spirit Blossom Irelia": {
+      "id": 55
+    }
+  },
+  "Ivern": {
+    "default": {
+      "id": 0
+    },
+    "Candy King Ivern": {
+      "id": 1
+    },
+    "Dunkmaster Ivern": {
+      "id": 2
+    },
+    "Old God Ivern": {
+      "id": 11
+    },
+    "Astronaut Ivern": {
+      "id": 20
+    },
+    "Spirit Blossom Ivern": {
+      "id": 30
+    }
+  },
+  "Janna": {
+    "default": {
+      "id": 0
+    },
+    "Tempest Janna": {
+      "id": 1
+    },
+    "Hextech Janna": {
+      "id": 2
+    },
+    "Frost Queen Janna": {
+      "id": 3
+    },
+    "Victorious Janna": {
+      "id": 4
+    },
+    "Forecast Janna": {
+      "id": 5
+    },
+    "Fnatic Janna": {
+      "id": 6
+    },
+    "Star Guardian Janna": {
+      "id": 7
+    },
+    "Sacred Sword Janna": {
+      "id": 8
+    },
+    "Bewitching Janna": {
+      "id": 13
+    },
+    "Guardian of the Sands Janna": {
+      "id": 20
+    },
+    "Battle Queen Janna": {
+      "id": 27
+    },
+    "Crystal Rose Janna": {
+      "id": 36
+    },
+    "Cyber Halo Janna": {
+      "id": 45
+    },
+    "Prestige Cyber Halo Janna": {
+      "id": 46
+    },
+    "Heavenscale Janna": {
+      "id": 56
+    },
+    "Dawnbringer Janna": {
+      "id": 66
+    }
+  },
+  "JarvanIV": {
+    "default": {
+      "id": 0
+    },
+    "Commando Jarvan IV": {
+      "id": 1
+    },
+    "Dragonslayer Jarvan IV": {
+      "id": 2
+    },
+    "Darkforge Jarvan IV": {
+      "id": 3
+    },
+    "Victorious Jarvan IV": {
+      "id": 4
+    },
+    "Warring Kingdoms Jarvan IV": {
+      "id": 5
+    },
+    "Fnatic Jarvan IV": {
+      "id": 6
+    },
+    "Dark Star Jarvan IV": {
+      "id": 7
+    },
+    "SSG Jarvan IV": {
+      "id": 8
+    },
+    "Hextech Jarvan IV": {
+      "id": 9
+    },
+    "Pool Party Jarvan IV": {
+      "id": 11
+    },
+    "Lunar Beast Jarvan IV": {
+      "id": 21
+    },
+    "Worlds 2021 Jarvan IV": {
+      "id": 30
+    },
+    "Nightbringer Jarvan IV": {
+      "id": 35
+    },
+    "Mythmaker Jarvan IV": {
+      "id": 44
+    },
+    "Prestige Visions of the Fallen Jarvan IV": {
+      "id": 54
+    }
+  },
+  "Jax": {
+    "default": {
+      "id": 0
+    },
+    "The Mighty Jax": {
+      "id": 1
+    },
+    "Vandal Jax": {
+      "id": 2
+    },
+    "Angler Jax": {
+      "id": 3
+    },
+    "PAX Jax": {
+      "id": 4
+    },
+    "Jaximus": {
+      "id": 5
+    },
+    "Temple Jax": {
+      "id": 6
+    },
+    "Nemesis Jax": {
+      "id": 7
+    },
+    "SKT T1 Jax": {
+      "id": 8
+    },
+    "Warden Jax": {
+      "id": 12
+    },
+    "God Staff Jax": {
+      "id": 13
+    },
+    "Mecha Kingdoms Jax": {
+      "id": 14
+    },
+    "Conqueror Jax": {
+      "id": 20
+    },
+    "Prestige Conqueror Jax": {
+      "id": 21
+    },
+    "Empyrean Jax": {
+      "id": 22
+    },
+    "Neo PAX Jax": {
+      "id": 32
+    },
+    "PROJECT: Jax": {
+      "id": 33
+    }
+  },
+  "Jayce": {
+    "default": {
+      "id": 0
+    },
+    "Full Metal Jayce": {
+      "id": 1
+    },
+    "Debonair Jayce": {
+      "id": 2
+    },
+    "Forsaken Jayce": {
+      "id": 3
+    },
+    "Jayce Brighthammer": {
+      "id": 4
+    },
+    "Battle Academia Jayce": {
+      "id": 5
+    },
+    "Resistance Jayce": {
+      "id": 15
+    },
+    "Arcane Inventor Jayce": {
+      "id": 24
+    },
+    "Zenith Games Jayce": {
+      "id": 25
+    },
+    "T1 Jayce": {
+      "id": 34
+    },
+    "Arcane Survivor Jayce": {
+      "id": 35
+    },
+    "Prestige T1 Jayce": {
+      "id": 36
+    },
+    "Petals of Spring Jayce": {
+      "id": 38
+    }
+  },
+  "Jhin": {
+    "default": {
+      "id": 0
+    },
+    "High Noon Jhin": {
+      "id": 1
+    },
+    "Blood Moon Jhin": {
+      "id": 2
+    },
+    "SKT T1 Jhin": {
+      "id": 3
+    },
+    "PROJECT: Jhin": {
+      "id": 4
+    },
+    "Dark Cosmic Jhin": {
+      "id": 5
+    },
+    "Shan Hai Scrolls Jhin": {
+      "id": 14
+    },
+    "DWG Jhin": {
+      "id": 23
+    },
+    "Empyrean Jhin": {
+      "id": 25
+    },
+    "Soul Fighter Jhin": {
+      "id": 36
+    },
+    "Dark Cosmic Erasure Jhin": {
+      "id": 37
+    },
+    "Mythmaker Jhin": {
+      "id": 47
+    },
+    "Arcana Jhin": {
+      "id": 55
+    }
+  },
+  "Jinx": {
+    "default": {
+      "id": 0
+    },
+    "Crime City Jinx": {
+      "id": 1
+    },
+    "Firecracker Jinx": {
+      "id": 2
+    },
+    "Zombie Slayer Jinx": {
+      "id": 3
+    },
+    "Star Guardian Jinx": {
+      "id": 4
+    },
+    "Ambitious Elf Jinx": {
+      "id": 12
+    },
+    "Odyssey Jinx": {
+      "id": 13
+    },
+    "PROJECT: Jinx": {
+      "id": 20
+    },
+    "Heartseeker Jinx": {
+      "id": 29
+    },
+    "Arcane Enemy Jinx": {
+      "id": 37
+    },
+    "Battle Cat Jinx": {
+      "id": 38
+    },
+    "Prestige Battle Cat Jinx": {
+      "id": 40
+    },
+    "Cafe Cuties Jinx": {
+      "id": 51
+    },
+    "Arcane Fractured Jinx": {
+      "id": 60
+    },
+    "T1 Jinx": {
+      "id": 62
+    }
+  },
+  "Kaisa": {
+    "default": {
+      "id": 0
+    },
+    "Bullet Angel Kai'Sa": {
+      "id": 1
+    },
+    "K/DA Kai'Sa": {
+      "id": 14
+    },
+    "Prestige K/DA Kai'Sa": {
+      "id": 15
+    },
+    "iG Kai'Sa": {
+      "id": 16
+    },
+    "Arcade Kai'Sa": {
+      "id": 17
+    },
+    "K/DA ALL OUT Kai'Sa": {
+      "id": 26
+    },
+    "Prestige K/DA ALL OUT Kai'Sa": {
+      "id": 27
+    },
+    "Lagoon Dragon Kai'Sa": {
+      "id": 29
+    },
+    "Prestige K/DA Kai'Sa (2022)": {
+      "id": 39
+    },
+    "Star Guardian Kai'Sa": {
+      "id": 40
+    },
+    "Inkshadow Kai'Sa": {
+      "id": 48
+    },
+    "Heavenscale Kai'Sa": {
+      "id": 59
+    },
+    "Dark Star Kai'Sa": {
+      "id": 69
+    },
+    "Risen Legend Kai'Sa": {
+      "id": 70
+    },
+    "Immortalized Legend Kai'Sa": {
+      "id": 71
+    }
+  },
+  "Kalista": {
+    "default": {
+      "id": 0
+    },
+    "Blood Moon Kalista": {
+      "id": 1
+    },
+    "Worlds 2015 Kalista": {
+      "id": 2
+    },
+    "SKT T1 Kalista": {
+      "id": 3
+    },
+    "Marauder Kalista": {
+      "id": 5
+    },
+    "Faerie Court Kalista": {
+      "id": 14
+    },
+    "Dawnbringer Kalista": {
+      "id": 24
+    }
+  },
+  "Karma": {
+    "default": {
+      "id": 0
+    },
+    "Sun Goddess Karma": {
+      "id": 1
+    },
+    "Sakura Karma": {
+      "id": 2
+    },
+    "Traditional Karma": {
+      "id": 3
+    },
+    "Order of the Lotus Karma": {
+      "id": 4
+    },
+    "Warden Karma": {
+      "id": 5
+    },
+    "Winter Wonder Karma": {
+      "id": 6
+    },
+    "Conqueror Karma": {
+      "id": 7
+    },
+    "Dark Star Karma": {
+      "id": 8
+    },
+    "Dawnbringer Karma": {
+      "id": 19
+    },
+    "Odyssey Karma": {
+      "id": 26
+    },
+    "Ruined Karma": {
+      "id": 27
+    },
+    "Tranquility Dragon Karma": {
+      "id": 44
+    },
+    "Faerie Queen Karma": {
+      "id": 54
+    },
+    "Infernal Karma": {
+      "id": 61
+    },
+    "Spirit Blossom Karma": {
+      "id": 70
+    }
+  },
+  "Karthus": {
+    "default": {
+      "id": 0
+    },
+    "Phantom Karthus": {
+      "id": 1
+    },
+    "Statue of Karthus": {
+      "id": 2
+    },
+    "Grim Reaper Karthus": {
+      "id": 3
+    },
+    "Pentakill Karthus": {
+      "id": 4
+    },
+    "Fnatic Karthus": {
+      "id": 5
+    },
+    "Karthus Lightsbane": {
+      "id": 9
+    },
+    "Infernal Karthus": {
+      "id": 10
+    },
+    "Pentakill III: Lost Chapter Karthus": {
+      "id": 17
+    },
+    "Elderwood Karthus": {
+      "id": 26
+    },
+    "Arcana Karthus": {
+      "id": 35
+    }
+  },
+  "Kassadin": {
+    "default": {
+      "id": 0
+    },
+    "Festival Kassadin": {
+      "id": 1
+    },
+    "Deep One Kassadin": {
+      "id": 2
+    },
+    "Pre-Void Kassadin": {
+      "id": 3
+    },
+    "Harbinger Kassadin": {
+      "id": 4
+    },
+    "Cosmic Reaver Kassadin": {
+      "id": 5
+    },
+    "Count Kassadin": {
+      "id": 6
+    },
+    "Hextech Kassadin": {
+      "id": 14
+    },
+    "Shockblade Kassadin": {
+      "id": 15
+    },
+    "Dragonmancer Kassadin": {
+      "id": 24
+    }
+  },
+  "Katarina": {
+    "default": {
+      "id": 0
+    },
+    "Mercenary Katarina": {
+      "id": 1
+    },
+    "Red Card Katarina": {
+      "id": 2
+    },
+    "Bilgewater Katarina": {
+      "id": 3
+    },
+    "Kitty Cat Katarina": {
+      "id": 4
+    },
+    "High Command Katarina": {
+      "id": 5
+    },
+    "Sandstorm Katarina": {
+      "id": 6
+    },
+    "Slay Belle Katarina": {
+      "id": 7
+    },
+    "Warring Kingdoms Katarina": {
+      "id": 8
+    },
+    "PROJECT: Katarina": {
+      "id": 9
+    },
+    "Death Sworn Katarina": {
+      "id": 10
+    },
+    "Battle Academia Katarina": {
+      "id": 12
+    },
+    "Blood Moon Katarina": {
+      "id": 21
+    },
+    "Battle Queen Katarina": {
+      "id": 29
+    },
+    "High Noon Katarina": {
+      "id": 37
+    },
+    "Faerie Court Katarina": {
+      "id": 47
+    },
+    "Prestige Faerie Court Katarina": {
+      "id": 48
+    },
+    "Chosen of the Wolf Katarina": {
+      "id": 59
+    },
+    "Prestige Masque of the Black Rose Katarina": {
+      "id": 60
+    },
+    "Petals of Spring Katarina": {
+      "id": 70
+    }
+  },
+  "Kayle": {
+    "default": {
+      "id": 0
+    },
+    "Silver Kayle": {
+      "id": 1
+    },
+    "Viridian Kayle": {
+      "id": 2
+    },
+    "Transcended Kayle": {
+      "id": 3
+    },
+    "Battleborn Kayle": {
+      "id": 4
+    },
+    "Judgment Kayle": {
+      "id": 5
+    },
+    "Aether Wing Kayle": {
+      "id": 6
+    },
+    "Riot Kayle": {
+      "id": 7
+    },
+    "Iron Inquisitor Kayle": {
+      "id": 8
+    },
+    "Pentakill Kayle": {
+      "id": 9
+    },
+    "PsyOps Kayle": {
+      "id": 15
+    },
+    "Dragonslayer Kayle": {
+      "id": 24
+    },
+    "Pentakill III: Lost Chapter Kayle": {
+      "id": 33
+    },
+    "Sun-Eater Kayle": {
+      "id": 42
+    },
+    "Immortal Journey Kayle": {
+      "id": 57
+    },
+    "Empyrean Kayle": {
+      "id": 66
+    },
+    "Prestige Empyrean Kayle": {
+      "id": 67
+    },
+    "Spirit Blossom Kayle": {
+      "id": 78
+    }
+  },
+  "Kayn": {
+    "default": {
+      "id": 0
+    },
+    "Soulhunter Kayn": {
+      "id": 1
+    },
+    "Odyssey Kayn": {
+      "id": 2
+    },
+    "Nightbringer Kayn": {
+      "id": 8
+    },
+    "Prestige Nightbringer Kayn": {
+      "id": 9
+    },
+    "Snow Moon Kayn": {
+      "id": 15
+    },
+    "HEARTSTEEL Kayn": {
+      "id": 20
+    },
+    "Battle Academia Kayn": {
+      "id": 26
+    }
+  },
+  "Kennen": {
+    "default": {
+      "id": 0
+    },
+    "Deadly Kennen": {
+      "id": 1
+    },
+    "Swamp Master Kennen": {
+      "id": 2
+    },
+    "Karate Kennen": {
+      "id": 3
+    },
+    "Kennen M.D.": {
+      "id": 4
+    },
+    "Arctic Ops Kennen": {
+      "id": 5
+    },
+    "Blood Moon Kennen": {
+      "id": 6
+    },
+    "Super Kennen": {
+      "id": 7
+    },
+    "Infernal Kennen": {
+      "id": 8
+    },
+    "DWG Kennen": {
+      "id": 23
+    },
+    "Astronaut Kennen": {
+      "id": 25
+    }
+  },
+  "Khazix": {
+    "default": {
+      "id": 0
+    },
+    "Mecha Kha'Zix": {
+      "id": 1
+    },
+    "Guardian of the Sands Kha'Zix": {
+      "id": 2
+    },
+    "Death Blossom Kha'Zix": {
+      "id": 3
+    },
+    "Dark Star Kha'Zix": {
+      "id": 4
+    },
+    "Worlds 2018 Kha'Zix": {
+      "id": 11
+    },
+    "Odyssey Kha'Zix": {
+      "id": 60
+    },
+    "Lunar Guardian Kha'Zix": {
+      "id": 69
+    },
+    "Crystalis Indomitus Kha'Zix": {
+      "id": 79
+    }
+  },
+  "Kindred": {
+    "default": {
+      "id": 0
+    },
+    "Shadowfire Kindred": {
+      "id": 1
+    },
+    "Super Galaxy Kindred": {
+      "id": 2
+    },
+    "Spirit Blossom Kindred": {
+      "id": 3
+    },
+    "Porcelain Kindred": {
+      "id": 12
+    },
+    "Woof and Lamb Kindred": {
+      "id": 22
+    },
+    "DRX Kindred": {
+      "id": 23
+    },
+    "Prestige Porcelain Kindred": {
+      "id": 33
+    },
+    "Chosen of the Wolf Kindred": {
+      "id": 34
+    }
+  },
+  "Kled": {
+    "default": {
+      "id": 0
+    },
+    "Sir Kled": {
+      "id": 1
+    },
+    "Count Kledula": {
+      "id": 2
+    },
+    "Marauder Kled": {
+      "id": 9
+    },
+    "Kibble-Head Kled": {
+      "id": 18
+    }
+  },
+  "KogMaw": {
+    "default": {
+      "id": 0
+    },
+    "Caterpillar Kog'Maw": {
+      "id": 1
+    },
+    "Sonoran Kog'Maw": {
+      "id": 2
+    },
+    "Monarch Kog'Maw": {
+      "id": 3
+    },
+    "Reindeer Kog'Maw": {
+      "id": 4
+    },
+    "Lion Dance Kog'Maw": {
+      "id": 5
+    },
+    "Deep Sea Kog'Maw": {
+      "id": 6
+    },
+    "Jurassic Kog'Maw": {
+      "id": 7
+    },
+    "Battlecast Kog'Maw": {
+      "id": 8
+    },
+    "Pug'Maw": {
+      "id": 9
+    },
+    "Hextech Kog'Maw": {
+      "id": 10
+    },
+    "Arcanist Kog'Maw": {
+      "id": 19
+    },
+    "Bee'Maw": {
+      "id": 28
+    },
+    "Zap'Maw": {
+      "id": 37
+    },
+    "Shan Hai Scrolls Kog'Maw": {
+      "id": 46
+    },
+    "Victorious Kog'Maw": {
+      "id": 55
+    }
+  },
+  "KSante": {
+    "default": {
+      "id": 0
+    },
+    "Empyrean K'Sante": {
+      "id": 1
+    },
+    "Prestige Empyrean K'Sante": {
+      "id": 2
+    },
+    "HEARTSTEEL K'Sante": {
+      "id": 8
+    }
+  },
+  "Leblanc": {
+    "default": {
+      "id": 0
+    },
+    "Wicked LeBlanc": {
+      "id": 1
+    },
+    "Prestigious LeBlanc": {
+      "id": 2
+    },
+    "Mistletoe LeBlanc": {
+      "id": 3
+    },
+    "Ravenborn LeBlanc": {
+      "id": 4
+    },
+    "Elderwood LeBlanc": {
+      "id": 5
+    },
+    "Program LeBlanc": {
+      "id": 12
+    },
+    "iG LeBlanc": {
+      "id": 19
+    },
+    "Coven LeBlanc": {
+      "id": 20
+    },
+    "Worlds 2020 LeBlanc": {
+      "id": 29
+    },
+    "Prestige Coven LeBlanc": {
+      "id": 33
+    },
+    "Debonair LeBlanc": {
+      "id": 35
+    },
+    "Bewitching LeBlanc": {
+      "id": 45
+    },
+    "Risen Legend LeBlanc": {
+      "id": 55
+    }
+  },
+  "LeeSin": {
+    "default": {
+      "id": 0
+    },
+    "Traditional Lee Sin": {
+      "id": 1
+    },
+    "Acolyte Lee Sin": {
+      "id": 2
+    },
+    "Dragon Fist Lee Sin": {
+      "id": 3
+    },
+    "Muay Thai Lee Sin": {
+      "id": 4
+    },
+    "Pool Party Lee Sin": {
+      "id": 5
+    },
+    "SKT T1 Lee Sin": {
+      "id": 6
+    },
+    "Knockout Lee Sin": {
+      "id": 10
+    },
+    "God Fist Lee Sin": {
+      "id": 11
+    },
+    "Playmaker Lee Sin": {
+      "id": 12
+    },
+    "Nightbringer Lee Sin": {
+      "id": 27
+    },
+    "Prestige Nightbringer Lee Sin": {
+      "id": 28
+    },
+    "FPX Lee Sin": {
+      "id": 29
+    },
+    "Storm Dragon Lee Sin": {
+      "id": 31
+    },
+    "Prestige Nightbringer Lee Sin (2022)": {
+      "id": 39
+    },
+    "Zenith Games Lee Sin": {
+      "id": 41
+    },
+    "Heavenscale Lee Sin": {
+      "id": 51
+    },
+    "Divine Heavenscale Lee Sin": {
+      "id": 52
+    },
+    "T1 Lee Sin": {
+      "id": 68
+    },
+    "Inkshadow Lee Sin": {
+      "id": 72
+    }
+  },
+  "Leona": {
+    "default": {
+      "id": 0
+    },
+    "Valkyrie Leona": {
+      "id": 1
+    },
+    "Defender Leona": {
+      "id": 2
+    },
+    "Iron Solari Leona": {
+      "id": 3
+    },
+    "Pool Party Leona": {
+      "id": 4
+    },
+    "PROJECT: Leona": {
+      "id": 8
+    },
+    "Barbecue Leona": {
+      "id": 9
+    },
+    "Solar Eclipse Leona": {
+      "id": 10
+    },
+    "Lunar Eclipse Leona": {
+      "id": 11
+    },
+    "Mecha Kingdoms Leona": {
+      "id": 12
+    },
+    "Battle Academia Leona": {
+      "id": 21
+    },
+    "DWG Leona": {
+      "id": 22
+    },
+    "Prestige Battle Academia Leona": {
+      "id": 23
+    },
+    "Debonair Leona": {
+      "id": 33
+    },
+    "High Noon Leona": {
+      "id": 34
+    },
+    "Crystalis Motus Leona": {
+      "id": 50
+    },
+    "Battle Lion Leona": {
+      "id": 52
+    },
+    "Prestige Battle Lion Leona": {
+      "id": 53
+    }
+  },
+  "Lillia": {
+    "default": {
+      "id": 0
+    },
+    "Spirit Blossom Lillia": {
+      "id": 1
+    },
+    "Nightbringer Lillia": {
+      "id": 10
+    },
+    "Shan Hai Scrolls Lillia": {
+      "id": 19
+    },
+    "Faerie Court Lillia": {
+      "id": 28
+    },
+    "Bowling League Lillia": {
+      "id": 37
+    },
+    "Petals of Spring Lillia": {
+      "id": 46
+    }
+  },
+  "Lissandra": {
+    "default": {
+      "id": 0
+    },
+    "Bloodstone Lissandra": {
+      "id": 1
+    },
+    "Blade Queen Lissandra": {
+      "id": 2
+    },
+    "Program Lissandra": {
+      "id": 3
+    },
+    "Coven Lissandra": {
+      "id": 4
+    },
+    "Dark Cosmic Lissandra": {
+      "id": 12
+    },
+    "Porcelain Lissandra": {
+      "id": 23
+    },
+    "Prestige Porcelain Lissandra": {
+      "id": 33
+    },
+    "Space Groove Lissandra": {
+      "id": 34
+    },
+    "Flora Fatalis Lissandra": {
+      "id": 43
+    }
+  },
+  "Lucian": {
+    "default": {
+      "id": 0
+    },
+    "Hired Gun Lucian": {
+      "id": 1
+    },
+    "Striker Lucian": {
+      "id": 2
+    },
+    "PROJECT: Lucian": {
+      "id": 6
+    },
+    "Heartseeker Lucian": {
+      "id": 7
+    },
+    "High Noon Lucian": {
+      "id": 8
+    },
+    "Demacia Vice Lucian": {
+      "id": 9
+    },
+    "Pulsefire Lucian": {
+      "id": 18
+    },
+    "Prestige Pulsefire Lucian": {
+      "id": 19
+    },
+    "Victorious Lucian": {
+      "id": 25
+    },
+    "Arcana Lucian": {
+      "id": 31
+    },
+    "Strike Paladin Lucian": {
+      "id": 40
+    },
+    "Winterblessed Lucian": {
+      "id": 52
+    },
+    "Masked Justice Lucian": {
+      "id": 62
+    },
+    "Sunken Shadows Lucian": {
+      "id": 72
+    }
+  },
+  "Lulu": {
+    "default": {
+      "id": 0
+    },
+    "Bittersweet Lulu": {
+      "id": 1
+    },
+    "Wicked Lulu": {
+      "id": 2
+    },
+    "Dragon Trainer Lulu": {
+      "id": 3
+    },
+    "Winter Wonder Lulu": {
+      "id": 4
+    },
+    "Pool Party Lulu": {
+      "id": 5
+    },
+    "Star Guardian Lulu": {
+      "id": 6
+    },
+    "Cosmic Enchantress Lulu": {
+      "id": 14
+    },
+    "Pajama Guardian Lulu": {
+      "id": 15
+    },
+    "Space Groove Lulu": {
+      "id": 26
+    },
+    "Prestige Space Groove Lulu": {
+      "id": 27
+    },
+    "Monster Tamer Lulu": {
+      "id": 37
+    },
+    "Cafe Cuties Lulu": {
+      "id": 46
+    },
+    "Arcana Lulu": {
+      "id": 55
+    }
+  },
+  "Lux": {
+    "default": {
+      "id": 0
+    },
+    "Sorceress Lux": {
+      "id": 1
+    },
+    "Spellthief Lux": {
+      "id": 2
+    },
+    "Commando Lux": {
+      "id": 3
+    },
+    "Imperial Lux": {
+      "id": 4
+    },
+    "Steel Legion Lux": {
+      "id": 5
+    },
+    "Star Guardian Lux": {
+      "id": 6
+    },
+    "Elementalist Lux": {
+      "id": 7
+    },
+    "Lunar Empress Lux": {
+      "id": 8
+    },
+    "Pajama Guardian Lux": {
+      "id": 14
+    },
+    "Battle Academia Lux": {
+      "id": 15
+    },
+    "Prestige Battle Academia Lux": {
+      "id": 16
+    },
+    "Dark Cosmic Lux": {
+      "id": 17
+    },
+    "Cosmic Lux": {
+      "id": 18
+    },
+    "Space Groove Lux": {
+      "id": 19
+    },
+    "Porcelain Lux": {
+      "id": 29
+    },
+    "Soul Fighter Lux": {
+      "id": 38
+    },
+    "Prestige Battle Academia Lux (2022)": {
+      "id": 39
+    },
+    "Prestige Porcelain Lux": {
+      "id": 40
+    },
+    "Empyrean Lux": {
+      "id": 42
+    },
+    "Faerie Court Lux": {
+      "id": 61
+    },
+    "Prestige Spirit Blossom Lux": {
+      "id": 70
+    },
+    "Panda Pal Lux": {
+      "id": 72
+    }
+  },
+  "Malphite": {
+    "default": {
+      "id": 0
+    },
+    "Shamrock Malphite": {
+      "id": 1
+    },
+    "Coral Reef Malphite": {
+      "id": 2
+    },
+    "Marble Malphite": {
+      "id": 3
+    },
+    "Obsidian Malphite": {
+      "id": 4
+    },
+    "Glacial Malphite": {
+      "id": 5
+    },
+    "Mecha Malphite": {
+      "id": 6
+    },
+    "Ironside Malphite": {
+      "id": 7
+    },
+    "Odyssey Malphite": {
+      "id": 16
+    },
+    "Dark Star Malphite": {
+      "id": 23
+    },
+    "Prestige Dark Star Malphite": {
+      "id": 24
+    },
+    "FPX Malphite": {
+      "id": 25
+    },
+    "Old God Malphite": {
+      "id": 27
+    },
+    "Lunar Guardian Malphite": {
+      "id": 37
+    },
+    "Pool Party Malphite": {
+      "id": 48
+    }
+  },
+  "Malzahar": {
+    "default": {
+      "id": 0
+    },
+    "Vizier Malzahar": {
+      "id": 1
+    },
+    "Shadow Prince Malzahar": {
+      "id": 2
+    },
+    "Djinn Malzahar": {
+      "id": 3
+    },
+    "Overlord Malzahar": {
+      "id": 4
+    },
+    "Snow Day Malzahar": {
+      "id": 5
+    },
+    "Battle Boss Malzahar": {
+      "id": 6
+    },
+    "Hextech Malzahar": {
+      "id": 7
+    },
+    "Worldbreaker Malzahar": {
+      "id": 9
+    },
+    "Beezahar": {
+      "id": 18
+    },
+    "Debonair Malzahar": {
+      "id": 28
+    },
+    "Three Honors Malzahar": {
+      "id": 38
+    },
+    "Empyrean Malzahar": {
+      "id": 39
+    },
+    "Fatebreaker Malzahar": {
+      "id": 49
+    }
+  },
+  "Maokai": {
+    "default": {
+      "id": 0
+    },
+    "Charred Maokai": {
+      "id": 1
+    },
+    "Totemic Maokai": {
+      "id": 2
+    },
+    "Festive Maokai": {
+      "id": 3
+    },
+    "Haunted Maokai": {
+      "id": 4
+    },
+    "Goalkeeper Maokai": {
+      "id": 5
+    },
+    "Meowkai": {
+      "id": 6
+    },
+    "Victorious Maokai": {
+      "id": 7
+    },
+    "Worldbreaker Maokai": {
+      "id": 16
+    },
+    "Astronaut Maokai": {
+      "id": 24
+    },
+    "DRX Maokai": {
+      "id": 33
+    }
+  },
+  "MasterYi": {
+    "default": {
+      "id": 0
+    },
+    "Assassin Master Yi": {
+      "id": 1
+    },
+    "Chosen Master Yi": {
+      "id": 2
+    },
+    "Ionia Master Yi": {
+      "id": 3
+    },
+    "Samurai Yi": {
+      "id": 4
+    },
+    "Headhunter Master Yi": {
+      "id": 5
+    },
+    "PROJECT: Yi": {
+      "id": 9
+    },
+    "Cosmic Blade Master Yi": {
+      "id": 10
+    },
+    "Eternal Sword Yi": {
+      "id": 11
+    },
+    "Snow Man Yi": {
+      "id": 17
+    },
+    "Blood Moon Master Yi": {
+      "id": 24
+    },
+    "PsyOps Master Yi": {
+      "id": 33
+    },
+    "Debonair Master Yi": {
+      "id": 42
+    },
+    "Spirit Blossom Master Yi": {
+      "id": 52
+    },
+    "Prestige Spirit Blossom Master Yi": {
+      "id": 53
+    },
+    "Inkshadow Master Yi": {
+      "id": 89
+    },
+    "Heavenscale Master Yi": {
+      "id": 96
+    },
+    "Victorious Master Yi": {
+      "id": 106
+    }
+  },
+  "Mel": {
+    "default": {
+      "id": 0
+    },
+    "Arcane Councilor Mel": {
+      "id": 1
+    },
+    "Prestige Winterblessed Mel": {
+      "id": 10
+    }
+  },
+  "Milio": {
+    "default": {
+      "id": 0
+    },
+    "Faerie Court Milio": {
+      "id": 1
+    },
+    "Rain Shepherd Milio": {
+      "id": 11
+    },
+    "Winter Wonder Milio": {
+      "id": 20
+    }
+  },
+  "MissFortune": {
+    "default": {
+      "id": 0
+    },
+    "Cowgirl Miss Fortune": {
+      "id": 1
+    },
+    "Waterloo Miss Fortune": {
+      "id": 2
+    },
+    "Secret Agent Miss Fortune": {
+      "id": 3
+    },
+    "Candy Cane Miss Fortune": {
+      "id": 4
+    },
+    "Road Warrior Miss Fortune": {
+      "id": 5
+    },
+    "Crime City Miss Fortune": {
+      "id": 6
+    },
+    "Arcade Miss Fortune": {
+      "id": 7
+    },
+    "Captain Fortune": {
+      "id": 8
+    },
+    "Pool Party Miss Fortune": {
+      "id": 9
+    },
+    "Star Guardian Miss Fortune": {
+      "id": 15
+    },
+    "Gun Goddess Miss Fortune": {
+      "id": 16
+    },
+    "Pajama Guardian Miss Fortune": {
+      "id": 17
+    },
+    "Bewitching Miss Fortune": {
+      "id": 18
+    },
+    "Prestige Bewitching Miss Fortune": {
+      "id": 20
+    },
+    "Ruined Miss Fortune": {
+      "id": 21
+    },
+    "Battle Bunny Miss Fortune": {
+      "id": 31
+    },
+    "Admiral Battle Bunny Miss Fortune": {
+      "id": 32
+    },
+    "Prestige Bewitching Miss Fortune (2022)": {
+      "id": 33
+    },
+    "Broken Covenant Miss Fortune": {
+      "id": 40
+    },
+    "Prestige Broken Covenant Miss Fortune": {
+      "id": 41
+    },
+    "Porcelain Miss Fortune": {
+      "id": 50
+    },
+    "Battle Queen Miss Fortune": {
+      "id": 60
+    }
+  },
+  "MonkeyKing": {
+    "default": {
+      "id": 0
+    },
+    "Volcanic Wukong": {
+      "id": 1
+    },
+    "General Wukong": {
+      "id": 2
+    },
+    "Jade Dragon Wukong": {
+      "id": 3
+    },
+    "Underworld Wukong": {
+      "id": 4
+    },
+    "Radiant Wukong": {
+      "id": 5
+    },
+    "Lancer Stratus Wukong": {
+      "id": 6
+    },
+    "Battle Academia Wukong": {
+      "id": 7
+    },
+    "Elderwood Wukong": {
+      "id": 16
+    },
+    "Mecha Kingdoms Wukong": {
+      "id": 26
+    }
+  },
+  "Mordekaiser": {
+    "default": {
+      "id": 0
+    },
+    "Dragon Knight Mordekaiser": {
+      "id": 1
+    },
+    "Infernal Mordekaiser": {
+      "id": 2
+    },
+    "Pentakill Mordekaiser": {
+      "id": 3
+    },
+    "Lord Mordekaiser": {
+      "id": 4
+    },
+    "King of Clubs Mordekaiser": {
+      "id": 5
+    },
+    "Dark Star Mordekaiser": {
+      "id": 6
+    },
+    "PROJECT: Mordekaiser": {
+      "id": 13
+    },
+    "Pentakill III: Lost Chapter Mordekaiser": {
+      "id": 23
+    },
+    "High Noon Mordekaiser": {
+      "id": 32
+    },
+    "Ashen Graveknight Mordekaiser": {
+      "id": 42
+    },
+    "Old God Mordekaiser": {
+      "id": 44
+    },
+    "Sahn-Uzal Mordekaiser": {
+      "id": 54
+    }
+  },
+  "Morgana": {
+    "default": {
+      "id": 0
+    },
+    "Exiled Morgana": {
+      "id": 1
+    },
+    "Sinful Succulence Morgana": {
+      "id": 2
+    },
+    "Blade Mistress Morgana": {
+      "id": 3
+    },
+    "Blackthorn Morgana": {
+      "id": 4
+    },
+    "Ghost Bride Morgana": {
+      "id": 5
+    },
+    "Victorious Morgana": {
+      "id": 6
+    },
+    "Lunar Wraith Morgana": {
+      "id": 10
+    },
+    "Bewitching Morgana": {
+      "id": 11
+    },
+    "Majestic Empress Morgana": {
+      "id": 17
+    },
+    "Coven Morgana": {
+      "id": 26
+    },
+    "Dawnbringer Morgana": {
+      "id": 39
+    },
+    "Prestige Bewitching Morgana": {
+      "id": 41
+    },
+    "Star Nemesis Morgana": {
+      "id": 50
+    },
+    "Snow Moon Morgana": {
+      "id": 60
+    },
+    "Porcelain Morgana": {
+      "id": 70
+    },
+    "Spirit Blossom Morgana": {
+      "id": 80
+    },
+    "Prestige Veiled Lady Morgana": {
+      "id": 81
+    }
+  },
+  "Naafiri": {
+    "default": {
+      "id": 0
+    },
+    "Soul Fighter Naafiri": {
+      "id": 1
+    },
+    "PROJECT: Naafiri": {
+      "id": 11
+    },
+    "Glizzy Naafiri": {
+      "id": 20
+    }
+  },
+  "Nami": {
+    "default": {
+      "id": 0
+    },
+    "Koi Nami": {
+      "id": 1
+    },
+    "River Spirit Nami": {
+      "id": 2
+    },
+    "Urf the Nami-tee": {
+      "id": 3
+    },
+    "Deep Sea Nami": {
+      "id": 7
+    },
+    "SKT T1 Nami": {
+      "id": 8
+    },
+    "Program Nami": {
+      "id": 9
+    },
+    "Splendid Staff Nami": {
+      "id": 15
+    },
+    "Cosmic Destiny Nami": {
+      "id": 24
+    },
+    "Bewitching Nami": {
+      "id": 32
+    },
+    "Space Groove Nami": {
+      "id": 41
+    },
+    "Prestige Space Groove Nami": {
+      "id": 42
+    },
+    "Coven Nami": {
+      "id": 51
+    },
+    "Mythmaker Nami": {
+      "id": 58
+    },
+    "Sunken Shadows Nami": {
+      "id": 68
+    }
+  },
+  "Nasus": {
+    "default": {
+      "id": 0
+    },
+    "Galactic Nasus": {
+      "id": 1
+    },
+    "Pharaoh Nasus": {
+      "id": 2
+    },
+    "Dreadknight Nasus": {
+      "id": 3
+    },
+    "Riot K-9 Nasus": {
+      "id": 4
+    },
+    "Infernal Nasus": {
+      "id": 5
+    },
+    "Archduke Nasus": {
+      "id": 6
+    },
+    "Worldbreaker Nasus": {
+      "id": 10
+    },
+    "Lunar Guardian Nasus": {
+      "id": 11
+    },
+    "Battlecast Nasus": {
+      "id": 16
+    },
+    "Space Groove Nasus": {
+      "id": 25
+    },
+    "Armored Titan Nasus": {
+      "id": 35
+    },
+    "Nightbringer Nasus": {
+      "id": 45
+    },
+    "Fatemaker Nasus": {
+      "id": 54
+    }
+  },
+  "Nautilus": {
+    "default": {
+      "id": 0
+    },
+    "Abyssal Nautilus": {
+      "id": 1
+    },
+    "Subterranean Nautilus": {
+      "id": 2
+    },
+    "AstroNautilus": {
+      "id": 3
+    },
+    "Warden Nautilus": {
+      "id": 4
+    },
+    "Worldbreaker Nautilus": {
+      "id": 5
+    },
+    "Conqueror Nautilus": {
+      "id": 6
+    },
+    "Shan Hai Scrolls Nautilus": {
+      "id": 9
+    },
+    "Fright Night Nautilus": {
+      "id": 18
+    },
+    "Cosmic Paladin Nautilus": {
+      "id": 27
+    },
+    "Crystalis Indomitus Nautilus": {
+      "id": 36
+    },
+    "Petricite Nautilus": {
+      "id": 39
+    }
+  },
+  "Neeko": {
+    "default": {
+      "id": 0
+    },
+    "Winter Wonder Neeko": {
+      "id": 1
+    },
+    "Star Guardian Neeko": {
+      "id": 10
+    },
+    "Prestige Star Guardian Neeko": {
+      "id": 11
+    },
+    "Shan Hai Scrolls Neeko": {
+      "id": 12
+    },
+    "Prestige Star Guardian Neeko (2022)": {
+      "id": 21
+    },
+    "Bewitching Neeko": {
+      "id": 22
+    },
+    "Street Demons Neeko": {
+      "id": 31
+    },
+    "Cosplayer Neeko": {
+      "id": 40
+    },
+    "Beeko": {
+      "id": 49
+    }
+  },
+  "Nidalee": {
+    "default": {
+      "id": 0
+    },
+    "Snow Bunny Nidalee": {
+      "id": 1
+    },
+    "Leopard Nidalee": {
+      "id": 2
+    },
+    "French Maid Nidalee": {
+      "id": 3
+    },
+    "Pharaoh Nidalee": {
+      "id": 4
+    },
+    "Bewitching Nidalee": {
+      "id": 5
+    },
+    "Headhunter Nidalee": {
+      "id": 6
+    },
+    "Warring Kingdoms Nidalee": {
+      "id": 7
+    },
+    "Challenger Nidalee": {
+      "id": 8
+    },
+    "Super Galaxy Nidalee": {
+      "id": 9
+    },
+    "Dawnbringer Nidalee": {
+      "id": 11
+    },
+    "Cosmic Huntress Nidalee": {
+      "id": 18
+    },
+    "DWG Nidalee": {
+      "id": 27
+    },
+    "Ocean Song Nidalee": {
+      "id": 29
+    },
+    "Kittalee": {
+      "id": 39
+    },
+    "La Ilusi\u00f3n Nidalee": {
+      "id": 48
+    },
+    "Spirit Blossom Nidalee": {
+      "id": 58
+    }
+  },
+  "Nilah": {
+    "default": {
+      "id": 0
+    },
+    "Star Guardian Nilah": {
+      "id": 1
+    },
+    "Coven Nilah": {
+      "id": 11
+    },
+    "Inkshadow Nilah": {
+      "id": 21
+    }
+  },
+  "Nocturne": {
+    "default": {
+      "id": 0
+    },
+    "Frozen Terror Nocturne": {
+      "id": 1
+    },
+    "Void Nocturne": {
+      "id": 2
+    },
+    "Ravager Nocturne": {
+      "id": 3
+    },
+    "Haunting Nocturne": {
+      "id": 4
+    },
+    "Eternum Nocturne": {
+      "id": 5
+    },
+    "Cursed Revenant Nocturne": {
+      "id": 6
+    },
+    "Old God Nocturne": {
+      "id": 7
+    },
+    "Hextech Nocturne": {
+      "id": 16
+    },
+    "Broken Covenant Nocturne": {
+      "id": 17
+    },
+    "Empyrean Nocturne": {
+      "id": 26
+    }
+  },
+  "Nunu": {
+    "default": {
+      "id": 0
+    },
+    "Sasquatch Nunu & Willump": {
+      "id": 1
+    },
+    "Workshop Nunu & Willump": {
+      "id": 2
+    },
+    "Grungy Nunu & Willump": {
+      "id": 3
+    },
+    "Nunu & Willump Bot": {
+      "id": 4
+    },
+    "Demolisher Nunu & Willump": {
+      "id": 5
+    },
+    "TPA Nunu & Willump": {
+      "id": 6
+    },
+    "Zombie Nunu & Willump": {
+      "id": 7
+    },
+    "Papercraft Nunu & Willump": {
+      "id": 8
+    },
+    "Space Groove Nunu & Willump": {
+      "id": 16
+    },
+    "Nunu & Beelump": {
+      "id": 26
+    },
+    "Cosmic Paladins Nunu & Willump": {
+      "id": 35
+    },
+    "Fright Night Nunu & Willump": {
+      "id": 44
+    }
+  },
+  "Olaf": {
+    "default": {
+      "id": 0
+    },
+    "Forsaken Olaf": {
+      "id": 1
+    },
+    "Glacial Olaf": {
+      "id": 2
+    },
+    "Brolaf": {
+      "id": 3
+    },
+    "Pentakill Olaf": {
+      "id": 4
+    },
+    "Marauder Olaf": {
+      "id": 5
+    },
+    "Butcher Olaf": {
+      "id": 6
+    },
+    "SKT T1 Olaf": {
+      "id": 15
+    },
+    "Dragonslayer Olaf": {
+      "id": 16
+    },
+    "Sentinel Olaf": {
+      "id": 25
+    },
+    "Pentakill III: Lost Chapter Olaf": {
+      "id": 35
+    },
+    "Infernal Olaf": {
+      "id": 44
+    }
+  },
+  "Orianna": {
+    "default": {
+      "id": 0
+    },
+    "Gothic Orianna": {
+      "id": 1
+    },
+    "Sewn Chaos Orianna": {
+      "id": 2
+    },
+    "Bladecraft Orianna": {
+      "id": 3
+    },
+    "TPA Orianna": {
+      "id": 4
+    },
+    "Winter Wonder Orianna": {
+      "id": 5
+    },
+    "Heartseeker Orianna": {
+      "id": 6
+    },
+    "Dark Star Orianna": {
+      "id": 7
+    },
+    "Victorious Orianna": {
+      "id": 8
+    },
+    "Pool Party Orianna": {
+      "id": 11
+    },
+    "Orbeeanna": {
+      "id": 20
+    },
+    "Star Guardian Orianna": {
+      "id": 29
+    },
+    "T1 Orianna": {
+      "id": 38
+    }
+  },
+  "Ornn": {
+    "default": {
+      "id": 0
+    },
+    "Thunder Lord Ornn": {
+      "id": 1
+    },
+    "Elderwood Ornn": {
+      "id": 2
+    },
+    "Space Groove Ornn": {
+      "id": 11
+    },
+    "Choo-Choo Ornn": {
+      "id": 20
+    },
+    "Aegis Frame Ornn": {
+      "id": 29
+    }
+  },
+  "Pantheon": {
+    "default": {
+      "id": 0
+    },
+    "Myrmidon Pantheon": {
+      "id": 1
+    },
+    "Ruthless Pantheon": {
+      "id": 2
+    },
+    "Perseus Pantheon": {
+      "id": 3
+    },
+    "Full Metal Pantheon": {
+      "id": 4
+    },
+    "Glaive Warrior Pantheon": {
+      "id": 5
+    },
+    "Dragonslayer Pantheon": {
+      "id": 6
+    },
+    "Zombie Slayer Pantheon": {
+      "id": 7
+    },
+    "Baker Pantheon": {
+      "id": 8
+    },
+    "Pulsefire Pantheon": {
+      "id": 16
+    },
+    "Ruined Pantheon": {
+      "id": 25
+    },
+    "Prestige Ascended Pantheon": {
+      "id": 26
+    },
+    "Ashen Conqueror Pantheon": {
+      "id": 36
+    },
+    "Chosen of the Wolf Pantheon": {
+      "id": 38
+    }
+  },
+  "Poppy": {
+    "default": {
+      "id": 0
+    },
+    "Noxus Poppy": {
+      "id": 1
+    },
+    "Lollipoppy": {
+      "id": 2
+    },
+    "Blacksmith Poppy": {
+      "id": 3
+    },
+    "Ragdoll Poppy": {
+      "id": 4
+    },
+    "Battle Regalia Poppy": {
+      "id": 5
+    },
+    "Scarlet Hammer Poppy": {
+      "id": 6
+    },
+    "Star Guardian Poppy": {
+      "id": 7
+    },
+    "Snow Fawn Poppy": {
+      "id": 14
+    },
+    "Hextech Poppy": {
+      "id": 15
+    },
+    "Astronaut Poppy": {
+      "id": 16
+    },
+    "Bewitching Poppy": {
+      "id": 24
+    },
+    "Cafe Cuties Poppy": {
+      "id": 33
+    },
+    "Firecracker Poppy": {
+      "id": 42
+    }
+  },
+  "Pyke": {
+    "default": {
+      "id": 0
+    },
+    "Sand Wraith Pyke": {
+      "id": 1
+    },
+    "Blood Moon Pyke": {
+      "id": 9
+    },
+    "PROJECT: Pyke": {
+      "id": 16
+    },
+    "PsyOps Pyke": {
+      "id": 25
+    },
+    "Sentinel Pyke": {
+      "id": 34
+    },
+    "Ashen Knight Pyke": {
+      "id": 44
+    },
+    "Empyrean Pyke": {
+      "id": 45
+    },
+    "Soul Fighter Pyke": {
+      "id": 53
+    },
+    "Prestige Soul Fighter Pyke": {
+      "id": 54
+    },
+    "Fright Night Pyke": {
+      "id": 64
+    },
+    "Inkshadow Pyke": {
+      "id": 74
+    },
+    "T1 Pyke": {
+      "id": 75
+    }
+  },
+  "Qiyana": {
+    "default": {
+      "id": 0
+    },
+    "Battle Boss Qiyana": {
+      "id": 1
+    },
+    "True Damage Qiyana": {
+      "id": 2
+    },
+    "Prestige True Damage Qiyana": {
+      "id": 10
+    },
+    "Battle Queen Qiyana": {
+      "id": 11
+    },
+    "Shockblade Qiyana": {
+      "id": 20
+    },
+    "Prestige True Damage Qiyana (2022)": {
+      "id": 21
+    },
+    "Lunar Empress Qiyana": {
+      "id": 30
+    },
+    "La Ilusi\u00f3n Qiyana": {
+      "id": 40
+    },
+    "Prestige Battle Academia Qiyana": {
+      "id": 50
+    }
+  },
+  "Quinn": {
+    "default": {
+      "id": 0
+    },
+    "Phoenix Quinn": {
+      "id": 1
+    },
+    "Woad Scout Quinn": {
+      "id": 2
+    },
+    "Corsair Quinn": {
+      "id": 3
+    },
+    "Heartseeker Quinn": {
+      "id": 4
+    },
+    "Warden Quinn": {
+      "id": 5
+    },
+    "Star Guardian Quinn": {
+      "id": 14
+    }
+  },
+  "Rakan": {
+    "default": {
+      "id": 0
+    },
+    "Cosmic Dawn Rakan": {
+      "id": 1
+    },
+    "Sweetheart Rakan": {
+      "id": 2
+    },
+    "SSG Rakan": {
+      "id": 3
+    },
+    "iG Rakan": {
+      "id": 4
+    },
+    "Star Guardian Rakan": {
+      "id": 5
+    },
+    "Elderwood Rakan": {
+      "id": 9
+    },
+    "Arcana Rakan": {
+      "id": 18
+    },
+    "Broken Covenant Rakan": {
+      "id": 27
+    },
+    "Redeemed Star Guardian Rakan": {
+      "id": 36
+    },
+    "Dragonmancer Rakan": {
+      "id": 37
+    },
+    "Prestige Dragonmancer Rakan": {
+      "id": 38
+    },
+    "Battle Academia Rakan": {
+      "id": 47
+    }
+  },
+  "Rammus": {
+    "default": {
+      "id": 0
+    },
+    "King Rammus": {
+      "id": 1
+    },
+    "Chrome Rammus": {
+      "id": 2
+    },
+    "Molten Rammus": {
+      "id": 3
+    },
+    "Freljord Rammus": {
+      "id": 4
+    },
+    "Ninja Rammus": {
+      "id": 5
+    },
+    "Full Metal Rammus": {
+      "id": 6
+    },
+    "Guardian of the Sands Rammus": {
+      "id": 7
+    },
+    "Sweeper Rammus": {
+      "id": 8
+    },
+    "Hextech Rammus": {
+      "id": 16
+    },
+    "Astronaut Rammus": {
+      "id": 17
+    },
+    "Durian Defender Rammus": {
+      "id": 26
+    }
+  },
+  "RekSai": {
+    "default": {
+      "id": 0
+    },
+    "Eternum Rek'Sai": {
+      "id": 1
+    },
+    "Pool Party Rek'Sai": {
+      "id": 2
+    },
+    "Blackfrost Rek'Sai": {
+      "id": 9
+    },
+    "Elderwood Rek'Sai": {
+      "id": 17
+    },
+    "Primordian Rek'Sai": {
+      "id": 26
+    }
+  },
+  "Rell": {
+    "default": {
+      "id": 0
+    },
+    "Battle Queen Rell": {
+      "id": 1
+    },
+    "Star Guardian Rell": {
+      "id": 10
+    },
+    "High Noon Rell": {
+      "id": 20
+    },
+    "Grand Reckoning Rell": {
+      "id": 30
+    }
+  },
+  "Renata": {
+    "default": {
+      "id": 0
+    },
+    "Admiral Glasc": {
+      "id": 1
+    },
+    "Fright Night Renata Glasc": {
+      "id": 10
+    },
+    "La Ilusi\u00f3n Renata Glasc": {
+      "id": 20
+    },
+    "Prestige La Ilusi\u00f3n Renata Glasc": {
+      "id": 21
+    },
+    "Masque of the Black Rose Renata Glasc": {
+      "id": 31
+    }
+  },
+  "Renekton": {
+    "default": {
+      "id": 0
+    },
+    "Galactic Renekton": {
+      "id": 1
+    },
+    "Outback Renekton": {
+      "id": 2
+    },
+    "Bloodfury Renekton": {
+      "id": 3
+    },
+    "Rune Wars Renekton": {
+      "id": 4
+    },
+    "Scorched Earth Renekton": {
+      "id": 5
+    },
+    "Pool Party Renekton": {
+      "id": 6
+    },
+    "Prehistoric Renekton": {
+      "id": 7
+    },
+    "SKT T1 Renekton": {
+      "id": 8
+    },
+    "Renektoy": {
+      "id": 9
+    },
+    "Hextech Renekton": {
+      "id": 17
+    },
+    "Blackfrost Renekton": {
+      "id": 18
+    },
+    "PROJECT: Renekton": {
+      "id": 26
+    },
+    "Dawnbringer Renekton": {
+      "id": 33
+    },
+    "Worlds 2023 Renekton": {
+      "id": 42
+    },
+    "Inkshadow Renekton": {
+      "id": 48
+    }
+  },
+  "Rengar": {
+    "default": {
+      "id": 0
+    },
+    "Headhunter Rengar": {
+      "id": 1
+    },
+    "Night Hunter Rengar": {
+      "id": 2
+    },
+    "SSW Rengar": {
+      "id": 3
+    },
+    "Mecha Rengar": {
+      "id": 8
+    },
+    "Pretty Kitty Rengar": {
+      "id": 15
+    },
+    "Guardian of the Sands Rengar": {
+      "id": 23
+    },
+    "Sentinel Rengar": {
+      "id": 30
+    },
+    "Street Demons Rengar": {
+      "id": 40
+    }
+  },
+  "Riven": {
+    "default": {
+      "id": 0
+    },
+    "Redeemed Riven": {
+      "id": 1
+    },
+    "Crimson Elite Riven": {
+      "id": 2
+    },
+    "Battle Bunny Riven": {
+      "id": 3
+    },
+    "Worlds 2012 Riven": {
+      "id": 4
+    },
+    "Dragonblade Riven": {
+      "id": 5
+    },
+    "Arcade Riven": {
+      "id": 6
+    },
+    "Reignited Worlds 2012 Riven": {
+      "id": 7
+    },
+    "Dawnbringer Riven": {
+      "id": 16
+    },
+    "Pulsefire Riven": {
+      "id": 18
+    },
+    "Valiant Sword Riven": {
+      "id": 20
+    },
+    "Prestige Valiant Sword Riven": {
+      "id": 22
+    },
+    "Spirit Blossom Riven": {
+      "id": 23
+    },
+    "Sentinel Riven": {
+      "id": 34
+    },
+    "Battle Bunny Prime Riven": {
+      "id": 44
+    },
+    "Prestige Valiant Sword Riven (2022)": {
+      "id": 45
+    },
+    "Broken Covenant Riven": {
+      "id": 55
+    },
+    "Primal Ambush Riven": {
+      "id": 63
+    }
+  },
+  "Rumble": {
+    "default": {
+      "id": 0
+    },
+    "Rumble in the Jungle": {
+      "id": 1
+    },
+    "Bilgerat Rumble": {
+      "id": 2
+    },
+    "Super Galaxy Rumble": {
+      "id": 3
+    },
+    "Badlands Baron Rumble": {
+      "id": 4
+    },
+    "Space Groove Rumble": {
+      "id": 13
+    },
+    "Cafe Cuties Rumble": {
+      "id": 23
+    }
+  },
+  "Ryze": {
+    "default": {
+      "id": 0
+    },
+    "Young Ryze": {
+      "id": 1
+    },
+    "Tribal Ryze": {
+      "id": 2
+    },
+    "Uncle Ryze": {
+      "id": 3
+    },
+    "Triumphant Ryze": {
+      "id": 4
+    },
+    "Professor Ryze": {
+      "id": 5
+    },
+    "Zombie Ryze": {
+      "id": 6
+    },
+    "Dark Crystal Ryze": {
+      "id": 7
+    },
+    "Pirate Ryze": {
+      "id": 8
+    },
+    "Ryze Whitebeard": {
+      "id": 9
+    },
+    "SKT T1 Ryze": {
+      "id": 10
+    },
+    "Worlds 2019 Ryze": {
+      "id": 11
+    },
+    "Guardian of the Sands Ryze": {
+      "id": 13
+    },
+    "Arcana Ryze": {
+      "id": 20
+    },
+    "Blood Moon Ryze": {
+      "id": 29
+    }
+  },
+  "Samira": {
+    "default": {
+      "id": 0
+    },
+    "PsyOps Samira": {
+      "id": 1
+    },
+    "Space Groove Samira": {
+      "id": 10
+    },
+    "High Noon Samira": {
+      "id": 20
+    },
+    "Soul Fighter Samira": {
+      "id": 30
+    },
+    "Masque of the Black Rose Samira": {
+      "id": 33
+    },
+    "Battle Professor Samira": {
+      "id": 35
+    }
+  },
+  "Sejuani": {
+    "default": {
+      "id": 0
+    },
+    "Sabretusk Sejuani": {
+      "id": 1
+    },
+    "Darkrider Sejuani": {
+      "id": 2
+    },
+    "Traditional Sejuani": {
+      "id": 3
+    },
+    "Bear Cavalry Sejuani": {
+      "id": 4
+    },
+    "Poro Rider Sejuani": {
+      "id": 5
+    },
+    "Beast Hunter Sejuani": {
+      "id": 6
+    },
+    "Sejuani Dawnchaser": {
+      "id": 7
+    },
+    "Firecracker Sejuani": {
+      "id": 8
+    },
+    "Hextech Sejuani": {
+      "id": 15
+    },
+    "PROJECT: Sejuani": {
+      "id": 16
+    },
+    "Solar Eclipse Sejuani": {
+      "id": 26
+    },
+    "Victorious Sejuani": {
+      "id": 36
+    }
+  },
+  "Senna": {
+    "default": {
+      "id": 0
+    },
+    "True Damage Senna": {
+      "id": 1
+    },
+    "Prestige True Damage Senna": {
+      "id": 9
+    },
+    "High Noon Senna": {
+      "id": 10
+    },
+    "PROJECT: Senna": {
+      "id": 16
+    },
+    "Lunar Eclipse Senna": {
+      "id": 26
+    },
+    "Prestige Lunar Eclipse Senna": {
+      "id": 27
+    },
+    "Bewitching Senna": {
+      "id": 36
+    },
+    "Star Guardian Senna": {
+      "id": 46
+    },
+    "Winterblessed Senna": {
+      "id": 56
+    },
+    "Masked Justice Senna": {
+      "id": 63
+    }
+  },
+  "Seraphine": {
+    "default": {
+      "id": 0
+    },
+    "K/DA ALL OUT Seraphine Indie": {
+      "id": 1
+    },
+    "K/DA ALL OUT Seraphine Rising Star": {
+      "id": 2
+    },
+    "K/DA ALL OUT Seraphine Superstar": {
+      "id": 3
+    },
+    "Graceful Phoenix Seraphine": {
+      "id": 4
+    },
+    "Ocean Song Seraphine": {
+      "id": 14
+    },
+    "Prestige Ocean Song Seraphine": {
+      "id": 15
+    },
+    "Faerie Court Seraphine": {
+      "id": 24
+    },
+    "Star Guardian Seraphine": {
+      "id": 34
+    },
+    "Battle Dove Seraphine": {
+      "id": 43
+    },
+    "Dumpling Darlings Seraphine": {
+      "id": 50
+    },
+    "Firecracker Seraphine": {
+      "id": 59
+    }
+  },
+  "Sett": {
+    "default": {
+      "id": 0
+    },
+    "Mecha Kingdoms Sett": {
+      "id": 1
+    },
+    "Obsidian Dragon Sett": {
+      "id": 8
+    },
+    "Prestige Obsidian Dragon Sett": {
+      "id": 9
+    },
+    "Pool Party Sett": {
+      "id": 10
+    },
+    "Firecracker Sett": {
+      "id": 19
+    },
+    "Spirit Blossom Sett": {
+      "id": 38
+    },
+    "Soul Fighter Sett": {
+      "id": 45
+    },
+    "HEARTSTEEL Sett": {
+      "id": 56
+    },
+    "Radiant Serpent Sett": {
+      "id": 66
+    },
+    "Spirit Blossom Springs Sett": {
+      "id": 67
+    }
+  },
+  "Shaco": {
+    "default": {
+      "id": 0
+    },
+    "Mad Hatter Shaco": {
+      "id": 1
+    },
+    "Royal Shaco": {
+      "id": 2
+    },
+    "Nutcracko": {
+      "id": 3
+    },
+    "Workshop Shaco": {
+      "id": 4
+    },
+    "Asylum Shaco": {
+      "id": 5
+    },
+    "Masked Shaco": {
+      "id": 6
+    },
+    "Wild Card Shaco": {
+      "id": 7
+    },
+    "Dark Star Shaco": {
+      "id": 8
+    },
+    "Arcanist Shaco": {
+      "id": 15
+    },
+    "Crime City Nightmare Shaco": {
+      "id": 23
+    },
+    "Winterblessed Shaco": {
+      "id": 33
+    },
+    "Soul Fighter Shaco": {
+      "id": 43
+    },
+    "Prestige Soul Fighter Shaco": {
+      "id": 44
+    },
+    "Fright Night Shaco": {
+      "id": 54
+    },
+    "Cat-in-the-Box Shaco": {
+      "id": 64
+    }
+  },
+  "Shen": {
+    "default": {
+      "id": 0
+    },
+    "Frozen Shen": {
+      "id": 1
+    },
+    "Yellow Jacket Shen": {
+      "id": 2
+    },
+    "Surgeon Shen": {
+      "id": 3
+    },
+    "Blood Moon Shen": {
+      "id": 4
+    },
+    "Warlord Shen": {
+      "id": 5
+    },
+    "TPA Shen": {
+      "id": 6
+    },
+    "Pulsefire Shen": {
+      "id": 15
+    },
+    "Infernal Shen": {
+      "id": 16
+    },
+    "PsyOps Shen": {
+      "id": 22
+    },
+    "Shockblade Shen": {
+      "id": 40
+    },
+    "Ashen Guardian Shen": {
+      "id": 49
+    },
+    "Three Honors Shen": {
+      "id": 51
+    }
+  },
+  "Shyvana": {
+    "default": {
+      "id": 0
+    },
+    "Ironscale Shyvana": {
+      "id": 1
+    },
+    "Boneclaw Shyvana": {
+      "id": 2
+    },
+    "Darkflame Shyvana": {
+      "id": 3
+    },
+    "Ice Drake Shyvana": {
+      "id": 4
+    },
+    "Worlds 2014 Shyvana": {
+      "id": 5
+    },
+    "Super Galaxy Shyvana": {
+      "id": 6
+    },
+    "Ruined Shyvana": {
+      "id": 8
+    },
+    "Immortal Journey Shyvana": {
+      "id": 17
+    }
+  },
+  "Singed": {
+    "default": {
+      "id": 0
+    },
+    "Riot Squad Singed": {
+      "id": 1
+    },
+    "Hextech Singed": {
+      "id": 2
+    },
+    "Surfer Singed": {
+      "id": 3
+    },
+    "Mad Scientist Singed": {
+      "id": 4
+    },
+    "Augmented Singed": {
+      "id": 5
+    },
+    "Snow Day Singed": {
+      "id": 6
+    },
+    "SSW Singed": {
+      "id": 7
+    },
+    "Black Scourge Singed": {
+      "id": 8
+    },
+    "Beekeeper Singed": {
+      "id": 9
+    },
+    "Resistance Singed": {
+      "id": 10
+    },
+    "Astronaut Singed": {
+      "id": 19
+    },
+    "Arcane Shimmer Lab Singed": {
+      "id": 28
+    }
+  },
+  "Sion": {
+    "default": {
+      "id": 0
+    },
+    "Hextech Sion": {
+      "id": 1
+    },
+    "Barbarian Sion": {
+      "id": 2
+    },
+    "Lumberjack Sion": {
+      "id": 3
+    },
+    "Warmonger Sion": {
+      "id": 4
+    },
+    "Mecha Zero Sion": {
+      "id": 5
+    },
+    "Worldbreaker Sion": {
+      "id": 14
+    },
+    "Blackfrost Sion": {
+      "id": 22
+    },
+    "High Noon Sion": {
+      "id": 30
+    },
+    "Cosmic Paladin Sion": {
+      "id": 40
+    },
+    "Grand Reckoning Sion": {
+      "id": 49
+    }
+  },
+  "Sivir": {
+    "default": {
+      "id": 0
+    },
+    "Warrior Princess Sivir": {
+      "id": 1
+    },
+    "Spectacular Sivir": {
+      "id": 2
+    },
+    "Huntress Sivir": {
+      "id": 3
+    },
+    "Bandit Sivir": {
+      "id": 4
+    },
+    "PAX Sivir": {
+      "id": 5
+    },
+    "Snowstorm Sivir": {
+      "id": 6
+    },
+    "Warden Sivir": {
+      "id": 7
+    },
+    "Victorious Sivir": {
+      "id": 8
+    },
+    "Neo PAX Sivir": {
+      "id": 9
+    },
+    "Pizza Delivery Sivir": {
+      "id": 10
+    },
+    "Blood Moon Sivir": {
+      "id": 16
+    },
+    "Odyssey Sivir": {
+      "id": 25
+    },
+    "Cafe Cuties Sivir": {
+      "id": 34
+    },
+    "Solar Eclipse Sivir": {
+      "id": 43
+    },
+    "Mythmaker Sivir": {
+      "id": 50
+    },
+    "Prestige Mythmaker Sivir": {
+      "id": 51
+    },
+    "Primal Ambush Sivir": {
+      "id": 61
+    },
+    "Ann-Sivir-sary": {
+      "id": 70
+    }
+  },
+  "Skarner": {
+    "default": {
+      "id": 0
+    },
+    "Sandscourge Skarner": {
+      "id": 1
+    },
+    "Earthrune Skarner": {
+      "id": 2
+    },
+    "Battlecast Alpha Skarner": {
+      "id": 3
+    },
+    "Guardian of the Sands Skarner": {
+      "id": 4
+    },
+    "Cosmic Sting Skarner": {
+      "id": 5
+    },
+    "Mecha Kingdoms Skarner": {
+      "id": 14
+    }
+  },
+  "Smolder": {
+    "default": {
+      "id": 0
+    },
+    "Heavenscale Smolder": {
+      "id": 1
+    },
+    "Reindeer Smolder": {
+      "id": 11
+    }
+  },
+  "Sona": {
+    "default": {
+      "id": 0
+    },
+    "Muse Sona": {
+      "id": 1
+    },
+    "Pentakill Sona": {
+      "id": 2
+    },
+    "Silent Night Sona": {
+      "id": 3
+    },
+    "Guqin Sona": {
+      "id": 4
+    },
+    "Arcade Sona": {
+      "id": 5
+    },
+    "DJ Sona": {
+      "id": 6
+    },
+    "Sweetheart Sona": {
+      "id": 7
+    },
+    "Odyssey Sona": {
+      "id": 9
+    },
+    "PsyOps Sona": {
+      "id": 17
+    },
+    "Pentakill III: Lost Chapter Sona": {
+      "id": 26
+    },
+    "Star Guardian Sona": {
+      "id": 35
+    },
+    "Immortal Journey Sona": {
+      "id": 45
+    },
+    "Prestige Immortal Journey Sona": {
+      "id": 46
+    },
+    "Victorious Sona": {
+      "id": 56
+    },
+    "Spirit Blossom Springs Sona": {
+      "id": 66
+    }
+  },
+  "Soraka": {
+    "default": {
+      "id": 0
+    },
+    "Dryad Soraka": {
+      "id": 1
+    },
+    "Divine Soraka": {
+      "id": 2
+    },
+    "Celestine Soraka": {
+      "id": 3
+    },
+    "Reaper Soraka": {
+      "id": 4
+    },
+    "Order of the Banana Soraka": {
+      "id": 5
+    },
+    "Program Soraka": {
+      "id": 6
+    },
+    "Star Guardian Soraka": {
+      "id": 7
+    },
+    "Pajama Guardian Soraka": {
+      "id": 8
+    },
+    "Winter Wonder Soraka": {
+      "id": 9
+    },
+    "Dawnbringer Soraka": {
+      "id": 15
+    },
+    "Nightbringer Soraka": {
+      "id": 16
+    },
+    "Prestige Star Guardian Soraka": {
+      "id": 17
+    },
+    "Cafe Cuties Soraka": {
+      "id": 18
+    },
+    "Spirit Blossom Soraka": {
+      "id": 27
+    },
+    "Immortal Journey Soraka": {
+      "id": 37
+    },
+    "Faerie Court Soraka": {
+      "id": 44
+    },
+    "Flora Fatalis Soraka": {
+      "id": 53
+    }
+  },
+  "Swain": {
+    "default": {
+      "id": 0
+    },
+    "Northern Front Swain": {
+      "id": 1
+    },
+    "Bilgewater Swain": {
+      "id": 2
+    },
+    "Tyrant Swain": {
+      "id": 3
+    },
+    "Dragon Master Swain": {
+      "id": 4
+    },
+    "Hextech Swain": {
+      "id": 11
+    },
+    "Crystal Rose Swain": {
+      "id": 12
+    },
+    "Winterblessed Swain": {
+      "id": 21
+    },
+    "Chosen of the Wolf Swain": {
+      "id": 32
+    },
+    "Prestige Chosen of the Wolf Swain": {
+      "id": 33
+    }
+  },
+  "Sylas": {
+    "default": {
+      "id": 0
+    },
+    "Lunar Wraith Sylas": {
+      "id": 1
+    },
+    "Freljord Sylas": {
+      "id": 8
+    },
+    "PROJECT: Sylas": {
+      "id": 13
+    },
+    "Prestige PROJECT: Sylas": {
+      "id": 14
+    },
+    "Battle Wolf Sylas": {
+      "id": 24
+    },
+    "Ashen Slayer Sylas": {
+      "id": 34
+    },
+    "Winterblessed Sylas": {
+      "id": 36
+    },
+    "Dark Star Sylas": {
+      "id": 46
+    },
+    "Prestige T1 Sylas": {
+      "id": 53
+    }
+  },
+  "Syndra": {
+    "default": {
+      "id": 0
+    },
+    "Justicar Syndra": {
+      "id": 1
+    },
+    "Atlantean Syndra": {
+      "id": 2
+    },
+    "Queen of Diamonds Syndra": {
+      "id": 3
+    },
+    "Snow Day Syndra": {
+      "id": 4
+    },
+    "SKT T1 Syndra": {
+      "id": 5
+    },
+    "Star Guardian Syndra": {
+      "id": 6
+    },
+    "Pool Party Syndra": {
+      "id": 7
+    },
+    "Withered Rose Syndra": {
+      "id": 16
+    },
+    "Bewitching Syndra": {
+      "id": 25
+    },
+    "Prestige Star Guardian Syndra": {
+      "id": 34
+    },
+    "Spirit Blossom Syndra": {
+      "id": 44
+    },
+    "Coven Syndra": {
+      "id": 54
+    },
+    "Dumpling Darlings Syndra": {
+      "id": 65
+    }
+  },
+  "TahmKench": {
+    "default": {
+      "id": 0
+    },
+    "Master Chef Tahm Kench": {
+      "id": 1
+    },
+    "Urf Kench": {
+      "id": 2
+    },
+    "Coin Emperor Tahm Kench": {
+      "id": 3
+    },
+    "Arcana Tahm Kench": {
+      "id": 11
+    },
+    "High Noon Tahm Kench": {
+      "id": 20
+    },
+    "Shan Hai Scrolls Tahm Kench": {
+      "id": 30
+    }
+  },
+  "Taliyah": {
+    "default": {
+      "id": 0
+    },
+    "Freljord Taliyah": {
+      "id": 1
+    },
+    "SSG Taliyah": {
+      "id": 2
+    },
+    "Pool Party Taliyah": {
+      "id": 3
+    },
+    "Star Guardian Taliyah": {
+      "id": 11
+    },
+    "Crystalis Motus Taliyah": {
+      "id": 21
+    },
+    "Durand's Legacy Taliyah": {
+      "id": 24
+    }
+  },
+  "Talon": {
+    "default": {
+      "id": 0
+    },
+    "Renegade Talon": {
+      "id": 1
+    },
+    "Crimson Elite Talon": {
+      "id": 2
+    },
+    "Dragonblade Talon": {
+      "id": 3
+    },
+    "SSW Talon": {
+      "id": 4
+    },
+    "Blood Moon Talon": {
+      "id": 5
+    },
+    "Enduring Sword Talon": {
+      "id": 12
+    },
+    "Talon Blackwood": {
+      "id": 20
+    },
+    "Withered Rose Talon": {
+      "id": 29
+    },
+    "High Noon Talon": {
+      "id": 38
+    },
+    "Prestige High Noon Talon": {
+      "id": 39
+    },
+    "Primal Ambush Talon": {
+      "id": 49
+    },
+    "Grand Reckoning Talon": {
+      "id": 59
+    }
+  },
+  "Taric": {
+    "default": {
+      "id": 0
+    },
+    "Emerald Taric": {
+      "id": 1
+    },
+    "Armor of the Fifth Age Taric": {
+      "id": 2
+    },
+    "Bloodstone Taric": {
+      "id": 3
+    },
+    "Pool Party Taric": {
+      "id": 4
+    },
+    "Taric Luminshield": {
+      "id": 9
+    },
+    "Space Groove Taric": {
+      "id": 18
+    },
+    "Fatebreaker Taric": {
+      "id": 27
+    }
+  },
+  "Teemo": {
+    "default": {
+      "id": 0
+    },
+    "Happy Elf Teemo": {
+      "id": 1
+    },
+    "Recon Teemo": {
+      "id": 2
+    },
+    "Badger Teemo": {
+      "id": 3
+    },
+    "Astronaut Teemo": {
+      "id": 4
+    },
+    "Cottontail Teemo": {
+      "id": 5
+    },
+    "Super Teemo": {
+      "id": 6
+    },
+    "Panda Teemo": {
+      "id": 7
+    },
+    "Omega Squad Teemo": {
+      "id": 8
+    },
+    "Little Devil Teemo": {
+      "id": 14
+    },
+    "Beemo": {
+      "id": 18
+    },
+    "Spirit Blossom Teemo": {
+      "id": 25
+    },
+    "Prestige Spirit Blossom Teemo": {
+      "id": 27
+    },
+    "Firecracker Teemo": {
+      "id": 37
+    },
+    "Space Groove Teemo": {
+      "id": 47
+    },
+    "Spirit Blossom Springs Teemo": {
+      "id": 54
+    }
+  },
+  "Thresh": {
+    "default": {
+      "id": 0
+    },
+    "Deep Terror Thresh": {
+      "id": 1
+    },
+    "Worlds 2013 Thresh": {
+      "id": 2
+    },
+    "Blood Moon Thresh": {
+      "id": 3
+    },
+    "SSW Thresh": {
+      "id": 4
+    },
+    "Dark Star Thresh": {
+      "id": 5
+    },
+    "High Noon Thresh": {
+      "id": 6
+    },
+    "Pulsefire Thresh": {
+      "id": 13
+    },
+    "Prestige Pulsefire Thresh": {
+      "id": 14
+    },
+    "FPX Thresh": {
+      "id": 15
+    },
+    "Spirit Blossom Thresh": {
+      "id": 17
+    },
+    "Unbound Thresh": {
+      "id": 27
+    },
+    "Steel Dragon Thresh": {
+      "id": 28
+    },
+    "Prestige Pulsefire Thresh (2022)": {
+      "id": 38
+    },
+    "Lunar Emperor Thresh": {
+      "id": 39
+    },
+    "Winterblessed Thresh": {
+      "id": 49
+    },
+    "Janitor Thresh": {
+      "id": 59
+    }
+  },
+  "Tristana": {
+    "default": {
+      "id": 0
+    },
+    "Riot Girl Tristana": {
+      "id": 1
+    },
+    "Earnest Elf Tristana": {
+      "id": 2
+    },
+    "Firefighter Tristana": {
+      "id": 3
+    },
+    "Guerilla Tristana": {
+      "id": 4
+    },
+    "Buccaneer Tristana": {
+      "id": 5
+    },
+    "Rocket Girl Tristana": {
+      "id": 6
+    },
+    "Dragon Trainer Tristana": {
+      "id": 10
+    },
+    "Bewitching Tristana": {
+      "id": 11
+    },
+    "Omega Squad Tristana": {
+      "id": 12
+    },
+    "Little Demon Tristana": {
+      "id": 24
+    },
+    "Pengu Cosplay Tristana": {
+      "id": 33
+    },
+    "Hextech Tristana": {
+      "id": 40
+    },
+    "Firecracker Tristana": {
+      "id": 41
+    },
+    "Spirit Blossom Tristana": {
+      "id": 51
+    },
+    "Faerie Court Tristana": {
+      "id": 61
+    },
+    "Rain Shepherd Tristana": {
+      "id": 70
+    }
+  },
+  "Trundle": {
+    "default": {
+      "id": 0
+    },
+    "Lil' Slugger Trundle": {
+      "id": 1
+    },
+    "Junkyard Trundle": {
+      "id": 2
+    },
+    "Traditional Trundle": {
+      "id": 3
+    },
+    "Constable Trundle": {
+      "id": 4
+    },
+    "Worldbreaker Trundle": {
+      "id": 5
+    },
+    "Dragonslayer Trundle": {
+      "id": 6
+    },
+    "Fright Night Trundle": {
+      "id": 12
+    },
+    "Esports Fan Trundle": {
+      "id": 21
+    }
+  },
+  "Tryndamere": {
+    "default": {
+      "id": 0
+    },
+    "Highland Tryndamere": {
+      "id": 1
+    },
+    "King Tryndamere": {
+      "id": 2
+    },
+    "Viking Tryndamere": {
+      "id": 3
+    },
+    "Demonblade Tryndamere": {
+      "id": 4
+    },
+    "Sultan Tryndamere": {
+      "id": 5
+    },
+    "Warring Kingdoms Tryndamere": {
+      "id": 6
+    },
+    "Nightmare Tryndamere": {
+      "id": 7
+    },
+    "Beast Hunter Tryndamere": {
+      "id": 8
+    },
+    "Chemtech Tryndamere": {
+      "id": 9
+    },
+    "Blood Moon Tryndamere": {
+      "id": 10
+    },
+    "Nightbringer Tryndamere": {
+      "id": 18
+    },
+    "Victorious Tryndamere": {
+      "id": 27
+    },
+    "Visions of the Fallen Tryndamere": {
+      "id": 37
+    }
+  },
+  "TwistedFate": {
+    "default": {
+      "id": 0
+    },
+    "PAX Twisted Fate": {
+      "id": 1
+    },
+    "Jack of Hearts Twisted Fate": {
+      "id": 2
+    },
+    "The Magnificent Twisted Fate": {
+      "id": 3
+    },
+    "Tango Twisted Fate": {
+      "id": 4
+    },
+    "High Noon Twisted Fate": {
+      "id": 5
+    },
+    "Musketeer Twisted Fate": {
+      "id": 6
+    },
+    "Underworld Twisted Fate": {
+      "id": 7
+    },
+    "Red Card Twisted Fate": {
+      "id": 8
+    },
+    "Cutpurse Twisted Fate": {
+      "id": 9
+    },
+    "Blood Moon Twisted Fate": {
+      "id": 10
+    },
+    "Pulsefire Twisted Fate": {
+      "id": 11
+    },
+    "Odyssey Twisted Fate": {
+      "id": 13
+    },
+    "DWG Twisted Fate": {
+      "id": 23
+    },
+    "Crime City Nightmare Twisted Fate": {
+      "id": 25
+    },
+    "Space Groove Twisted Fate": {
+      "id": 36
+    },
+    "Victorious Twisted Fate": {
+      "id": 45
+    }
+  },
+  "Twitch": {
+    "default": {
+      "id": 0
+    },
+    "Kingpin Twitch": {
+      "id": 1
+    },
+    "Whistler Village Twitch": {
+      "id": 2
+    },
+    "Medieval Twitch": {
+      "id": 3
+    },
+    "Crime City Twitch": {
+      "id": 4
+    },
+    "Vandal Twitch": {
+      "id": 5
+    },
+    "Pickpocket Twitch": {
+      "id": 6
+    },
+    "SSW Twitch": {
+      "id": 7
+    },
+    "Omega Squad Twitch": {
+      "id": 8
+    },
+    "Ice King Twitch": {
+      "id": 12
+    },
+    "Twitch Shadowfoot": {
+      "id": 27
+    },
+    "Dragonslayer Twitch": {
+      "id": 36
+    },
+    "High Noon Twitch": {
+      "id": 45
+    },
+    "Cheddar Chief Twitch": {
+      "id": 55
+    },
+    "Pool Party Twitch": {
+      "id": 64
+    }
+  },
+  "Udyr": {
+    "default": {
+      "id": 0
+    },
+    "Black Belt Udyr": {
+      "id": 1
+    },
+    "Primal Udyr": {
+      "id": 2
+    },
+    "Spirit Guard Udyr": {
+      "id": 3
+    },
+    "Definitely Not Udyr": {
+      "id": 4
+    },
+    "Dragon Oracle Udyr": {
+      "id": 5
+    },
+    "Inkshadow Udyr": {
+      "id": 6
+    }
+  },
+  "Urgot": {
+    "default": {
+      "id": 0
+    },
+    "Giant Enemy Crabgot": {
+      "id": 1
+    },
+    "Butcher Urgot": {
+      "id": 2
+    },
+    "Battlecast Urgot": {
+      "id": 3
+    },
+    "High Noon Urgot": {
+      "id": 9
+    },
+    "Pajama Guardian Cosplay Urgot": {
+      "id": 15
+    },
+    "Fright Night Urgot": {
+      "id": 23
+    },
+    "Urgot the Clogfather": {
+      "id": 32
+    }
+  },
+  "Varus": {
+    "default": {
+      "id": 0
+    },
+    "Blight Crystal Varus": {
+      "id": 1
+    },
+    "Arclight Varus": {
+      "id": 2
+    },
+    "Arctic Ops Varus": {
+      "id": 3
+    },
+    "Heartseeker Varus": {
+      "id": 4
+    },
+    "Varus Swiftbolt": {
+      "id": 5
+    },
+    "Dark Star Varus": {
+      "id": 6
+    },
+    "Conqueror Varus": {
+      "id": 7
+    },
+    "Infernal Varus": {
+      "id": 9
+    },
+    "PROJECT: Varus": {
+      "id": 16
+    },
+    "Cosmic Hunter Varus": {
+      "id": 17
+    },
+    "High Noon Varus": {
+      "id": 34
+    },
+    "Snow Moon Varus": {
+      "id": 44
+    },
+    "Empyrean Varus": {
+      "id": 53
+    },
+    "Spirit Blossom Varus": {
+      "id": 60
+    },
+    "T1 Varus": {
+      "id": 69
+    }
+  },
+  "Vayne": {
+    "default": {
+      "id": 0
+    },
+    "Vindicator Vayne": {
+      "id": 1
+    },
+    "Aristocrat Vayne": {
+      "id": 2
+    },
+    "Dragonslayer Vayne": {
+      "id": 3
+    },
+    "Heartseeker Vayne": {
+      "id": 4
+    },
+    "SKT T1 Vayne": {
+      "id": 5
+    },
+    "Arclight Vayne": {
+      "id": 6
+    },
+    "Soulstealer Vayne": {
+      "id": 10
+    },
+    "PROJECT: Vayne": {
+      "id": 11
+    },
+    "Firecracker Vayne": {
+      "id": 12
+    },
+    "Prestige Firecracker Vayne": {
+      "id": 13
+    },
+    "Spirit Blossom Vayne": {
+      "id": 14
+    },
+    "FPX Vayne": {
+      "id": 15
+    },
+    "Sentinel Vayne": {
+      "id": 25
+    },
+    "Battle Bat Vayne": {
+      "id": 32
+    },
+    "Prestige Firecracker Vayne (2022)": {
+      "id": 33
+    },
+    "Dawnbringer Vayne": {
+      "id": 44
+    },
+    "Dragonmancer Vayne": {
+      "id": 55
+    },
+    "Risen Legend Vayne": {
+      "id": 64
+    }
+  },
+  "Veigar": {
+    "default": {
+      "id": 0
+    },
+    "White Mage Veigar": {
+      "id": 1
+    },
+    "Curling Veigar": {
+      "id": 2
+    },
+    "Veigar Greybeard": {
+      "id": 3
+    },
+    "Leprechaun Veigar": {
+      "id": 4
+    },
+    "Baron Von Veigar": {
+      "id": 5
+    },
+    "Superb Villain Veigar": {
+      "id": 6
+    },
+    "Bad Santa Veigar": {
+      "id": 7
+    },
+    "Final Boss Veigar": {
+      "id": 8
+    },
+    "Omega Squad Veigar": {
+      "id": 9
+    },
+    "Elderwood Veigar": {
+      "id": 13
+    },
+    "Furyhorn Cosplay Veigar": {
+      "id": 23
+    },
+    "Astronaut Veigar": {
+      "id": 32
+    },
+    "Monster Tamer Veigar": {
+      "id": 41
+    },
+    "King Beegar": {
+      "id": 51
+    },
+    "Fright Night Veigar": {
+      "id": 60
+    }
+  },
+  "Velkoz": {
+    "default": {
+      "id": 0
+    },
+    "Battlecast Vel'Koz": {
+      "id": 1
+    },
+    "Arclight Vel'Koz": {
+      "id": 2
+    },
+    "Definitely Not Vel'Koz": {
+      "id": 3
+    },
+    "Infernal Vel'Koz": {
+      "id": 4
+    },
+    "Blackfrost Vel'Koz": {
+      "id": 11
+    },
+    "Bee'Koz": {
+      "id": 20
+    }
+  },
+  "Vex": {
+    "default": {
+      "id": 0
+    },
+    "Dawnbringer Vex": {
+      "id": 1
+    },
+    "Empyrean Vex": {
+      "id": 10
+    },
+    "Stargazer Vex": {
+      "id": 20
+    }
+  },
+  "Vi": {
+    "default": {
+      "id": 0
+    },
+    "Neon Strike Vi": {
+      "id": 1
+    },
+    "Officer Vi": {
+      "id": 2
+    },
+    "Debonair Vi": {
+      "id": 3
+    },
+    "Demon Vi": {
+      "id": 4
+    },
+    "Warring Kingdoms Vi": {
+      "id": 5
+    },
+    "PROJECT: Vi": {
+      "id": 11
+    },
+    "Heartbreaker Vi": {
+      "id": 12
+    },
+    "PsyOps Vi": {
+      "id": 20
+    },
+    "Arcane Undercity Vi": {
+      "id": 29
+    },
+    "Heartache Vi": {
+      "id": 30
+    },
+    "Primal Ambush Vi": {
+      "id": 39
+    },
+    "Arcane Brawler Vi": {
+      "id": 48
+    },
+    "T1 Vi": {
+      "id": 49
+    }
+  },
+  "Viego": {
+    "default": {
+      "id": 0
+    },
+    "Lunar Beast Viego": {
+      "id": 1
+    },
+    "Dissonance of Pentakill Viego": {
+      "id": 10
+    },
+    "EDG Viego": {
+      "id": 19
+    },
+    "King Viego": {
+      "id": 21
+    },
+    "Soul Fighter Viego": {
+      "id": 30
+    },
+    "Worlds 2024 Viego": {
+      "id": 37
+    },
+    "Revenant Reign Viego": {
+      "id": 43
+    }
+  },
+  "Viktor": {
+    "default": {
+      "id": 0
+    },
+    "Full Machine Viktor": {
+      "id": 1
+    },
+    "Prototype Viktor": {
+      "id": 2
+    },
+    "Creator Viktor": {
+      "id": 3
+    },
+    "Death Sworn Viktor": {
+      "id": 4
+    },
+    "PsyOps Viktor": {
+      "id": 5
+    },
+    "High Noon Viktor": {
+      "id": 14
+    },
+    "Arcane Savior Viktor": {
+      "id": 24
+    },
+    "Machine Herald Viktor": {
+      "id": 25
+    }
+  },
+  "Vladimir": {
+    "default": {
+      "id": 0
+    },
+    "Count Vladimir": {
+      "id": 1
+    },
+    "Marquis Vladimir": {
+      "id": 2
+    },
+    "Nosferatu Vladimir": {
+      "id": 3
+    },
+    "Vandal Vladimir": {
+      "id": 4
+    },
+    "Blood Lord Vladimir": {
+      "id": 5
+    },
+    "Soulstealer Vladimir": {
+      "id": 6
+    },
+    "Academy Vladimir": {
+      "id": 7
+    },
+    "Dark Waters Vladimir": {
+      "id": 8
+    },
+    "Nightbringer Vladimir": {
+      "id": 14
+    },
+    "Cosmic Devourer Vladimir": {
+      "id": 21
+    },
+    "Cafe Cuties Vladimir": {
+      "id": 30
+    },
+    "Broken Covenant Vladimir": {
+      "id": 39
+    },
+    "Masque of the Black Rose Vladimir": {
+      "id": 48
+    }
+  },
+  "Volibear": {
+    "default": {
+      "id": 0
+    },
+    "Thunder Lord Volibear": {
+      "id": 1
+    },
+    "Northern Storm Volibear": {
+      "id": 2
+    },
+    "Runeguard Volibear": {
+      "id": 3
+    },
+    "Captain Volibear": {
+      "id": 4
+    },
+    "El Rayo Volibear": {
+      "id": 5
+    },
+    "The Thousand-Pierced Bear": {
+      "id": 6
+    },
+    "Duality Dragon Volibear": {
+      "id": 7
+    },
+    "Prestige Duality Dragon Volibear": {
+      "id": 9
+    },
+    "Inkshadow Volibear": {
+      "id": 19
+    },
+    "Spirit Blossom Springs Volibear": {
+      "id": 29
+    }
+  },
+  "Warwick": {
+    "default": {
+      "id": 0
+    },
+    "Grey Warwick": {
+      "id": 1
+    },
+    "Urf the Manatee": {
+      "id": 2
+    },
+    "Big Bad Warwick": {
+      "id": 3
+    },
+    "Tundra Hunter Warwick": {
+      "id": 4
+    },
+    "Feral Warwick": {
+      "id": 5
+    },
+    "Firefang Warwick": {
+      "id": 6
+    },
+    "Hyena Warwick": {
+      "id": 7
+    },
+    "Marauder Warwick": {
+      "id": 8
+    },
+    "Urfwick": {
+      "id": 9
+    },
+    "Lunar Guardian Warwick": {
+      "id": 10
+    },
+    "PROJECT: Warwick": {
+      "id": 16
+    },
+    "Old God Warwick": {
+      "id": 35
+    },
+    "Winterblessed Warwick": {
+      "id": 45
+    },
+    "Prestige Winterblessed Warwick": {
+      "id": 46
+    },
+    "Arcane Vander Warwick": {
+      "id": 56
+    }
+  },
+  "Xayah": {
+    "default": {
+      "id": 0
+    },
+    "Cosmic Dusk Xayah": {
+      "id": 1
+    },
+    "Sweetheart Xayah": {
+      "id": 2
+    },
+    "SSG Xayah": {
+      "id": 3
+    },
+    "Star Guardian Xayah": {
+      "id": 4
+    },
+    "Elderwood Xayah": {
+      "id": 8
+    },
+    "Brave Phoenix Xayah": {
+      "id": 17
+    },
+    "Prestige Brave Phoenix Xayah": {
+      "id": 26
+    },
+    "Arcana Xayah": {
+      "id": 28
+    },
+    "Broken Covenant Xayah": {
+      "id": 37
+    },
+    "Redeemed Star Guardian Xayah": {
+      "id": 38
+    },
+    "Battle Bat Xayah": {
+      "id": 47
+    },
+    "Battle Academia Xayah": {
+      "id": 57
+    }
+  },
+  "Xerath": {
+    "default": {
+      "id": 0
+    },
+    "Runeborn Xerath": {
+      "id": 1
+    },
+    "Battlecast Xerath": {
+      "id": 2
+    },
+    "Scorched Earth Xerath": {
+      "id": 3
+    },
+    "Guardian of the Sands Xerath": {
+      "id": 4
+    },
+    "Dark Star Xerath": {
+      "id": 5
+    },
+    "Arcana Xerath": {
+      "id": 12
+    },
+    "Astronaut Xerath": {
+      "id": 21
+    },
+    "Crystalis Indomitus Xerath": {
+      "id": 30
+    }
+  },
+  "XinZhao": {
+    "default": {
+      "id": 0
+    },
+    "Commando Xin Zhao": {
+      "id": 1
+    },
+    "Imperial Xin Zhao": {
+      "id": 2
+    },
+    "Viscero Xin Zhao": {
+      "id": 3
+    },
+    "Winged Hussar Xin Zhao": {
+      "id": 4
+    },
+    "Warring Kingdoms Xin Zhao": {
+      "id": 5
+    },
+    "Secret Agent Xin Zhao": {
+      "id": 6
+    },
+    "Dragonslayer Xin Zhao": {
+      "id": 13
+    },
+    "Cosmic Defender Xin Zhao": {
+      "id": 20
+    },
+    "Marauder Xin Zhao": {
+      "id": 27
+    },
+    "Firecracker Xin Zhao": {
+      "id": 36
+    },
+    "Trials of Twilight Xin Zhao": {
+      "id": 47
+    }
+  },
+  "Yasuo": {
+    "default": {
+      "id": 0
+    },
+    "High Noon Yasuo": {
+      "id": 1
+    },
+    "PROJECT: Yasuo": {
+      "id": 2
+    },
+    "Blood Moon Yasuo": {
+      "id": 3
+    },
+    "Nightbringer Yasuo": {
+      "id": 9
+    },
+    "Odyssey Yasuo": {
+      "id": 10
+    },
+    "Battle Boss Yasuo": {
+      "id": 17
+    },
+    "True Damage Yasuo": {
+      "id": 18
+    },
+    "Prestige True Damage Yasuo": {
+      "id": 35
+    },
+    "Spirit Blossom Yasuo": {
+      "id": 36
+    },
+    "Sea Dog Yasuo": {
+      "id": 45
+    },
+    "Truth Dragon Yasuo": {
+      "id": 54
+    },
+    "Dream Dragon Yasuo": {
+      "id": 55
+    },
+    "Inkshadow Yasuo": {
+      "id": 56
+    },
+    "Prestige Inkshadow Yasuo": {
+      "id": 57
+    },
+    "Foreseen Yasuo": {
+      "id": 68
+    },
+    "Battle Wolf Yasuo": {
+      "id": 77
+    },
+    "Genesis Nightbringer Yasuo": {
+      "id": 87
+    },
+    "Petals of Spring Yasuo": {
+      "id": 88
+    }
+  },
+  "Yone": {
+    "default": {
+      "id": 0
+    },
+    "Spirit Blossom Yone": {
+      "id": 1
+    },
+    "Battle Academia Yone": {
+      "id": 10
+    },
+    "Dawnbringer Yone": {
+      "id": 19
+    },
+    "Ocean Song Yone": {
+      "id": 26
+    },
+    "Inkshadow Yone": {
+      "id": 35
+    },
+    "HEARTSTEEL Yone": {
+      "id": 45
+    },
+    "Prestige HEARTSTEEL Yone": {
+      "id": 46
+    },
+    "High Noon Yone": {
+      "id": 55
+    },
+    "Peacemaker High Noon Yone": {
+      "id": 58
+    },
+    "Masked Justice Yone": {
+      "id": 65
+    },
+    "T1 Yone": {
+      "id": 74
+    }
+  },
+  "Yorick": {
+    "default": {
+      "id": 0
+    },
+    "Undertaker Yorick": {
+      "id": 1
+    },
+    "Pentakill Yorick": {
+      "id": 2
+    },
+    "Arclight Yorick": {
+      "id": 3
+    },
+    "Meowrick": {
+      "id": 4
+    },
+    "Resistance Yorick": {
+      "id": 12
+    },
+    "Pentakill III: Lost Chapter Yorick": {
+      "id": 21
+    },
+    "Spirit Blossom Yorick": {
+      "id": 30
+    },
+    "Dark Star Yorick": {
+      "id": 40
+    },
+    "High Noon Yorick": {
+      "id": 50
+    }
+  },
+  "Yunara": {
+    "default": {
+      "id": 0
+    },
+    "Spirit Blossom Springs Yunara": {
+      "id": 1
+    }
+  },
+  "Yuumi": {
+    "default": {
+      "id": 0
+    },
+    "Battle Principal Yuumi": {
+      "id": 1
+    },
+    "Heartseeker Yuumi": {
+      "id": 11
+    },
+    "Yuubee": {
+      "id": 19
+    },
+    "Bewitching Yuumi": {
+      "id": 28
+    },
+    "EDG Yuumi": {
+      "id": 37
+    },
+    "Shiba Yuumi": {
+      "id": 39
+    },
+    "Cyber Cat Yuumi": {
+      "id": 49
+    },
+    "Prestige Cyber Cat Yuumi": {
+      "id": 50
+    },
+    "Nightbringer Yuumi": {
+      "id": 61
+    },
+    "Firecracker Yuumi": {
+      "id": 70
+    }
+  },
+  "Zaahen": {
+    "default": {
+      "id": 0
+    },
+    "Immortal Journey Zaahen": {
+      "id": 1
+    }
+  },
+  "Zac": {
+    "default": {
+      "id": 0
+    },
+    "Special Weapon Zac": {
+      "id": 1
+    },
+    "Pool Party Zac": {
+      "id": 2
+    },
+    "SKT T1 Zac": {
+      "id": 6
+    },
+    "Battlecast Zac": {
+      "id": 7
+    },
+    "Empyrean Zac": {
+      "id": 14
+    },
+    "Zesty Dip Zac": {
+      "id": 24
+    }
+  },
+  "Zed": {
+    "default": {
+      "id": 0
+    },
+    "Shockblade Zed": {
+      "id": 1
+    },
+    "SKT T1 Zed": {
+      "id": 2
+    },
+    "PROJECT: Zed": {
+      "id": 3
+    },
+    "Worlds 2016 Zed": {
+      "id": 10
+    },
+    "Death Sworn Zed": {
+      "id": 11
+    },
+    "Galaxy Slayer Zed": {
+      "id": 13
+    },
+    "PsyOps Zed": {
+      "id": 15
+    },
+    "Prestige PROJECT: Zed": {
+      "id": 30
+    },
+    "Debonair Zed": {
+      "id": 31
+    },
+    "Empyrean Zed": {
+      "id": 38
+    },
+    "Immortal Journey Zed": {
+      "id": 49
+    },
+    "Blood Moon Zed": {
+      "id": 58
+    },
+    "Quantum Galaxy Slayer Zed": {
+      "id": 68
+    },
+    "Prestige Spirit Blossom Zed": {
+      "id": 69
+    }
+  },
+  "Zeri": {
+    "default": {
+      "id": 0
+    },
+    "Withered Rose Zeri": {
+      "id": 1
+    },
+    "Ocean Song Zeri": {
+      "id": 10
+    },
+    "Immortal Journey Zeri": {
+      "id": 19
+    },
+    "Fright Night Zeri": {
+      "id": 28
+    },
+    "Prestige Fright Night Zeri": {
+      "id": 29
+    },
+    "Winter Wonder Zeri": {
+      "id": 40
+    }
+  },
+  "Ziggs": {
+    "default": {
+      "id": 0
+    },
+    "Mad Scientist Ziggs": {
+      "id": 1
+    },
+    "Major Ziggs": {
+      "id": 2
+    },
+    "Pool Party Ziggs": {
+      "id": 3
+    },
+    "Snow Day Ziggs": {
+      "id": 4
+    },
+    "Master Arcanist Ziggs": {
+      "id": 5
+    },
+    "Battle Boss Ziggs": {
+      "id": 6
+    },
+    "Odyssey Ziggs": {
+      "id": 7
+    },
+    "Sugar Rush Ziggs": {
+      "id": 14
+    },
+    "Hextech Ziggs": {
+      "id": 23
+    },
+    "BZZZiggs": {
+      "id": 24
+    },
+    "La Ilusi\u00f3n Ziggs": {
+      "id": 33
+    },
+    "Firecracker Ziggs": {
+      "id": 43
+    }
+  },
+  "Zilean": {
+    "default": {
+      "id": 0
+    },
+    "Old Saint Zilean": {
+      "id": 1
+    },
+    "Groovy Zilean": {
+      "id": 2
+    },
+    "Shurima Desert Zilean": {
+      "id": 3
+    },
+    "Time Machine Zilean": {
+      "id": 4
+    },
+    "Blood Moon Zilean": {
+      "id": 5
+    },
+    "Sugar Rush Zilean": {
+      "id": 6
+    },
+    "Winterblessed Zilean": {
+      "id": 14
+    },
+    "Arcana Zilean": {
+      "id": 24
+    }
+  },
+  "Zoe": {
+    "default": {
+      "id": 0
+    },
+    "Cyber Pop Zoe": {
+      "id": 1
+    },
+    "Pool Party Zoe": {
+      "id": 2
+    },
+    "Star Guardian Zoe": {
+      "id": 9
+    },
+    "Arcanist Zoe": {
+      "id": 18
+    },
+    "Prestige Arcanist Zoe": {
+      "id": 19
+    },
+    "EDG Zoe": {
+      "id": 20
+    },
+    "Winterblessed Zoe": {
+      "id": 22
+    },
+    "Dark Star Zoe": {
+      "id": 33
+    },
+    "Prestige Eternal Aspect Zoe": {
+      "id": 43
+    }
+  },
+  "Zyra": {
+    "default": {
+      "id": 0
+    },
+    "Wildfire Zyra": {
+      "id": 1
+    },
+    "Haunted Zyra": {
+      "id": 2
+    },
+    "SKT T1 Zyra": {
+      "id": 3
+    },
+    "Dragon Sorceress Zyra": {
+      "id": 4
+    },
+    "Coven Zyra": {
+      "id": 5
+    },
+    "Prestige Coven Zyra": {
+      "id": 6
+    },
+    "Crystal Rose Zyra": {
+      "id": 7
+    },
+    "Crime City Nightmare Zyra": {
+      "id": 16
+    },
+    "Mythmaker Zyra": {
+      "id": 36
+    },
+    "Street Demons Zyra": {
+      "id": 46
+    },
+    "Blood Moon Zyra": {
+      "id": 55
+    },
+    "Spirit Blossom Zyra": {
+      "id": 64
+    }
+  }
+}
