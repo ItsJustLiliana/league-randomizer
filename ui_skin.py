@@ -3,7 +3,7 @@ from data_manager import load_user_data, save_user_data, load_champions
 from assets_manager import get_splash
 import threading
 import random
-from PIL import ImageTk
+from PIL import Image, ImageTk
 
 BG = "#0A1428"
 CARD = "#1F2933"
