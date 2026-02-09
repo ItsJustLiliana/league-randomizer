@@ -6,6 +6,7 @@ from ui_skin import SkinUI
 import threading
 import re
 import os
+from PIL import ImageTk
 
 BG = "#0A1428"
 CARD = "#1F2933"
@@ -13,7 +14,6 @@ TEXT = "#E5E7EB"
 ACCENT = "#C89B3C"
 PLACEHOLDER_COLOR = "#1F2933"
 
-# Hardcoded mapping for tricky champions
 HARDCODE_ASSET_MAP = {
     "Bel'Veth": "Belveth",
     "Cho'Gath": "Chogath",
@@ -28,7 +28,6 @@ HARDCODE_ASSET_MAP = {
 }
 
 class ChampionCard:
-    """Wrapper for each champion card widgets"""
     def __init__(self, champ_name, frame, lbl, fav_btn):
         self.name = champ_name
         self.frame = frame
@@ -44,8 +43,9 @@ class MainUI(tk.Frame):
 
         self.champions = {}
         self.filtered_champions = {}
-        self.card_refs = {}  # champ_name -> ChampionCard
+        self.card_refs = {}          # champ_name -> ChampionCard
         self.favorite_champs = set()
+        self.card_image_cache = {}   # champ_name -> PhotoImage
         self._last_width = None
         self._resize_job = None
 
@@ -53,7 +53,6 @@ class MainUI(tk.Frame):
         self.build_canvas()
         self.load_favorites()
         
-        # Load champions or show first-start overlay
         if not load_champions():
             self.show_first_start_overlay()
         else:
@@ -65,27 +64,18 @@ class MainUI(tk.Frame):
     def build_header(self):
         top = tk.Frame(self, bg=BG)
         top.pack(fill="x", pady=5)
-
         tk.Label(top, text="Choose your Champion", fg=ACCENT, bg=BG, font=("Segoe UI", 20, "bold")).pack(side="left", padx=10)
 
-        # Frame for buttons + search
         btn_frame = tk.Frame(top, bg=BG)
         btn_frame.pack(side="right", padx=10)
 
-        btn_delete_skins = tk.Button(btn_frame, text="🗑 Delete Skin Assets", command=self.delete_skin_assets, bg=ACCENT, fg="black")
-        btn_delete_skins.pack(side="right", padx=5)
+        tk.Button(btn_frame, text="🗑 Delete Skin Assets", command=self.delete_skin_assets, bg=ACCENT, fg="black").pack(side="right", padx=5)
+        tk.Button(btn_frame, text="🗑 Delete ALL Assets", command=self.delete_all_assets, bg=ACCENT, fg="black").pack(side="right", padx=5)
+        tk.Button(btn_frame, text="🔄 Refresh Champions", command=self.refresh_prompt, bg=ACCENT, fg="black").pack(side="right", padx=5)
 
-        btn_delete_all = tk.Button(btn_frame, text="🗑 Delete ALL Assets", command=self.delete_all_assets, bg=ACCENT, fg="black")
-        btn_delete_all.pack(side="right", padx=5)
-
-        btn_refresh = tk.Button(btn_frame, text="🔄 Refresh Champions", command=self.refresh_prompt, bg=ACCENT, fg="black")
-        btn_refresh.pack(side="right", padx=5)
-
-        # Search bar
         self.search_var = tk.StringVar()
         self.search_var.trace_add("write", self.apply_search_filter)
-        search_entry = tk.Entry(btn_frame, textvariable=self.search_var, font=("Segoe UI", 12))
-        search_entry.pack(side="right", padx=(5,5))
+        tk.Entry(btn_frame, textvariable=self.search_var, font=("Segoe UI", 12)).pack(side="right", padx=(5,5))
 
     # ---------------- CANVAS ----------------
     def build_canvas(self):
@@ -100,7 +90,6 @@ class MainUI(tk.Frame):
         self.window_id = self.canvas.create_window((0,0), window=self.container, anchor="nw")
         self.container.bind("<Configure>", lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
 
-        # Scroll binding
         self.canvas.bind("<Enter>", lambda e: self.canvas.bind_all("<MouseWheel>", self.on_mousewheel))
         self.canvas.bind("<Leave>", lambda e: self.canvas.unbind_all("<MouseWheel>"))
         self.canvas.bind("<Button-4>", self.on_mousewheel)
@@ -108,7 +97,6 @@ class MainUI(tk.Frame):
 
     # ---------------- DATA ----------------
     def load_and_render(self):
-        """Load champions in a separate thread"""
         def load():
             self.champions = load_champions()
             self.filtered_champions = dict(self.champions)
@@ -118,10 +106,7 @@ class MainUI(tk.Frame):
     # ---------------- SEARCH ----------------
     def apply_search_filter(self, *args):
         query = self.search_var.get().lower()
-        self.filtered_champions = {
-            champ: data for champ, data in self.champions.items()
-            if query in champ.lower()
-        }
+        self.filtered_champions = {champ: data for champ, data in self.champions.items() if query in champ.lower()}
         self.reorder_cards()
 
     # ---------------- RENDER CARDS ----------------
@@ -134,7 +119,6 @@ class MainUI(tk.Frame):
             tk.Label(self.container, text="No champions found.\nPress Refresh.", fg=TEXT, bg=BG, font=("Segoe UI",14)).pack(pady=50)
             return
 
-        # Sort champions: favorites first
         sorted_champs = sorted(
             self.filtered_champions.keys(),
             key=lambda c: (c not in self.favorite_champs, c.lower())
@@ -165,7 +149,7 @@ class MainUI(tk.Frame):
             open_btn.pack(side="left", padx=(0,5))
 
             fav_btn = tk.Button(btn_frame, text="★" if champ in self.favorite_champs else "☆", bg=ACCENT, fg="black")
-            fav_btn.config(command=lambda c=champ, b=fav_btn: self.toggle_favorite(c, b))
+            fav_btn.config(command=lambda c=champ, b=fav_btn: self.toggle_favorite(c,b))
             fav_btn.pack(side="left")
 
             card_obj = ChampionCard(champ, card, lbl, fav_btn)
@@ -176,7 +160,6 @@ class MainUI(tk.Frame):
                 col = 0
                 row += 1
 
-        # Start lazy-loading visible images
         self.after(100, self.lazy_load_visible_cards)
 
     # ---------------- LAZY LOAD ----------------
@@ -193,11 +176,18 @@ class MainUI(tk.Frame):
                     threading.Thread(target=self.load_card_image, args=(card_obj,), daemon=True).start()
         self.after(200, self.lazy_load_visible_cards)
 
+    # ---------------- LOAD CARD IMAGE ----------------
     def load_card_image(self, card_obj):
         champ = card_obj.name
+        cache_key = champ
         try:
-            norm_name = HARDCODE_ASSET_MAP.get(champ, re.sub(r"[^A-Za-z0-9]","",champ))
-            img = get_splash(norm_name,0)
+            if cache_key in self.card_image_cache:
+                img = self.card_image_cache[cache_key]
+            else:
+                norm_name = HARDCODE_ASSET_MAP.get(champ, re.sub(r"[^A-Za-z0-9]", "", champ))
+                pil_img = get_splash(norm_name, 0, size=(340,210))  # PIL.Image
+                img = ImageTk.PhotoImage(pil_img)                   # convert for Tkinter
+                self.card_image_cache[cache_key] = img
         except Exception:
             img = tk.PhotoImage(width=340, height=210)
 
@@ -221,7 +211,6 @@ class MainUI(tk.Frame):
         self.reorder_cards()
 
     def reorder_cards(self):
-        """Reorder the card frames to show favorites on top without destroying them"""
         sorted_champs = sorted(
             self.filtered_champions.keys(),
             key=lambda c: (c not in self.favorite_champs, c.lower())
@@ -272,7 +261,7 @@ class MainUI(tk.Frame):
                     try:
                         os.remove(os.path.join(ASSETS_DIR, filename))
                         deleted_count += 1
-                    except Exception:
+                    except:
                         pass
             messagebox.showinfo("Done", f"Deleted {deleted_count} skin assets.")
             self.load_and_render()
@@ -294,12 +283,10 @@ class MainUI(tk.Frame):
     def show_first_start_overlay(self):
         self.overlay = tk.Frame(self, bg="#000000")
         self.overlay.place(relx=0,rely=0,relwidth=1,relheight=1)
-        lbl = tk.Label(self.overlay,text="No champions found.\nPress the button below to load them for the first time.",
-                       fg="white",bg="#000000",font=("Segoe UI",16,"bold"),justify="center")
-        lbl.pack(pady=30)
-        btn = tk.Button(self.overlay,text="🔄 Load Champions",bg=ACCENT,fg="black",
-                        font=("Segoe UI",14,"bold"),command=self.first_start_refresh)
-        btn.pack(pady=20)
+        tk.Label(self.overlay,text="No champions found.\nPress the button below to load them for the first time.",
+                 fg="white",bg="#000000",font=("Segoe UI",16,"bold"),justify="center").pack(pady=30)
+        tk.Button(self.overlay,text="🔄 Load Champions",bg=ACCENT,fg="black",
+                  font=("Segoe UI",14,"bold"),command=self.first_start_refresh).pack(pady=20)
 
     def first_start_refresh(self):
         self.overlay.destroy()
@@ -325,5 +312,5 @@ class MainUI(tk.Frame):
         self.canvas.itemconfig(self.window_id,width=new_width)
         if getattr(self,"_resize_job",None):
             try: self.after_cancel(self._resize_job)
-            except Exception: pass
+            except: pass
         self._resize_job = self.after(120,self.render_cards)
