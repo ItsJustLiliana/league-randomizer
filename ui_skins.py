@@ -6,7 +6,7 @@ import random
 from PIL import Image, ImageTk
 from theme import BG, CARD, TEXT, ACCENT, APP_PADDING, FONT_HEADER, FONT_TEXT, FONT_BUTTON
 
-class SkinUI(tk.Frame):
+class SkinsUI(tk.Frame):
     def __init__(self, master, champion, main_ui):
         super().__init__(master, bg=BG, padx=APP_PADDING, pady=APP_PADDING)
         self.master = master

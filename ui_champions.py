@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from data_manager import load_champions, refresh_champions, load_user_data, save_user_data
 from assets_manager import get_splash, clear_assets, ASSETS_DIR
-from ui_skin import SkinUI
+from ui_skins import SkinsUI
 import threading
 import re
 import os
@@ -31,10 +31,11 @@ class ChampionCard:
         self.image_loaded = False
         self.placeholder = frame.children['!label']
 
-class MainUI(tk.Frame):
-    def __init__(self, master):
+class ChampionsUI(tk.Frame):
+    def __init__(self, master, landing_ui=None):
         super().__init__(master, bg=BG, padx=APP_PADDING, pady=APP_PADDING)
         self.master = master
+        self.landing_ui = landing_ui
 
         self.champions = {}
         self.filtered_champions = {}
@@ -43,6 +44,9 @@ class MainUI(tk.Frame):
         self.card_image_cache = {}
         self._last_width = None
         self._resize_job = None
+        self._lazy_load_job = None
+        self._all_cards_loaded = False
+        self._cols = 1
 
         self.build_header()
         self.build_canvas()
@@ -59,7 +63,13 @@ class MainUI(tk.Frame):
     def build_header(self):
         top = tk.Frame(self, bg=BG)
         top.pack(fill="x", pady=5)
-        tk.Label(top, text="Choose your Champion", fg=ACCENT, bg=BG, font=FONT_HEADER).pack(side="left", padx=10, pady=(0,5))
+        
+        # Back button (left side)
+        if self.landing_ui:
+            tk.Button(top, text="← Back to Menu", bg=ACCENT, fg="black", font=FONT_BUTTON,
+                      command=self.go_back_to_landing).pack(side="left", padx=10)
+        
+        tk.Label(top, text="Champions", fg=ACCENT, bg=BG, font=FONT_HEADER).pack(side="left", padx=10, pady=(0,5))
 
         btn_frame = tk.Frame(top, bg=BG)
         btn_frame.pack(side="right", padx=10)
@@ -107,6 +117,10 @@ class MainUI(tk.Frame):
     def apply_search_filter(self, *args):
         query = self.search_var.get().lower()
         self.filtered_champions = {champ: data for champ, data in self.champions.items() if query in champ.lower()}
+        # Reset image loading flags for filtered cards
+        for champ, card_obj in self.card_refs.items():
+            if champ not in self.filtered_champions:
+                card_obj.image_loaded = False
         self.reorder_cards()
 
     # ---------------- RENDER CARDS ----------------
@@ -114,6 +128,7 @@ class MainUI(tk.Frame):
         for w in self.container.winfo_children():
             w.destroy()
         self.card_refs.clear()
+        self._all_cards_loaded = False
 
         if not self.filtered_champions:
             tk.Label(self.container, text="No champions found.\nPress Reload.", fg=TEXT, bg=BG, font=FONT_TEXT).pack(pady=50)
@@ -126,7 +141,7 @@ class MainUI(tk.Frame):
 
         width = max(1, self.canvas.winfo_width())
         card_width = 360
-        cols = max(1, width // card_width)
+        self._cols = max(1, width // card_width)
 
         row = col = 0
         for champ in sorted_champs:
@@ -158,25 +173,57 @@ class MainUI(tk.Frame):
             self.card_refs[champ] = card_obj
 
             col += 1
-            if col >= cols:
+            if col >= self._cols:
                 col = 0
                 row += 1
 
-        self.after(100, self.lazy_load_visible_cards)
+        self.start_lazy_loading()
 
     # ---------------- LAZY LOAD ----------------
+    def start_lazy_loading(self):
+        """Start lazy loading with scroll binding"""
+        if self._lazy_load_job:
+            self.after_cancel(self._lazy_load_job)
+        self.lazy_load_visible_cards()
+
     def lazy_load_visible_cards(self):
+        """Load only visible cards efficiently"""
+        if not self.card_refs:
+            return
+            
         canvas_top = self.canvas.canvasy(0)
         canvas_bottom = canvas_top + self.canvas.winfo_height()
+        
+        # Buffer zone for preloading cards slightly outside viewport
+        buffer = 300
+        load_top = max(0, canvas_top - buffer)
+        load_bottom = canvas_bottom + buffer
 
+        cards_to_load = []
         for champ, card_obj in self.card_refs.items():
+            if card_obj.image_loaded:
+                continue
+            
             frame_top = card_obj.frame.winfo_y()
             frame_bottom = frame_top + card_obj.frame.winfo_height()
-            if frame_bottom >= canvas_top and frame_top <= canvas_bottom:
-                if not card_obj.image_loaded:
-                    card_obj.image_loaded = True
-                    threading.Thread(target=self.load_card_image, args=(card_obj,), daemon=True).start()
-        self.after(200, self.lazy_load_visible_cards)
+            
+            # Only load if in viewport + buffer
+            if frame_bottom >= load_top and frame_top <= load_bottom:
+                cards_to_load.append(card_obj)
+
+        # Start loading
+        for card_obj in cards_to_load:
+            card_obj.image_loaded = True
+            threading.Thread(target=self.load_card_image, args=(card_obj,), daemon=True).start()
+
+        # Check if all cards are loaded
+        if all(card.image_loaded for card in self.card_refs.values()):
+            self._all_cards_loaded = True
+        else:
+            # Schedule next check only if needed
+            if self._lazy_load_job:
+                self.after_cancel(self._lazy_load_job)
+            self._lazy_load_job = self.after(300, self.lazy_load_visible_cards)
 
     # ---------------- LOAD CARD IMAGE ----------------
     def load_card_image(self, card_obj):
@@ -213,22 +260,29 @@ class MainUI(tk.Frame):
         self.reorder_cards()
 
     def reorder_cards(self):
+        """Reposition cards without rebuilding them"""
         sorted_champs = sorted(
             self.filtered_champions.keys(),
             key=lambda c: (c not in self.favorite_champs, c.lower())
         )
         width = max(1, self.canvas.winfo_width())
         card_width = 360
-        cols = max(1, width // card_width)
+        new_cols = max(1, width // card_width)
+
+        # Only rebuild if column count changed
+        if new_cols != self._cols:
+            self.render_cards()
+            return
 
         row = col = 0
         for champ in sorted_champs:
-            card_obj = self.card_refs[champ]
-            card_obj.frame.grid_configure(row=row, column=col)
-            col += 1
-            if col >= cols:
-                col = 0
-                row += 1
+            if champ in self.card_refs:
+                card_obj = self.card_refs[champ]
+                card_obj.frame.grid_configure(row=row, column=col)
+                col += 1
+                if col >= self._cols:
+                    col = 0
+                    row += 1
 
     # ---------------- FAVORITE PERSISTENCE ----------------
     def load_favorites(self):
@@ -242,9 +296,25 @@ class MainUI(tk.Frame):
 
     # ---------------- ACTIONS ----------------
     def open_skin(self, champ):
+        # Clean up before switching screens
+        if self._lazy_load_job:
+            try:
+                self.after_cancel(self._lazy_load_job)
+            except:
+                pass
         self.grid_forget()
-        skin_ui = SkinUI(self.master, champ, self)
+        skin_ui = SkinsUI(self.master, champ, self)
         skin_ui.grid(row=0, column=0, sticky="nsew")
+
+    def go_back_to_landing(self):
+        # Clean up before switching screens
+        if self._lazy_load_job:
+            try:
+                self.after_cancel(self._lazy_load_job)
+            except:
+                pass
+        self.grid_forget()
+        self.landing_ui.grid(row=0, column=0, sticky="nsew")
 
     def delete_all_assets(self):
         if messagebox.askyesno("Delete ALL Assets", "Delete ALL downloaded assets?"):
@@ -304,18 +374,30 @@ class MainUI(tk.Frame):
         threading.Thread(target=lambda: refresh_champions(progress, done), daemon=True).start()
 
     # ---------------- EVENTS ----------------
-    def on_mousewheel(self,event):
-        if event.delta: self.canvas.yview_scroll(int(-1*(event.delta/120)),"units")
-        elif event.num==4: self.canvas.yview_scroll(-3,"units")
-        elif event.num==5: self.canvas.yview_scroll(3,"units")
+    def on_mousewheel(self, event):
+        if event.delta:
+            self.canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+        elif event.num == 4:
+            self.canvas.yview_scroll(-3, "units")
+        elif event.num == 5:
+            self.canvas.yview_scroll(3, "units")
+        
+        # Trigger lazy loading on scroll
+        if not self._all_cards_loaded:
+            self.lazy_load_visible_cards()
 
     # ---------------- RESIZE ----------------
-    def on_resize(self,event=None):
+    def on_resize(self, event=None):
         new_width = self.canvas.winfo_width()
-        if getattr(self,"_last_width",None)==new_width: return
+        if getattr(self, "_last_width", None) == new_width:
+            return
         self._last_width = new_width
-        self.canvas.itemconfig(self.window_id,width=new_width)
-        if getattr(self,"_resize_job",None):
-            try: self.after_cancel(self._resize_job)
-            except: pass
-        self._resize_job = self.after(120,self.render_cards)
+        self.canvas.itemconfig(self.window_id, width=new_width)
+        
+        # Debounce resize with longer delay
+        if getattr(self, "_resize_job", None):
+            try:
+                self.after_cancel(self._resize_job)
+            except:
+                pass
+        self._resize_job = self.after(400, self.reorder_cards)
