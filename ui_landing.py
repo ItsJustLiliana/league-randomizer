@@ -2,6 +2,14 @@ import tkinter as tk
 from ui_champions import ChampionsUI
 from theme import BG, ACCENT, TEXT, FONT_HEADER, FONT_BUTTON, APP_PADDING, CARD, BUTTON_BG, BUTTON_FG, BUTTON_PADY
 
+# Credits - easily editable
+CREDITS = [
+    ("Assets", "Riot Games (Champion Splash Arts)"),
+    ("Data", "Data Dragon API"),
+    ("", ""),  # Empty line for spacing
+    ("Developer", "ItsJustLiliana"),
+]
+
 class LandingUI(tk.Frame):
     def __init__(self, master):
         super().__init__(master, bg=BG, padx=APP_PADDING, pady=APP_PADDING)
@@ -66,6 +74,19 @@ class LandingUI(tk.Frame):
         tk.Label(card3, text="Coming Soon", fg=ACCENT, bg=CARD, font=("Arial", 16, "bold")).pack()
         tk.Label(card3, text="Feature coming soon...", fg=TEXT, bg=CARD, font=("Arial", 11)).pack(pady=(5, 15))
         tk.Button(card3, text="Soon", bg=BUTTON_BG, fg=BUTTON_FG, font=FONT_BUTTON, state="disabled").pack(pady=(0, BUTTON_PADY))
+        
+        # Bottom bar with credits button
+        bottom_frame = tk.Frame(self, bg=BG)
+        bottom_frame.pack(side="bottom", fill="x", pady=10)
+        
+        tk.Button(
+            bottom_frame, 
+            text="Credits", 
+            bg=BUTTON_BG, 
+            fg=BUTTON_FG, 
+            font=("Segoe UI", 10), 
+            command=self.show_credits
+        ).pack(side="right", padx=10)
     
     def go_to_main(self):
         """Navigate to the main UI"""
@@ -85,3 +106,65 @@ class LandingUI(tk.Frame):
             self.main_ui = None
         
         self.grid(row=0, column=0, sticky="nsew")
+    
+    def show_credits(self):
+        """Display credits in a modal window"""
+        credits_window = tk.Toplevel(self)
+        credits_window.title("Credits")
+        credits_window.geometry("500x400")
+        credits_window.configure(bg=BG)
+        credits_window.resizable(False, False)
+        
+        # Center the window
+        credits_window.transient(self.master)
+        credits_window.grab_set()
+        
+        # Title
+        title = tk.Label(
+            credits_window, 
+            text="Credits", 
+            fg=ACCENT, 
+            bg=BG, 
+            font=("Arial", 24, "bold")
+        )
+        title.pack(pady=15)
+        
+        # Scrollable frame for credits
+        canvas = tk.Canvas(credits_window, bg=BG, highlightthickness=0)
+        scrollbar = tk.Scrollbar(credits_window, orient="vertical", command=canvas.yview)
+        scrollable_frame = tk.Frame(canvas, bg=BG)
+        
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        # Add credits entries
+        for title_text, description in CREDITS:
+            entry_frame = tk.Frame(scrollable_frame, bg=BG)
+            entry_frame.pack(fill="x", padx=20, pady=10)
+            
+            tk.Label(
+                entry_frame,
+                text=title_text,
+                fg=ACCENT,
+                bg=BG,
+                font=("Arial", 12, "bold")
+            ).pack(anchor="w")
+            
+            tk.Label(
+                entry_frame,
+                text=description,
+                fg=TEXT,
+                bg=BG,
+                font=("Arial", 10),
+                wraplength=400,
+                justify="left"
+            ).pack(anchor="w", pady=(2, 0))
+        
+        canvas.pack(side="left", fill="both", expand=True, padx=(10, 0), pady=10)
+        scrollbar.pack(side="right", fill="y", padx=(0, 10), pady=10)
+        

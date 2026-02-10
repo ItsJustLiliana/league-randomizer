@@ -185,6 +185,10 @@ class ChampionsUI(tk.Frame):
         
         for col, champ_idx in enumerate(range(start_idx, end_idx)):
             champ = self._sorted_champs[champ_idx]
+            if champ in self.card_refs:
+                card_obj = self.card_refs[champ]
+                card_obj.frame.grid(row=row, column=col, padx=10, pady=10, sticky="n")
+                continue
             card = tk.Frame(self.container, bg=CARD, width=340, height=250, relief="raised", bd=1)
             card.grid(row=row, column=col, padx=10, pady=10, sticky="n")
             card.grid_propagate(False)
@@ -321,7 +325,36 @@ class ChampionsUI(tk.Frame):
             self.favorite_champs.add(champ)
             btn.config(text="★")
         self.save_favorites()
-        self.reorder_cards()
+        self.reorder_favorites()
+
+    def reorder_favorites(self):
+        """Reorder favorites without rebuilding all widgets"""
+        self._sorted_champs = sorted(
+            self.filtered_champions.keys(),
+            key=lambda c: (c not in self.favorite_champs, c.lower())
+        )
+        width = max(1, self.canvas.winfo_width())
+        card_width = 360
+        self._cols = max(1, width // card_width)
+        self._total_rows = (len(self._sorted_champs) + self._cols - 1) // self._cols
+
+        # Hide cards that are no longer in the filtered set
+        for champ, card_obj in self.card_refs.items():
+            if champ not in self._sorted_champs:
+                card_obj.frame.grid_forget()
+
+        # Re-grid existing cards to their new positions
+        for idx, champ in enumerate(self._sorted_champs):
+            if champ in self.card_refs:
+                row = idx // self._cols
+                col = idx % self._cols
+                self.card_refs[champ].frame.grid(row=row, column=col, padx=10, pady=10, sticky="n")
+
+        # Allow lazy render to fill in any missing cards
+        self._rendered_rows.clear()
+        self.defer_render_offscreen_rows()
+        self.lazy_load_visible_cards()
+        self.canvas.yview_moveto(0)
 
     def reorder_cards(self):
         """Reposition cards without rebuilding them"""
