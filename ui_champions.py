@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from data_manager import load_champions, refresh_champions, load_user_data, save_user_data
+from data_manager import load_champions, refresh_champions, load_user_data, save_user_data, delete_champions_file
 from assets_manager import get_splash, clear_assets, ASSETS_DIR
 from ui_skins import SkinsUI
 import threading
@@ -44,17 +44,26 @@ class ChampionsUI(tk.Frame):
         self.card_image_cache = {}
         self._last_width = None
         self._resize_job = None
-        self._lazy_load_job = None
+        self._lazy_load_job = None  # For image loading
+        self._render_job = None  # For deferred row rendering
         self._all_cards_loaded = False
         self._cols = 1
+        self._sorted_champs = []
+        self._rendered_rows = set()  # Track which rows have been rendered
+        self._total_rows = 0  # Track total number of rows
 
         self.build_header()
         self.build_canvas()
         self.load_favorites()
 
-        if not load_champions():
-            self.reload_champions()
+        # Check if champions exist
+        champs_data = load_champions()
+        if not champs_data:
+            # No champions, show load screen
+            self.show_load_champions_screen()
         else:
+            self.champions = champs_data
+            self.filtered_champions = dict(self.champions)
             self.load_and_render()
 
         self.master.bind("<Configure>", self.on_resize)
@@ -125,16 +134,24 @@ class ChampionsUI(tk.Frame):
 
     # ---------------- RENDER CARDS ----------------
     def render_cards(self):
+        """Initial render - only creates visible rows, defers others"""
         for w in self.container.winfo_children():
             w.destroy()
         self.card_refs.clear()
+        self._rendered_rows.clear()
         self._all_cards_loaded = False
 
+        # If no champions are loaded at all, show the load screen
+        if not self.champions:
+            self.show_load_champions_screen()
+            return
+        
+        # If champions exist but search filter results in no matches
         if not self.filtered_champions:
             tk.Label(self.container, text="No champions found.\nPress Reload.", fg=TEXT, bg=BG, font=FONT_TEXT).pack(pady=50)
             return
 
-        sorted_champs = sorted(
+        self._sorted_champs = sorted(
             self.filtered_champions.keys(),
             key=lambda c: (c not in self.favorite_champs, c.lower())
         )
@@ -143,8 +160,31 @@ class ChampionsUI(tk.Frame):
         card_width = 360
         self._cols = max(1, width // card_width)
 
-        row = col = 0
-        for champ in sorted_champs:
+        # Calculate how many rows to render initially (viewport height / card height)
+        canvas_height = self.canvas.winfo_height()
+        card_height = 270  # 250 + padding
+        initial_visible_rows = max(3, (canvas_height // card_height) + 2)  # +2 for buffer
+
+        # Create cards only for initial visible rows
+        total_rows = (len(self._sorted_champs) + self._cols - 1) // self._cols
+        for row in range(min(initial_visible_rows, total_rows)):
+            self._render_row(row)
+
+        # Store total rows for later rendering
+        self._total_rows = total_rows
+        self.start_lazy_rendering()
+
+    def _render_row(self, row):
+        """Create card widgets for a specific row"""
+        if row in self._rendered_rows or row >= self._total_rows:
+            return
+        
+        self._rendered_rows.add(row)
+        start_idx = row * self._cols
+        end_idx = min(start_idx + self._cols, len(self._sorted_champs))
+        
+        for col, champ_idx in enumerate(range(start_idx, end_idx)):
+            champ = self._sorted_champs[champ_idx]
             card = tk.Frame(self.container, bg=CARD, width=340, height=250, relief="raised", bd=1)
             card.grid(row=row, column=col, padx=10, pady=10, sticky="n")
             card.grid_propagate(False)
@@ -172,16 +212,40 @@ class ChampionsUI(tk.Frame):
             card_obj = ChampionCard(champ, card, lbl, fav_btn)
             self.card_refs[champ] = card_obj
 
-            col += 1
-            if col >= self._cols:
-                col = 0
-                row += 1
+    # ---------------- LAZY RENDER (deferred widget creation) ----------------
+    def start_lazy_rendering(self):
+        """Start rendering off-screen rows as user scrolls"""
+        if self._render_job:
+            self.after_cancel(self._render_job)
+        self.defer_render_offscreen_rows()
+        # Start image loading after a delay to allow widgets to be created
+        self.after(100, self.lazy_load_visible_cards)
 
-        self.start_lazy_loading()
+    def defer_render_offscreen_rows(self):
+        """Render rows that are near or in viewport"""
+        canvas_top = self.canvas.canvasy(0)
+        canvas_bottom = canvas_top + self.canvas.winfo_height()
+        card_height = 270
 
-    # ---------------- LAZY LOAD ----------------
+        # Calculate which rows are in viewport + buffer
+        buffer_pixels = 500
+        render_top = max(0, (canvas_top - buffer_pixels) // card_height)
+        render_bottom = min(self._total_rows, ((canvas_bottom + buffer_pixels) // card_height) + 1)
+
+        # Render rows that haven't been rendered yet
+        for row in range(int(render_top), int(render_bottom)):
+            if row not in self._rendered_rows:
+                self._render_row(row)
+
+        # Continue checking if all rows are rendered
+        if len(self._rendered_rows) < self._total_rows:
+            self._render_job = self.after(400, self.defer_render_offscreen_rows)
+        else:
+            self._render_job = None
+
+    # ---------------- LAZY LOAD (image loading) ----------------
     def start_lazy_loading(self):
-        """Start lazy loading with scroll binding"""
+        """Start lazy loading images"""
         if self._lazy_load_job:
             self.after_cancel(self._lazy_load_job)
         self.lazy_load_visible_cards()
@@ -274,15 +338,54 @@ class ChampionsUI(tk.Frame):
             self.render_cards()
             return
 
-        row = col = 0
-        for champ in sorted_champs:
-            if champ in self.card_refs:
-                card_obj = self.card_refs[champ]
-                card_obj.frame.grid_configure(row=row, column=col)
-                col += 1
-                if col >= self._cols:
-                    col = 0
-                    row += 1
+        # If sorted order changed, update card positions but don't rebuild
+        if sorted_champs != self._sorted_champs:
+            self.render_cards()
+            return
+
+    # ---------------- LOAD CHAMPIONS SCREEN ----------------
+    def show_load_champions_screen(self):
+        """Display a screen asking user to load champions"""
+        # Clear existing content
+        for w in self.container.winfo_children():
+            w.destroy()
+        self.card_refs.clear()
+        
+        # Center frame
+        center = tk.Frame(self.container, bg=BG)
+        center.pack(expand=True, fill="both")
+        
+        # Message
+        msg = tk.Label(
+            center,
+            text="No Champions Loaded",
+            fg=ACCENT,
+            bg=BG,
+            font=("Arial", 32, "bold")
+        )
+        msg.pack(pady=(20, 10))
+        
+        submsg = tk.Label(
+            center,
+            text="Click Load Champions to download champion data",
+            fg=TEXT,
+            bg=BG,
+            font=("Arial", 12)
+        )
+        submsg.pack(pady=(0, 30))
+        
+        # Load button
+        load_btn = tk.Button(
+            center,
+            text="Load Champions",
+            bg=ACCENT,
+            fg="black",
+            font=FONT_BUTTON,
+            command=self.reload_champions,
+            padx=20,
+            pady=10
+        )
+        load_btn.pack(pady=20)
 
     # ---------------- FAVORITE PERSISTENCE ----------------
     def load_favorites(self):
@@ -302,6 +405,11 @@ class ChampionsUI(tk.Frame):
                 self.after_cancel(self._lazy_load_job)
             except:
                 pass
+        if self._render_job:
+            try:
+                self.after_cancel(self._render_job)
+            except:
+                pass
         self.grid_forget()
         skin_ui = SkinsUI(self.master, champ, self)
         skin_ui.grid(row=0, column=0, sticky="nsew")
@@ -313,17 +421,25 @@ class ChampionsUI(tk.Frame):
                 self.after_cancel(self._lazy_load_job)
             except:
                 pass
-        self.grid_forget()
-        self.landing_ui.grid(row=0, column=0, sticky="nsew")
+        if self._render_job:
+            try:
+                self.after_cancel(self._render_job)
+            except:
+                pass
+        self.landing_ui.show_landing()
 
     def delete_all_assets(self):
-        if messagebox.askyesno("Delete ALL Assets", "Delete ALL downloaded assets?"):
+        if messagebox.askyesno("Delete ALL Assets", "Delete ALL downloaded assets and champions data?"):
+            # Delete all asset files
             clear_assets()
-            messagebox.showinfo("Done", "All assets deleted.")
+            # Delete and reset champions.json
+            delete_champions_file()
+            # Clear local state
             self.champions.clear()
             self.filtered_champions.clear()
-            self.render_cards()
-            self.reload_champions()
+            self.card_refs.clear()
+            # Show the load champions screen
+            self.show_load_champions_screen()
 
     def delete_skin_assets(self):
         if messagebox.askyesno("Delete Skin Assets", "Delete all skin assets?"):
@@ -382,9 +498,9 @@ class ChampionsUI(tk.Frame):
         elif event.num == 5:
             self.canvas.yview_scroll(3, "units")
         
-        # Trigger lazy loading on scroll
-        if not self._all_cards_loaded:
-            self.lazy_load_visible_cards()
+        # Trigger both row rendering and image loading on scroll
+        self.defer_render_offscreen_rows()
+        self.lazy_load_visible_cards()
 
     # ---------------- RESIZE ----------------
     def on_resize(self, event=None):

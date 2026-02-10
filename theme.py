@@ -11,6 +11,7 @@ PLACEHOLDER_COLOR = "#1F2933"  # Placeholder for images
 APP_PADDING = 10
 CARD_PADX = 5
 CARD_PADY = 5
+BUTTON_PADY = 10  # Padding below buttons
 SCROLLBAR_WIDTH = 12
 
 # ---------------- FONTS ----------------

@@ -24,6 +24,15 @@ def ensure_files():
             json.dump({}, f)
 
 
+def delete_champions_file():
+    """Delete champions.json to reset champion data"""
+    if os.path.exists(CHAMPIONS_FILE):
+        os.remove(CHAMPIONS_FILE)
+    # Recreate empty file
+    with open(CHAMPIONS_FILE, "w", encoding="utf-8") as f:
+        json.dump({}, f)
+
+
 # ---------------------------
 # Loaders
 # ---------------------------

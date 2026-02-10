@@ -9,8 +9,9 @@ def main():
 
     root = tk.Tk()
     root.title("League Randomizer")
-    root.geometry("1140x730")
-    root.minsize(1140, 650)
+    root.geometry("1140x720")
+    root.minsize(1140, 720)
+    root.maxsize(1140, 720)
     root.configure(bg=APP_BG)
 
     # Improve resize performance
