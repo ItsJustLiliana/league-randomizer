@@ -1,5 +1,5 @@
 import tkinter as tk
-from ui_champions import ChampionsUI
+from randomizer.ui_champions import ChampionsUI
 from theme import BG, ACCENT, TEXT, FONT_HEADER, FONT_BUTTON, APP_PADDING, CARD, BUTTON_BG, BUTTON_FG, BUTTON_PADY
 
 # Credits - easily editable

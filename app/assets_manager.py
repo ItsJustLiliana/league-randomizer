@@ -2,7 +2,9 @@ import os
 import urllib.request
 from PIL import Image
 
-ASSETS_DIR = "assets"
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(APP_DIR)
+ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets")
 os.makedirs(ASSETS_DIR, exist_ok=True)
 
 # Cache PIL.Image objects (never PhotoImage)

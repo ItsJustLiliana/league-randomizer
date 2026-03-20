@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from data_manager import load_champions, refresh_champions, load_user_data, save_user_data, delete_champions_file
 from assets_manager import get_splash, clear_assets, ASSETS_DIR
-from ui_skins import SkinsUI
+from .ui_skins import SkinsUI
 import threading
 import re
 import os

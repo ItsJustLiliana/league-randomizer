@@ -4,8 +4,12 @@ import threading
 import time
 import urllib.request
 
-CHAMPIONS_FILE = "champions.json"
-USER_FILE = "user_data.json"
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(APP_DIR)
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+
+CHAMPIONS_FILE = os.path.join(DATA_DIR, "champions.json")
+USER_FILE = os.path.join(DATA_DIR, "user_data.json")
 
 DDRAGON_CHAMP_URL = "https://ddragon.leagueoflegends.com/cdn/14.1.1/data/en_US/champion.json"
 DDRAGON_CHAMP_DETAIL = "https://ddragon.leagueoflegends.com/cdn/14.1.1/data/en_US/champion/{champ}.json"
@@ -15,6 +19,8 @@ DDRAGON_CHAMP_DETAIL = "https://ddragon.leagueoflegends.com/cdn/14.1.1/data/en_U
 # File bootstrap
 # ---------------------------
 def ensure_files():
+    os.makedirs(DATA_DIR, exist_ok=True)
+
     if not os.path.exists(CHAMPIONS_FILE):
         with open(CHAMPIONS_FILE, "w", encoding="utf-8") as f:
             json.dump({}, f)
@@ -60,10 +66,13 @@ def refresh_champions(progress_cb=None, done_cb=None):
     Runs in background thread.
     """
 
+    tmp_champs_file = os.path.join(DATA_DIR, "_tmp_champs.json")
+    tmp_detail_file = os.path.join(DATA_DIR, "_tmp_detail.json")
+
     def worker():
         try:
-            urllib.request.urlretrieve(DDRAGON_CHAMP_URL, "_tmp_champs.json")
-            with open("_tmp_champs.json", "r", encoding="utf-8") as f:
+            urllib.request.urlretrieve(DDRAGON_CHAMP_URL, tmp_champs_file)
+            with open(tmp_champs_file, "r", encoding="utf-8") as f:
                 champ_list = json.load(f)["data"]
 
             total = len(champ_list)
@@ -74,9 +83,9 @@ def refresh_champions(progress_cb=None, done_cb=None):
                     progress_cb(i + 1, total, champ_key)
 
                 url = DDRAGON_CHAMP_DETAIL.format(champ=champ_key)
-                urllib.request.urlretrieve(url, "_tmp_detail.json")
+                urllib.request.urlretrieve(url, tmp_detail_file)
 
-                with open("_tmp_detail.json", "r", encoding="utf-8") as f:
+                with open(tmp_detail_file, "r", encoding="utf-8") as f:
                     detail = json.load(f)["data"][champ_key]
 
                 skins = {}
@@ -98,7 +107,7 @@ def refresh_champions(progress_cb=None, done_cb=None):
                 done_cb(False)
 
         finally:
-            for tmp in ("_tmp_champs.json", "_tmp_detail.json"):
+            for tmp in (tmp_champs_file, tmp_detail_file):
                 if os.path.exists(tmp):
                     os.remove(tmp)
 
