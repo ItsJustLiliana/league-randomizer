@@ -1,4 +1,5 @@
-/__pycache__
+/app/__pycache__
+/app/randomizer/__pycache__
 /assets
 _tmp_champs.json
 _tmp_detail.json
